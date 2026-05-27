@@ -4,13 +4,21 @@ Incremental lessons learning Java.
 
 ## Prerequisites
 
-- JDK 17+ (Eclipse Temurin recommended)
+- OpenJDK 26
 
 ### Install
 
-- macOS (Homebrew): `brew install --cask temurin`
-- Debian / Ubuntu: `sudo apt install default-jdk`
-- Other: download from [adoptium.net](https://adoptium.net/)
+- macOS (Homebrew): `brew install openjdk@26`
+  - It's keg-only. Symlink so the system finds it:
+
+        sudo ln -sfn /opt/homebrew/opt/openjdk@26/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-26.jdk
+
+  - And put it on `PATH`:
+
+        echo 'export PATH="/opt/homebrew/opt/openjdk@26/bin:$PATH"' >> ~/.zshrc
+
+- Debian / Ubuntu: `sudo apt install openjdk-26-jdk` (use your distro's package; fall back to `default-jdk` if 26 isn't packaged yet)
+- Other: download from [jdk.java.net/26](https://jdk.java.net/26/)
 
 ### Verify
 
