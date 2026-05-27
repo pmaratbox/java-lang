@@ -4,7 +4,17 @@ Incremental lessons learning Java.
 
 ## Prerequisites
 
-- JDK (`javac --version`, `java --version`)
+- JDK 17+ (Eclipse Temurin recommended)
+
+### Install
+
+- macOS (Homebrew): `brew install --cask temurin`
+- Debian / Ubuntu: `sudo apt install default-jdk`
+- Other: download from [adoptium.net](https://adoptium.net/)
+
+### Verify
+
+    javac --version && java --version
 
 ## Lessons
 
