@@ -564,6 +564,7 @@ Incremental lessons learning Java.
 
 ### Template Engines
 - [0477-variable-substitution](31-template-engines/0477-variable-substitution/) — render a template with a variable
+- [0478-conditional](31-template-engines/0478-conditional/) — render based on a condition
 
 ## How to run
 
