@@ -774,6 +774,7 @@ Incremental lessons learning Java.
 - [0645-cache-size](51-caching/0645-cache-size/) — number of entries
 - [0646-cache-update](51-caching/0646-cache-update/) — re-putting a key updates its value
 - [0647-cache-contains](51-caching/0647-cache-contains/) — check key membership
+- [0648-cache-capacity](51-caching/0648-cache-capacity/) — size never exceeds capacity
 
 ## How to run
 
