@@ -798,6 +798,7 @@ Incremental lessons learning Java.
 
 ### Exact & Big Numbers
 - [0665-bignum-add](54-decimal-bignum/0665-bignum-add/) — add two huge integers
+- [0666-bignum-multiply](54-decimal-bignum/0666-bignum-multiply/) — multiply two large integers
 
 ## How to run
 
