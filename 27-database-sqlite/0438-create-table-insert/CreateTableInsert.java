@@ -14,5 +14,5 @@ void main() throws Exception {
         ins.executeUpdate();
     }
     var rs = c.createStatement().executeQuery("select name from users order by id");
-    while (rs.next()) System.out.println(rs.getString(1));
+    while (rs.next()) IO.println(rs.getString(1));
 }

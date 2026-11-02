@@ -11,5 +11,5 @@ void main() {
     IntUnaryOperator dbl = x -> x * 2;
     IntUnaryOperator neg = x -> -x;
     var p = pipe(inc, dbl, neg);
-    System.out.println(p.applyAsInt(3));
+    IO.println(p.applyAsInt(3));
 }

@@ -10,5 +10,5 @@ void main() throws Exception {
  up.setString(1,"apple"); up.setInt(2,5); up.executeUpdate();
  up.setString(1,"banana"); up.setInt(2,3); up.executeUpdate();
  var rs = c.createStatement().executeQuery("select item,qty from inv order by item");
- while(rs.next()) System.out.println(rs.getString(1)+" "+rs.getInt(2));
+ while(rs.next()) IO.println(rs.getString(1)+" "+rs.getInt(2));
 }

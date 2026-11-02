@@ -13,5 +13,5 @@ void main() {
     return "ok"; // no exception => succeeds first try
   });
   // The library drove exactly one attempt.
-  System.out.println(attempts.get()); // 1
+  IO.println(attempts.get()); // 1
 }

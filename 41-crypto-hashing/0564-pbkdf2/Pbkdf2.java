@@ -14,5 +14,5 @@ void main() throws Exception {
 
     var sb = new StringBuilder();
     for (var b : derived) sb.append(String.format("%02x", b));
-    System.out.println(sb);
+    IO.println(sb);
 }

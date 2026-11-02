@@ -13,5 +13,5 @@ void main() throws Exception {
   for (var i = 0; i < bs.getLength(); i++) {
     ids.add(((Element) bs.item(i)).getAttribute("id"));
   }
-  System.out.println(ids);
+  IO.println(ids);
 }

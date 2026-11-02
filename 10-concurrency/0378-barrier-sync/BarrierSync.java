@@ -18,5 +18,5 @@ void main() throws InterruptedException {
         threads[i].start();
     }
     for (var t : threads) t.join();
-    System.out.println("all reached: " + reached.get());
+    IO.println("all reached: " + reached.get());
 }

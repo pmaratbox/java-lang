@@ -22,5 +22,5 @@ void main() {
   addE(g, "d", "e", 1);
 
   var path = new DijkstraShortestPath<>(g).getPath("a", "e");
-  System.out.println(String.join("-", path.getVertexList()));
+  IO.println(String.join("-", path.getVertexList()));
 }

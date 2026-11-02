@@ -7,6 +7,6 @@ void main() {
             if (j > i) sb.append(" ");
             sb.append(nums[j]);
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

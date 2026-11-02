@@ -24,7 +24,7 @@ void main() throws Exception {
       HttpRequest.newBuilder().uri(URI.create("http://localhost:" + port + "/about")).build(),
       HttpResponse.BodyHandlers.ofString()).body();
 
-  System.out.println(home);
-  System.out.println(about);
+  IO.println(home);
+  IO.println(about);
   app.stop();
 }

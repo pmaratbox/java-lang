@@ -8,5 +8,5 @@ void main() {
             break;
         }
     }
-    System.out.println("found " + target + " at index " + index);
+    IO.println("found " + target + " at index " + index);
 }

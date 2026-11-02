@@ -2,7 +2,7 @@ public class ExpressionAst {
     void main() {
         // AST for "1+2*3": Add(Num(1), Mul(Num(2), Num(3)))
         Node ast = new Add(new Num(1), new Mul(new Num(2), new Num(3)));
-        System.out.println(ast.eval());
+        IO.println(ast.eval());
     }
 }
 

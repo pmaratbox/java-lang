@@ -5,5 +5,5 @@ void main() throws Exception {
     var digest = MessageDigest.getInstance("SHA-512").digest("hello".getBytes("UTF-8"));
     var sb = new StringBuilder();
     for (var b : digest) sb.append(String.format("%02x", b));
-    System.out.println(sb);
+    IO.println(sb);
 }

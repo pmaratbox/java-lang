@@ -9,5 +9,5 @@ void main() throws InterruptedException {
     t2.start();
     t1.join();
     t2.join();
-    System.out.println(r1.get() + r2.get());
+    IO.println(r1.get() + r2.get());
 }

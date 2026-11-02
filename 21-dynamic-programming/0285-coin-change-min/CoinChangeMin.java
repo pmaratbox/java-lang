@@ -9,5 +9,5 @@ void main() {
             if (c <= a) dp[a] = Math.min(dp[a], dp[a - c] + 1);
         }
     }
-    System.out.println(dp[amount]);
+    IO.println(dp[amount]);
 }

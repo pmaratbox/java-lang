@@ -15,5 +15,5 @@ static String hex(Object v) throws Exception {
 }
 
 void main() throws Exception {
-  System.out.println(hex(List.of(1, 2, 3))); // 93010203 (fixarray 93 + 01 02 03)
+  IO.println(hex(List.of(1, 2, 3))); // 93010203 (fixarray 93 + 01 02 03)
 }

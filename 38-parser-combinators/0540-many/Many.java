@@ -10,5 +10,5 @@ void main() {
     // into a List. We then print the size of that list.
     var manyA = Scanners.isChar('a').many();
     var matched = manyA.parse("aaaa");
-    System.out.println(matched.size());
+    IO.println(matched.size());
 }

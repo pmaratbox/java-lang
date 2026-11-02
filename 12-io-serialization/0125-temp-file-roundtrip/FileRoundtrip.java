@@ -9,5 +9,5 @@ void main() throws IOException {
     Files.writeString(file, data);
     var read = Files.readString(file, StandardCharsets.UTF_8);
     Files.delete(file);
-    System.out.println("roundtrip: " + (read.equals(data) ? "ok" : "fail"));
+    IO.println("roundtrip: " + (read.equals(data) ? "ok" : "fail"));
 }

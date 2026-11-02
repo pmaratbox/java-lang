@@ -20,5 +20,5 @@ void main() {
     var graphQL = GraphQL.newGraphQL(schema).build();
 
     Map<String, Object> data = graphQL.execute("{ hello }").getData();
-    System.out.println(data.get("hello"));
+    IO.println(data.get("hello"));
 }

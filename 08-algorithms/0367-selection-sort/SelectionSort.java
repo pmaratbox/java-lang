@@ -14,5 +14,5 @@ void main() {
         if (i > 0) sb.append(' ');
         sb.append(a[i]);
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

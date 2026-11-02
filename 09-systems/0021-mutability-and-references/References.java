@@ -4,7 +4,7 @@ static void inc(int[] box) {
 
 void main() {
     int[] box = {1};
-    System.out.println("before: " + box[0]);
+    IO.println("before: " + box[0]);
     inc(box);
-    System.out.println("after: " + box[0]);
+    IO.println("after: " + box[0]);
 }

@@ -15,5 +15,5 @@ void main() {
     for (Map.Entry<Integer, List<String>> e : groups.entrySet()) {
         out.add(e.getKey() + ":[" + String.join(",", e.getValue()) + "]");
     }
-    System.out.println(out);
+    IO.println(out);
 }

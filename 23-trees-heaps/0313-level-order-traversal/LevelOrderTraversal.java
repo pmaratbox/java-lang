@@ -23,7 +23,7 @@ public class LevelOrderTraversal {
             if (n.left != null) q.add(n.left);
             if (n.right != null) q.add(n.right);
         }
-        System.out.println(sj);
+        IO.println(sj);
     }
 }
 

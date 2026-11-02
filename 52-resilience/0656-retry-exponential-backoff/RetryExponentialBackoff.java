@@ -18,5 +18,5 @@ void main() {
     return "done";
   });
   // Scripted: fail three times (attempts 1-3), succeed on attempt 4.
-  System.out.println(attempts.get());
+  IO.println(attempts.get());
 }

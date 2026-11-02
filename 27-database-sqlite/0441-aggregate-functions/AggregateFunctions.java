@@ -10,8 +10,8 @@ void main() throws Exception {
  var rs = c.createStatement().executeQuery(
    "select count(*),sum(amount),min(amount),max(amount) from t");
  rs.next();
- System.out.println(rs.getInt(1));
- System.out.println(rs.getInt(2));
- System.out.println(rs.getInt(3));
- System.out.println(rs.getInt(4));
+ IO.println(rs.getInt(1));
+ IO.println(rs.getInt(2));
+ IO.println(rs.getInt(3));
+ IO.println(rs.getInt(4));
 }

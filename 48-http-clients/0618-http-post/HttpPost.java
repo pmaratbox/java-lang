@@ -27,7 +27,7 @@ void main() throws Exception {
           .POST(HttpRequest.BodyPublishers.ofString("ping"))
           .build(),
       HttpResponse.BodyHandlers.ofString());
-  System.out.println(resp.body());
+  IO.println(resp.body());
 
   s.stop(0);
 }

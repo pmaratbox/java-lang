@@ -35,7 +35,7 @@ public class BstDelete {
         root = delete(root, 3);
         var sb = new StringBuilder();
         inorder(root, sb);
-        System.out.println(sb);
+        IO.println(sb);
     }
 }
 

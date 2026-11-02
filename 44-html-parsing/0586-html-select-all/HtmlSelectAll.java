@@ -13,5 +13,5 @@ void main() {
   // CSS `.item` selects every element with class "item"; take each one's text.
   var sj = new StringJoiner(",");
   for (var e : d.select(".item")) sj.add(e.text());
-  System.out.println(sj);
+  IO.println(sj);
 }

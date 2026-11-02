@@ -13,6 +13,6 @@ public class InterfaceDefaultMethod {
     void main() {
         Greeter a = new PlainGreeter();
         Greeter b = new CasualGreeter();
-        System.out.println(a.greet() + " " + b.greet());
+        IO.println(a.greet() + " " + b.greet());
     }
 }

@@ -13,5 +13,5 @@ void main() {
         int bc = last.getOrDefault(text.charAt(s + j), -1);
         s += Math.max(1, j - bc);
     }
-    System.out.println(result);
+    IO.println(result);
 }

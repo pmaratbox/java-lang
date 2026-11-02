@@ -9,5 +9,5 @@ void main() {
     var dog = Scanners.string("dog").retn("dog");
     // choice combinator: try `cat`, otherwise `dog`
     var animal = Parsers.or(cat, dog);
-    System.out.println(animal.parse("dog"));
+    IO.println(animal.parse("dog"));
 }

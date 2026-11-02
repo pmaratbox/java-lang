@@ -10,6 +10,6 @@ static boolean isOdd(int n) {
 
 void main() {
     for (var n : new int[]{4, 3}) {
-        System.out.println(isEven(n) ? "even" : "odd");
+        IO.println(isEven(n) ? "even" : "odd");
     }
 }

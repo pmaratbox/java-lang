@@ -56,7 +56,7 @@ static Consumer<String> throttle(Scheduler sched, long window, Consumer<String> 
 
 void main() {
     var sched = new Scheduler();
-    var throttled = throttle(sched, 30, System.out::println);
+    var throttled = throttle(sched, 30, IO::println);
 
     sched.schedule(10, () -> throttled.accept("a"));
     sched.schedule(20, () -> throttled.accept("b"));

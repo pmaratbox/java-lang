@@ -9,5 +9,5 @@ static String render(String src) {
   return h.render(p.parse(src)).replaceAll("\n+$", "");
 }
 void main() {
-  System.out.println(render("- a\n- b"));
+  IO.println(render("- a\n- b"));
 }

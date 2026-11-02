@@ -9,5 +9,5 @@ record Person(Address address, String name) {}
 void main() throws Exception {
     var mapper = new ObjectMapper();
     var person = new Person(new Address("oslo", 1000), "alice");
-    System.out.println(mapper.writeValueAsString(person));
+    IO.println(mapper.writeValueAsString(person));
 }

@@ -15,5 +15,5 @@ static String rot13(String s) {
 void main() {
     var once = rot13("hello");
     var twice = rot13(once);
-    System.out.println(once + " " + twice);
+    IO.println(once + " " + twice);
 }

@@ -15,5 +15,5 @@ void main() {
   var schema = new SchemaGenerator().makeExecutableSchema(reg, wiring);
   Map<String, Object> data = GraphQL.newGraphQL(schema).build()
       .execute("{ greet(name: \"alice\") }").getData();
-  System.out.println(data.get("greet"));
+  IO.println(data.get("greet"));
 }

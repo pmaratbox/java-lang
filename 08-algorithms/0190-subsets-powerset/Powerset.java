@@ -9,6 +9,6 @@ void main() {
                 sb.append(a[i]);
             }
         }
-        System.out.println(sb.length() == 0 ? "{}" : sb.toString());
+        IO.println(sb.length() == 0 ? "{}" : sb.toString());
     }
 }

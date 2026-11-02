@@ -15,5 +15,5 @@ void main() {
         if (out.length() > 0) out.append(" -> ");
         out.append(node.value);
     }
-    System.out.println(out);
+    IO.println(out);
 }

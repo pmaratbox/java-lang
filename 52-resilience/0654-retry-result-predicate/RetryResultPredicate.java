@@ -11,5 +11,5 @@ void main() {
       .handleResultIf(r -> (int) r < 3)
       .build();
   int accepted = Failsafe.with(rp).get(() -> n.incrementAndGet());
-  System.out.println(accepted);   // 3
+  IO.println(accepted);   // 3
 }

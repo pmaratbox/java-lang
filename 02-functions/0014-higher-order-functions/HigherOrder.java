@@ -8,6 +8,6 @@ void main() {
     IntUnaryOperator inc = x -> x + 1;
     IntUnaryOperator dbl = x -> x * 2;
 
-    System.out.println("inc 5 = " + apply(inc, 5));
-    System.out.println("double 5 = " + apply(dbl, 5));
+    IO.println("inc 5 = " + apply(inc, 5));
+    IO.println("double 5 = " + apply(dbl, 5));
 }

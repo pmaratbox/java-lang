@@ -8,5 +8,5 @@ void main() {
         var parts = row.split(",");
         pairs.add(parts[0] + "=" + parts[1]);
     }
-    System.out.println(String.join(" ", pairs));
+    IO.println(String.join(" ", pairs));
 }

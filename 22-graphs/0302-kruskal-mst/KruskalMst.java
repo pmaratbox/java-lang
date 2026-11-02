@@ -24,5 +24,5 @@ void main() {
             total += e[2];
         }
     }
-    System.out.println(total);
+    IO.println(total);
 }

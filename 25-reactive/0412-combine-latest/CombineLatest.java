@@ -32,7 +32,7 @@ void main() {
 
     Runnable emit = () -> {
         if (latestA[0] != null && latestB[0] != null) {
-            System.out.println("(" + latestA[0] + ", " + latestB[0] + ")");
+            IO.println("(" + latestA[0] + ", " + latestB[0] + ")");
         }
     };
 

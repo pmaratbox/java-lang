@@ -5,5 +5,5 @@ void main() {
     var sum = new BigDecimal("0.1").add(new BigDecimal("0.2"));
     var target = new BigDecimal("0.3");
     // Use compareTo()==0 (ignores scale), NOT equals() (which compares scale too).
-    System.out.println(sum.compareTo(target) == 0);
+    IO.println(sum.compareTo(target) == 0);
 }

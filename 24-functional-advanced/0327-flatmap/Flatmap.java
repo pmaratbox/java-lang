@@ -7,5 +7,5 @@ void main() {
             .flatMap(x -> Stream.of(x, x * 10))
             .map(String::valueOf)
             .collect(Collectors.joining(" "));
-    System.out.println(out);
+    IO.println(out);
 }

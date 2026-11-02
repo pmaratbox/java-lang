@@ -20,6 +20,6 @@ void main() throws Exception {
   var json = r.body();
   // Extract the "name" field with a small regex (no JSON dependency needed).
   var name = json.replaceAll(".*\"name\":\"([^\"]+)\".*", "$1");
-  System.out.println(name);   // Alice
+  IO.println(name);   // Alice
   s.stop(0);
 }

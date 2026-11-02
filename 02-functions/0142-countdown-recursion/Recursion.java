@@ -8,5 +8,5 @@ static void countdown(int n, StringBuilder sb) {
 void main() {
     var sb = new StringBuilder();
     countdown(5, sb);
-    System.out.println(sb.toString());
+    IO.println(sb.toString());
 }

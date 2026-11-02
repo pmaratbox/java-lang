@@ -16,5 +16,5 @@ static class System1Facade {
 }
 
 void main() {
-    System.out.println(new System1Facade().start());
+    IO.println(new System1Facade().start());
 }

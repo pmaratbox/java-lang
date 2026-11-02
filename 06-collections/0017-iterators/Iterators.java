@@ -8,5 +8,5 @@ void main() {
             .mapToInt(n -> n * 2)
             .sum();
 
-    System.out.println("sum: " + sum);
+    IO.println("sum: " + sum);
 }

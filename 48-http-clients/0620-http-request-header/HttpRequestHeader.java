@@ -24,7 +24,7 @@ void main() throws Exception {
   var r = c.send(
       HttpRequest.newBuilder(URI.create(base + "/token")).header("X-Token", "secret").build(),
       HttpResponse.BodyHandlers.ofString());
-  System.out.println(r.body());   // secret
+  IO.println(r.body());   // secret
 
   s.stop(0);
 }

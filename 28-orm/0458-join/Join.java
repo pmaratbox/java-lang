@@ -23,5 +23,5 @@ void main() throws Exception {
     .orderBy(field("users.name"), field("posts.title"))
     .fetch();
   for (org.jooq.Record rec : r)
-    System.out.println(rec.get(0, String.class) + " " + rec.get(1, String.class));
+    IO.println(rec.get(0, String.class) + " " + rec.get(1, String.class));
 }

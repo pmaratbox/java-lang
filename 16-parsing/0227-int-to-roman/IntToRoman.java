@@ -2,7 +2,7 @@ static final int[] VALUES = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 
 static final String[] SYMBOLS = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
 void main() {
-    System.out.println(toRoman(14));
+    IO.println(toRoman(14));
 }
 
 static String toRoman(int n) {

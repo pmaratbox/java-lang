@@ -28,5 +28,5 @@ static String itoa(int n) {
 void main() {
     var parsed = atoi("-42");
     var formatted = itoa(parsed);
-    System.out.println(parsed + " " + formatted);
+    IO.println(parsed + " " + formatted);
 }

@@ -4,5 +4,5 @@ static final int WRITE = 2;
 void main() {
     var flags = READ | WRITE;
     var hasWrite = (flags & WRITE) != 0 ? "yes" : "no";
-    System.out.println(flags + " " + hasWrite);
+    IO.println(flags + " " + hasWrite);
 }

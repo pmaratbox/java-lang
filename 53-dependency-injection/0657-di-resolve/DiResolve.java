@@ -16,6 +16,6 @@ public class DiResolve {
       }
     });
     var greeter = inj.getInstance(Greeter.class);
-    System.out.println(greeter.greet());
+    IO.println(greeter.greet());
   }
 }

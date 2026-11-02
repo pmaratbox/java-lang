@@ -23,5 +23,5 @@ static long[] civilFromDays(long z) {
 void main() {
     var start = daysFromCivil(2000, 1, 1);
     var r = civilFromDays(start + 40);
-    System.out.printf("%04d-%02d-%02d%n", r[0], r[1], r[2]);
+    IO.println("%04d-%02d-%02d".formatted(r[0], r[1], r[2]));
 }

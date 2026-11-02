@@ -10,6 +10,6 @@ public class RequiredOption {
   void main() {
     var opts = new RequiredOption();
     new CommandLine(opts).parseArgs("--id", "42");
-    System.out.println(opts.id);
+    IO.println(opts.id);
   }
 }

@@ -12,6 +12,6 @@ void main() {
             if (j > 0) sb.append(" ");
             sb.append((int) Math.round(c.get(i, j)));
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

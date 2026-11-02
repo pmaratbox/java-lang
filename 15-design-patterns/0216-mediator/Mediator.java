@@ -19,7 +19,7 @@ static class Colleague {
     }
     void send(String message) { mediator.send(name, message); }
     void receive(String message) {
-        System.out.println(name + " got: " + message);
+        IO.println(name + " got: " + message);
     }
 }
 

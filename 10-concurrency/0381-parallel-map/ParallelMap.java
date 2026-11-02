@@ -10,5 +10,5 @@ void main() {
         .collect(Collectors.collectingAndThen(
             Collectors.toList(),
             list -> list.stream().map(String::valueOf).collect(Collectors.joining(" "))));
-    System.out.println(result);
+    IO.println(result);
 }

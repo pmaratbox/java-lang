@@ -23,5 +23,5 @@ void main() throws InterruptedException {
         sum += value;
     }
     producer.join();
-    System.out.println(sum);
+    IO.println(sum);
 }

@@ -6,5 +6,5 @@ void main() {
         sb.append(c);
         c = c * 2 * (2 * n + 1) / (n + 2);
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

@@ -14,7 +14,7 @@ public class TreeHeight {
     void main() {
         Node root = null;
         for (var v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
-        System.out.println(height(root));
+        IO.println(height(root));
     }
 }
 

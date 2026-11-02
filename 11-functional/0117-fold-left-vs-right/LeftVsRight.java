@@ -15,5 +15,5 @@ static int foldr(IntBinaryOperator f, int init, int[] xs) {
 void main() {
     IntBinaryOperator sub = (a, b) -> a - b;
     int[] xs = {1, 2, 3};
-    System.out.println(foldl(sub, 0, xs) + " " + foldr(sub, 0, xs));
+    IO.println(foldl(sub, 0, xs) + " " + foldr(sub, 0, xs));
 }

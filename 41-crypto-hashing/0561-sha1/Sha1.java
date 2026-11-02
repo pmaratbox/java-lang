@@ -6,5 +6,5 @@ void main() throws Exception {
             .digest("hello".getBytes("UTF-8"));
     var hex = new StringBuilder();
     for (var b : digest) hex.append(String.format("%02x", b));
-    System.out.println(hex);
+    IO.println(hex);
 }

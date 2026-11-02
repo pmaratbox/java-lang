@@ -6,5 +6,5 @@ void main() {
             .limit(5)
             .map(String::valueOf)
             .collect(Collectors.joining(" "));
-    System.out.println(out);
+    IO.println(out);
 }

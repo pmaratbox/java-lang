@@ -4,5 +4,5 @@
 import io.vavr.collection.List;
 
 void main() {
-  System.out.println(List.of(1, 2, 3).map(x -> x * 2).mkString(","));
+  IO.println(List.of(1, 2, 3).map(x -> x * 2).mkString(","));
 }

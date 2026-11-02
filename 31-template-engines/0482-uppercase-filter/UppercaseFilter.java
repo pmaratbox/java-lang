@@ -8,5 +8,5 @@ void main() throws Exception {
   var t = new Template("x", new StringReader("${name?upper_case}"), cfg);
   Map<String,Object> m = new HashMap<>(); m.put("name", "alice");
   var w = new StringWriter(); t.process(m, w);
-  System.out.println(w.toString());
+  IO.println(w.toString());
 }

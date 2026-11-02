@@ -4,5 +4,5 @@ static int power(int base, int exp) {
 }
 
 void main() {
-    System.out.println(power(2, 10));
+    IO.println(power(2, 10));
 }

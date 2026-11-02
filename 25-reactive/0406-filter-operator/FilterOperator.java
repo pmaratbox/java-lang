@@ -24,5 +24,5 @@ void main() {
         }
     };
 
-    filter(source, v -> v % 2 == 0).subscribe(System.out::println);
+    filter(source, v -> v % 2 == 0).subscribe(IO::println);
 }

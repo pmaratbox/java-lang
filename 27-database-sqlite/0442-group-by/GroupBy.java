@@ -9,5 +9,5 @@ void main() throws Exception {
  int[] amts = {10,20,30,5,2};
  for (var i=0;i<cats.length;i++){ ins.setString(1,cats[i]); ins.setInt(2,amts[i]); ins.executeUpdate(); }
  var rs = c.createStatement().executeQuery("select category,sum(amount) from sales group by category order by category");
- while(rs.next()) System.out.println(rs.getString(1)+" "+rs.getInt(2));
+ while(rs.next()) IO.println(rs.getString(1)+" "+rs.getInt(2));
 }

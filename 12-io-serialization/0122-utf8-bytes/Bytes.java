@@ -8,5 +8,5 @@ void main() {
     for (var b : bytes) {
         values.add(String.valueOf(b & 0xFF));
     }
-    System.out.println(String.join(" ", values));
+    IO.println(String.join(" ", values));
 }

@@ -7,5 +7,5 @@ void main() {
   for (var i = 1; i <= 30; i++) {
     result = result.multiply(BigInteger.valueOf(i));
   }
-  System.out.println(result);
+  IO.println(result);
 }

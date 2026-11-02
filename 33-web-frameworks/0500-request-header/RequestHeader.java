@@ -23,6 +23,6 @@ void main() throws Exception {
           .build(),
       HttpResponse.BodyHandlers.ofString()).body();
 
-  System.out.println(body);
+  IO.println(body);
   app.stop();
 }

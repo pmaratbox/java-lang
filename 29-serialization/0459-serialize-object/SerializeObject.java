@@ -7,5 +7,5 @@ record Person(int age, String name) {}
 void main() throws Exception {
   var mapper = new ObjectMapper();
   var json = mapper.writeValueAsString(new Person(30, "alice"));
-  System.out.println(json);
+  IO.println(json);
 }

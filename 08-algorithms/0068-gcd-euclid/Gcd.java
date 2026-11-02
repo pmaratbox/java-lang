@@ -8,5 +8,5 @@ static int gcd(int a, int b) {
 }
 
 void main() {
-    System.out.println(gcd(48, 36));
+    IO.println(gcd(48, 36));
 }

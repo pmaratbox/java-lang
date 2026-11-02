@@ -15,5 +15,5 @@ void main() {
         if (i > 0) sb.append(" ");
         sb.append(r.get(i));
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

@@ -16,6 +16,6 @@ public class DiValue {
       }
     });
     var config = inj.getInstance(Config.class);
-    System.out.println(config.get());
+    IO.println(config.get());
   }
 }

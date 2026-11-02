@@ -8,5 +8,5 @@ void main() {
         if (sub == 0) break;
         sub = (sub - 1) & mask;
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

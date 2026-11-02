@@ -11,5 +11,5 @@ void main() {
             sb.append(v);
         }
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

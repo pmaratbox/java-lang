@@ -10,5 +10,5 @@ static String g(LRUMap<String, Integer> c, String k) {
 void main() {
   LRUMap<String, Integer> c = new LRUMap<>(3);
   c.put("a", 1);
-  System.out.println(g(c, "a"));
+  IO.println(g(c, "a"));
 }

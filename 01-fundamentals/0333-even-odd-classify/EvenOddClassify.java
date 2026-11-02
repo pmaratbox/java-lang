@@ -5,5 +5,5 @@ void main() {
         if (i > 0) sb.append(' ');
         sb.append(nums[i] % 2 == 0 ? "even" : "odd");
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

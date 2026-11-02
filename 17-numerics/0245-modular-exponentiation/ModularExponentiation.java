@@ -10,5 +10,5 @@ static long modpow(long base, long exp, long mod) {
 }
 
 void main() {
-    System.out.println(modpow(3, 13, 7));
+    IO.println(modpow(3, 13, 7));
 }

@@ -9,5 +9,5 @@ void main() throws IOException {
     var lines = Files.readAllLines(file);
     var count = lines.stream().filter(s -> !s.isBlank()).count();
     Files.delete(file);
-    System.out.println("lines: " + count);
+    IO.println("lines: " + count);
 }

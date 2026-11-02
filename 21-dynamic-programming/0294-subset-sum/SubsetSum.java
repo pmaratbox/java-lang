@@ -8,5 +8,5 @@ void main() {
             if (dp[s - n]) dp[s] = true;
         }
     }
-    System.out.println(dp[target] ? "yes" : "no");
+    IO.println(dp[target] ? "yes" : "no");
 }

@@ -27,6 +27,6 @@ void main() {
     var fields = (kv == null) ? "" :
         kv.stream().sorted(Comparator.comparing(k -> k.key))
           .map(k -> "|" + k.key + "=" + k.value).collect(Collectors.joining());
-    System.out.println(level + "|" + e.getFormattedMessage() + fields);
+    IO.println(level + "|" + e.getFormattedMessage() + fields);
   }
 }

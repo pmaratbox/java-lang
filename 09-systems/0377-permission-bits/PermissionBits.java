@@ -7,5 +7,5 @@ static String decode(int bits) {
 }
 
 void main() {
-    System.out.println(decode(0b101));
+    IO.println(decode(0b101));
 }

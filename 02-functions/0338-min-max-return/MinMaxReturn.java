@@ -12,5 +12,5 @@ static MinMax minMax(int[] xs) {
 
 void main() {
     var r = minMax(new int[]{4, 1, 7});
-    System.out.println(r.min() + " " + r.max());
+    IO.println(r.min() + " " + r.max());
 }

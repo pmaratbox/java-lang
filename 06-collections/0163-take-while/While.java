@@ -7,5 +7,5 @@ void main() {
             .takeWhile(n -> n < 3)
             .map(String::valueOf)
             .collect(Collectors.joining(" "));
-    System.out.println(result);
+    IO.println(result);
 }

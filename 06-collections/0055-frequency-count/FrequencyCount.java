@@ -13,5 +13,5 @@ void main() {
     for (Map.Entry<Character, Integer> e : counts.entrySet()) {
         out.add(e.getKey() + ":" + e.getValue());
     }
-    System.out.println(out);
+    IO.println(out);
 }

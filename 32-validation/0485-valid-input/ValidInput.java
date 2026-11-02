@@ -19,5 +19,5 @@ void main() {
       .map(x -> x.getPropertyPath().toString().toLowerCase())
       .distinct().sorted()
       .collect(Collectors.joining("\n"));
-  System.out.println(fields.isEmpty() ? "ok" : fields);
+  IO.println(fields.isEmpty() ? "ok" : fields);
 }

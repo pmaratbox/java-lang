@@ -17,5 +17,5 @@ void main() {
             break;
         }
     }
-    System.out.println(matchIndex);
+    IO.println(matchIndex);
 }

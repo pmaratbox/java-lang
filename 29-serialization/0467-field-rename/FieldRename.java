@@ -7,5 +7,5 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 record User(@JsonProperty("full_name") String fullName) {}
 
 void main() throws Exception {
-    System.out.println(new ObjectMapper().writeValueAsString(new User("alice")));
+    IO.println(new ObjectMapper().writeValueAsString(new User("alice")));
 }

@@ -5,5 +5,5 @@ void main() {
     for (var part : inner.split(",")) {
         sum += Integer.parseInt(part.trim());
     }
-    System.out.println(sum);
+    IO.println(sum);
 }

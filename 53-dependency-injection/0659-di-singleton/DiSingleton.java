@@ -15,6 +15,6 @@ public class DiSingleton {
     // Resolve the same singleton-scoped binding twice through the container.
     var first = inj.getInstance(Repo.class);
     var second = inj.getInstance(Repo.class);
-    System.out.println(first == second); // true
+    IO.println(first == second); // true
   }
 }

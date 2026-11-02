@@ -13,5 +13,5 @@ void main() {
             default: stack.push(Integer.parseInt(tok));
         }
     }
-    System.out.println(stack.pop());
+    IO.println(stack.pop());
 }

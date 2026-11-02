@@ -14,5 +14,5 @@ void main() {
             .limit(2)
             .map(Map.Entry::getKey)
             .collect(Collectors.joining(" "));
-    System.out.println(result);
+    IO.println(result);
 }

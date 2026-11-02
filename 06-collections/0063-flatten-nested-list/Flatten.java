@@ -10,5 +10,5 @@ void main() {
     var out = flat.stream()
             .map(String::valueOf)
             .collect(Collectors.joining(" "));
-    System.out.println(out);
+    IO.println(out);
 }

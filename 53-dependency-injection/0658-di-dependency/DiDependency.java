@@ -22,6 +22,6 @@ public class DiDependency {
     });
     // Service depends on Repo; Guice resolves the graph and injects RepoImpl.
     var service = inj.getInstance(Service.class);
-    System.out.println(service.run());
+    IO.println(service.run());
   }
 }

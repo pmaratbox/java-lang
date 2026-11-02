@@ -7,5 +7,5 @@ static int total(int... nums) {
 }
 
 void main() {
-    System.out.println("sum: " + total(1, 2, 3));
+    IO.println("sum: " + total(1, 2, 3));
 }

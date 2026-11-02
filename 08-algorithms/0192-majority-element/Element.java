@@ -6,5 +6,5 @@ void main() {
         if (count == 0) candidate = x;
         count += (x == candidate) ? 1 : -1;
     }
-    System.out.println(candidate);
+    IO.println(candidate);
 }

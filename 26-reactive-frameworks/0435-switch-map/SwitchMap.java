@@ -21,7 +21,7 @@ void main() {
             Mono.delay(Duration.ofMillis(5), s).map(t -> n),
             Mono.delay(Duration.ofMillis(25), s).map(t -> n * 10)
         ))
-        .subscribe(v -> System.out.println(v));
+        .subscribe(v -> IO.println(v));
 
     s.advanceTimeBy(Duration.ofMillis(300));
 }

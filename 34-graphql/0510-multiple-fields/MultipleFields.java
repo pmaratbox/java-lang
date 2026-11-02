@@ -13,6 +13,6 @@ void main() {
   var schema = new SchemaGenerator().makeExecutableSchema(reg, wiring);
   Map<String,Object> data = GraphQL.newGraphQL(schema).build().execute("{ user { name age } }").getData();
   var user = (Map<String,Object>) data.get("user");
-  System.out.println(user.get("name"));
-  System.out.println(user.get("age"));
+  IO.println(user.get("name"));
+  IO.println(user.get("age"));
 }

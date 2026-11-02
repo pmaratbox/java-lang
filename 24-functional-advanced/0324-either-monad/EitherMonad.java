@@ -11,7 +11,7 @@ public class EitherMonad {
 
         var a = ok.fold(err -> err, val -> String.valueOf(val));
         var b = bad.fold(err -> err, val -> String.valueOf(val));
-        System.out.println(a + " " + b);
+        IO.println(a + " " + b);
     }
 
     static Either<String, Integer> divide(int a, int b) {

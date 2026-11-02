@@ -11,5 +11,5 @@ static int read(A a) {
 void main() {
     var present = new A(Optional.of(new B(Optional.of(new C(5)))));
     var absent = new A(Optional.of(new B(Optional.empty())));
-    System.out.println(read(present) + " " + read(absent));
+    IO.println(read(present) + " " + read(absent));
 }

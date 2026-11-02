@@ -9,5 +9,5 @@ void main(){
   SimpleWeightedGraph<String,DefaultWeightedEdge> g = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
   for(var v: List.of("a","b","c","d","e")) g.addVertex(v);
   addE(g,"a","b",1); addE(g,"a","c",4); addE(g,"b","c",1); addE(g,"b","d",5); addE(g,"c","d",1); addE(g,"d","e",1);
-  System.out.println(g.containsEdge("b","c")+" "+g.containsEdge("a","e"));
+  IO.println(g.containsEdge("b","c")+" "+g.containsEdge("a","e"));
 }

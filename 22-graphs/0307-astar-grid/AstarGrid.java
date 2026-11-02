@@ -26,7 +26,7 @@ void main() {
             }
         }
     }
-    System.out.println(answer);
+    IO.println(answer);
 }
 
 static int h(int r, int c, int gr, int gc) {

@@ -4,5 +4,5 @@ void main() {
     var ur = (packed >> 16) & 0xff;
     var ug = (packed >> 8) & 0xff;
     var ub = packed & 0xff;
-    System.out.println(ur + " " + ug + " " + ub);
+    IO.println(ur + " " + ug + " " + ub);
 }

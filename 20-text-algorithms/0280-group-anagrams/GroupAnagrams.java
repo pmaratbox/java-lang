@@ -10,5 +10,5 @@ void main() {
         Arrays.sort(c);
         keys.add(new String(c));
     }
-    System.out.println(keys.size());
+    IO.println(keys.size());
 }

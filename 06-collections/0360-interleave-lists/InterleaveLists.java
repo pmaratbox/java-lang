@@ -9,5 +9,5 @@ void main() {
         sj.add(a.get(i).toString());
         sj.add(b.get(i).toString());
     }
-    System.out.println(sj);
+    IO.println(sj);
 }

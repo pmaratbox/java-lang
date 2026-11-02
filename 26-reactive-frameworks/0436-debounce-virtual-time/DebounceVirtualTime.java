@@ -20,7 +20,7 @@ void main() {
 
     // debounce with a quiet window of 30
     source.sampleTimeout(v -> Mono.delay(Duration.ofMillis(30), s))
-          .subscribe(v -> System.out.println(v));
+          .subscribe(v -> IO.println(v));
 
     s.advanceTimeBy(Duration.ofMillis(300));
 }

@@ -11,6 +11,6 @@ public class BooleanFlag {
   void main() {
     var cmd = new BooleanFlag();
     new CommandLine(cmd).parseArgs("--verbose");
-    System.out.println(cmd.verbose);
+    IO.println(cmd.verbose);
   }
 }

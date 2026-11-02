@@ -11,6 +11,5 @@ void main() throws Exception {
   Map<String, Object> data = new HashMap<>();
   var out = new StringWriter();
   t.process(data, out);
-  System.out.print(out.toString());
-  System.out.println();
+  IO.println(out.toString());
 }

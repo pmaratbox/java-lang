@@ -16,5 +16,5 @@ static class CelsiusToFahrenheit implements Fahrenheit {
 
 void main() {
     Fahrenheit f = new CelsiusToFahrenheit(new CelsiusSource(100));
-    System.out.println(f.fahrenheit());
+    IO.println(f.fahrenheit());
 }

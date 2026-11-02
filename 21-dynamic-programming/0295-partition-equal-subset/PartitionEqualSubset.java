@@ -3,7 +3,7 @@ void main() {
     var total = 0;
     for (var n : nums) total += n;
     if (total % 2 != 0) {
-        System.out.println("no");
+        IO.println("no");
         return;
     }
     var target = total / 2;
@@ -14,5 +14,5 @@ void main() {
             if (dp[s - n]) dp[s] = true;
         }
     }
-    System.out.println(dp[target] ? "yes" : "no");
+    IO.println(dp[target] ? "yes" : "no");
 }

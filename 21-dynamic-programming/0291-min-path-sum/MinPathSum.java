@@ -10,5 +10,5 @@ void main() {
             else dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j];
         }
     }
-    System.out.println(dp[m - 1][n - 1]);
+    IO.println(dp[m - 1][n - 1]);
 }

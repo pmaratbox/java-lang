@@ -24,6 +24,6 @@ void main() throws Exception {
           .POST(HttpRequest.BodyPublishers.noBody())
           .build(),
       HttpResponse.BodyHandlers.ofString()).body();
-  System.out.println(body);
+  IO.println(body);
   app.stop();
 }

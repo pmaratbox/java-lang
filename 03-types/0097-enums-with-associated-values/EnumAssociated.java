@@ -12,6 +12,6 @@ static int area(Shape shape) {
 void main() {
     Shape[] shapes = {new Rect(2, 3), new Square(4)};
     for (var shape : shapes) {
-        System.out.println(area(shape));
+        IO.println(area(shape));
     }
 }

@@ -35,7 +35,7 @@ public class ReplaySubject {
         subject.next(1);
         subject.next(2);
         subject.next(3);
-        subject.subscribe(value -> System.out.println(value));
+        subject.subscribe(value -> IO.println(value));
         subject.next(4);
     }
 }

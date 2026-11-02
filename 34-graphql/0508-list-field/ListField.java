@@ -17,6 +17,6 @@ void main() {
   @SuppressWarnings("unchecked")
   var numbers = (List<Integer>) data.get("numbers");
   for (var n : numbers) {
-    System.out.println(n);
+    IO.println(n);
   }
 }

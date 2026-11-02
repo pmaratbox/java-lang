@@ -12,6 +12,6 @@ void main() throws Exception {
   var c = HttpClient.newHttpClient();
   var r = c.send(HttpRequest.newBuilder(URI.create(base + "/missing")).build(),
                  HttpResponse.BodyHandlers.ofString());
-  System.out.println(r.statusCode());  // 404 — from the live response, not hardcoded
+  IO.println(r.statusCode());  // 404 — from the live response, not hardcoded
   s.stop(0);
 }

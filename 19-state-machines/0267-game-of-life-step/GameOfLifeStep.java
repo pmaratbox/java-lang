@@ -28,5 +28,5 @@ void main() {
         }
         if (r < 2) sb.append('\n');
     }
-    System.out.println(sb.toString());
+    IO.println(sb.toString());
 }

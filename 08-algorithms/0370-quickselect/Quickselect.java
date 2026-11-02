@@ -23,5 +23,5 @@ static int select(int[] a, int lo, int hi, int k) {
 
 void main() {
     int[] a = {7, 10, 4, 3, 20, 15};
-    System.out.println(select(a, 0, a.length - 1, 2));
+    IO.println(select(a, 0, a.length - 1, 2));
 }

@@ -12,6 +12,6 @@ class Composed implements A, B {
 public class TraitComposition {
     void main() {
         var c = new Composed();
-        System.out.println(c.a() + " " + c.b());
+        IO.println(c.a() + " " + c.b());
     }
 }

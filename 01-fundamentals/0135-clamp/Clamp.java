@@ -3,5 +3,5 @@ static int clamp(int x, int lo, int hi) {
 }
 
 void main() {
-    System.out.println(clamp(15, 0, 10) + " " + clamp(-3, 0, 10));
+    IO.println(clamp(15, 0, 10) + " " + clamp(-3, 0, 10));
 }

@@ -1,13 +1,13 @@
 void main() {
     for (var i = 1; i <= 15; i++) {
         if (i % 15 == 0) {
-            System.out.println("FizzBuzz");
+            IO.println("FizzBuzz");
         } else if (i % 3 == 0) {
-            System.out.println("Fizz");
+            IO.println("Fizz");
         } else if (i % 5 == 0) {
-            System.out.println("Buzz");
+            IO.println("Buzz");
         } else {
-            System.out.println(i);
+            IO.println(i);
         }
     }
 }

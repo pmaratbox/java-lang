@@ -17,6 +17,6 @@ void main() {
             if (j > 0) sb.append(" ");
             sb.append(row[j]);
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

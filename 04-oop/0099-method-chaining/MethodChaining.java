@@ -7,5 +7,5 @@ static class Calc {
 }
 
 void main() {
-    System.out.println(new Calc(5).add(3).multiply(2).result());
+    IO.println(new Calc(5).add(3).multiply(2).result());
 }

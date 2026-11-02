@@ -9,5 +9,5 @@ void main() {
     }
     var sb = new StringBuilder();
     for (var v : next) sb.append(v);
-    System.out.println(sb.toString());
+    IO.println(sb.toString());
 }

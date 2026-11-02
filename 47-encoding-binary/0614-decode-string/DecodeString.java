@@ -17,5 +17,5 @@ static byte[] fromHex(String hex) {
 void main() throws Exception {
   var bytes = fromHex("a568656c6c6f");
   var value = M.readValue(bytes, String.class);
-  System.out.println(value); // hello
+  IO.println(value); // hello
 }

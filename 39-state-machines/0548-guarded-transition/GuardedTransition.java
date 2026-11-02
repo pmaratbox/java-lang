@@ -18,5 +18,5 @@ void main() {
   fsm.fire("unlock");
   fsm.fire("open");
 
-  System.out.println(fsm.getCurrentState().toString().toLowerCase());
+  IO.println(fsm.getCurrentState().toString().toLowerCase());
 }

@@ -10,5 +10,5 @@ void main() throws Exception {
   // rows.get(0) = header [name, note]; rows.get(1) = data row [Alice, "hello, world"].
   // OpenCSV strips the surrounding quotes and keeps the embedded comma intact.
   var note = rows.get(1)[1];
-  System.out.println(note);   // hello, world
+  IO.println(note);   // hello, world
 }

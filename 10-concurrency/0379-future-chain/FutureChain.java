@@ -6,5 +6,5 @@ void main() throws Exception {
         .thenApply(v -> v * 2)
         .thenApply(v -> v + 1)
         .get();
-    System.out.println(result);
+    IO.println(result);
 }

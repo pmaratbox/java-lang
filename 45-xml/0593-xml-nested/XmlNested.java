@@ -10,5 +10,5 @@ void main() throws Exception {
                .parse(new ByteArrayInputStream(DOC.getBytes()));
   var bs = d.getElementsByTagName("book");
   var first = (Element) bs.item(0);
-  System.out.println(text(first, "price"));
+  IO.println(text(first, "price"));
 }

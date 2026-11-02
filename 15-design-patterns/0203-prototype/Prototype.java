@@ -8,5 +8,5 @@ void main() {
     var original = new Cell(1);
     var clone = original.copy();
     clone.value = 2;
-    System.out.println(original.value + " " + clone.value);
+    IO.println(original.value + " " + clone.value);
 }

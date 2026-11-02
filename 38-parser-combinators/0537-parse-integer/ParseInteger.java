@@ -8,5 +8,5 @@ void main() {
     // matched text into an int via Integer::parseInt.
     var number = Scanners.INTEGER.map(Integer::parseInt);
     int result = number.parse("42");
-    System.out.println(result);
+    IO.println(result);
 }

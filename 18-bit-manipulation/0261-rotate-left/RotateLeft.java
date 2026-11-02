@@ -3,5 +3,5 @@ static int rol8(int x, int n) {
 }
 
 void main() {
-    System.out.println(rol8(1, 1) + " " + rol8(128, 1));
+    IO.println(rol8(1, 1) + " " + rol8(128, 1));
 }

@@ -10,5 +10,5 @@ void main() {
   for (var i = 0; i < servers.size(); i++) {
     names.add(((TomlTable) servers.get(i)).getString("name"));
   }
-  System.out.println(String.join(",", names));
+  IO.println(String.join(",", names));
 }

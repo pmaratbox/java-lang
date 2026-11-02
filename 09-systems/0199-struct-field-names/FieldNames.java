@@ -8,5 +8,5 @@ void main() {
         if (sb.length() > 0) sb.append(' ');
         sb.append(rc.getName());
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

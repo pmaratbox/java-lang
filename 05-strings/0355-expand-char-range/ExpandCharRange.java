@@ -9,5 +9,5 @@ static String expand(String spec) {
 }
 
 void main() {
-    System.out.println(expand("a-e"));
+    IO.println(expand("a-e"));
 }

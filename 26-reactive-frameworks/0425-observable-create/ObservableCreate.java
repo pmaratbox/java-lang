@@ -6,8 +6,8 @@ import reactor.core.publisher.Flux;
 void main() {
     Flux.just(1, 2, 3)
         .subscribe(
-            v -> System.out.println(v),
+            v -> IO.println(v),
             err -> {},
-            () -> System.out.println("done")
+            () -> IO.println("done")
         );
 }

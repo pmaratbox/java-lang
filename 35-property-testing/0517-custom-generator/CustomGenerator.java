@@ -12,5 +12,5 @@ void main() {
   // Property: every generated value is even. QuickTheories feeds ~100 cases;
   // check throws a clean AssertionError on a counterexample.
   qt().forAll(evens).check(n -> n % 2 == 0);
-  System.out.println("passed");
+  IO.println("passed");
 }

@@ -7,6 +7,6 @@ static IntSupplier counter() {
 
 void main() {
     var next = counter();
-    System.out.println("count: " + next.getAsInt());
-    System.out.println("count: " + next.getAsInt());
+    IO.println("count: " + next.getAsInt());
+    IO.println("count: " + next.getAsInt());
 }

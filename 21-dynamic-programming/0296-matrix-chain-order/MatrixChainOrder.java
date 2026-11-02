@@ -12,5 +12,5 @@ void main() {
             }
         }
     }
-    System.out.println(dp[0][n - 1]);
+    IO.println(dp[0][n - 1]);
 }

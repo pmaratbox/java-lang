@@ -10,5 +10,5 @@ void main() {
 
     var sumOfSquares = mapSquare.andThen(sum);
 
-    System.out.println(sumOfSquares.apply(List.of(1, 2, 3)));
+    IO.println(sumOfSquares.apply(List.of(1, 2, 3)));
 }

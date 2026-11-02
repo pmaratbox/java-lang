@@ -46,7 +46,7 @@ static final class Observer {
     }
 
     void next(int value) {
-        System.out.println(value);
+        IO.println(value);
         // Unsubscribe after receiving 2 so later values are not delivered.
         if (value == 2) {
             sub.unsubscribe();

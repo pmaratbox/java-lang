@@ -4,5 +4,5 @@ import org.tomlj.*;
 
 void main() {
   var r = Toml.parse("title = \"demo\"\nversion = 2\n");
-  System.out.println(r.getString("title") + " " + r.getLong("version"));
+  IO.println(r.getString("title") + " " + r.getLong("version"));
 }

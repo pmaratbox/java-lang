@@ -10,5 +10,5 @@ void main() {
   var d = Jsoup.parse(DOC);
   var cells = new StringJoiner(",");
   for (var td : d.select("td")) cells.add(td.text());
-  System.out.println(cells);
+  IO.println(cells);
 }

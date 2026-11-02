@@ -84,7 +84,7 @@ void main() {
     var streamB = timed(scheduler,
             new long[]{20, 40, 60}, new int[]{2, 4, 6});
 
-    merge(streamA, streamB).subscribe(new Observer<>(System.out::println));
+    merge(streamA, streamB).subscribe(new Observer<>(IO::println));
 
     scheduler.run();
 }

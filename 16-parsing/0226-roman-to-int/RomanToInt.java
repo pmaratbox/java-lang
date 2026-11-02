@@ -1,5 +1,5 @@
 void main() {
-    System.out.println(parse("XIV"));
+    IO.println(parse("XIV"));
 }
 
 static int parse(String s) {

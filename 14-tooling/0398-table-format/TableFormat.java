@@ -6,6 +6,6 @@ void main() {
     }
     for (var row : rows) {
         var first = String.format("%-" + width + "s", row[0]);
-        System.out.println(first + " | " + row[1]);
+        IO.println(first + " | " + row[1]);
     }
 }

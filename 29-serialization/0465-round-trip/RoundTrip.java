@@ -10,5 +10,5 @@ void main() throws Exception {
   var original = new Person(30, "alice");
   var json = mapper.writeValueAsString(original);
   var back = mapper.readValue(json, Person.class);
-  System.out.println(back.name());
+  IO.println(back.name());
 }

@@ -1,7 +1,7 @@
 void main() {
     int a = 6, b = 3;
-    System.out.println("and: " + (a & b));
-    System.out.println("or: " + (a | b));
-    System.out.println("xor: " + (a ^ b));
-    System.out.println("shift: " + (a << 1));
+    IO.println("and: " + (a & b));
+    IO.println("or: " + (a | b));
+    IO.println("xor: " + (a ^ b));
+    IO.println("shift: " + (a << 1));
 }

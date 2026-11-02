@@ -24,6 +24,6 @@ public class MultisetCount {
         var before = ms.count(1);
         ms.remove(1);
         var after = ms.count(1);
-        System.out.println(before + " " + after);
+        IO.println(before + " " + after);
     }
 }

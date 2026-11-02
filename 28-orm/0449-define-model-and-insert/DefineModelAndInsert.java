@@ -20,6 +20,6 @@ void main() throws Exception {
       .execute();
     Result<org.jooq.Record> r = db.select().from("users").orderBy(field("id")).fetch();
     for (var rec : r) {
-        System.out.println(rec.get("name", String.class));
+        IO.println(rec.get("name", String.class));
     }
 }

@@ -6,5 +6,5 @@ void main() {
         var shifted = (char) ((ch - 'a' + shift) % 26 + 'a');
         result.append(shifted);
     }
-    System.out.println(result);
+    IO.println(result);
 }

@@ -5,5 +5,5 @@ void main() {
     var x = new Nested(new Pair(1, 2), new Pair(3, 4));
     var y = new Nested(new Pair(1, 2), new Pair(3, 4));
     var result = x.equals(y) ? "yes" : "no";
-    System.out.println("equal: " + result);
+    IO.println("equal: " + result);
 }

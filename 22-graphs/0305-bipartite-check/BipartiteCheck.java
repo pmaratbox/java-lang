@@ -34,5 +34,5 @@ void main() {
     int[][] triangle = {{0, 1}, {1, 2}, {2, 0}};
     var a = isBipartite(4, cycle4) ? "yes" : "no";
     var b = isBipartite(3, triangle) ? "yes" : "no";
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

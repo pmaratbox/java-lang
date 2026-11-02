@@ -30,6 +30,6 @@ void main() throws Exception {
       .orderBy(field("id"))
       .fetch();
     for (var rec : r) {
-        System.out.println(rec.get("name", String.class));
+        IO.println(rec.get("name", String.class));
     }
 }

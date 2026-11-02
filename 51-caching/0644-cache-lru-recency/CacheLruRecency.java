@@ -14,5 +14,5 @@ void main() {
   c.put("c", 3);
   c.get("a");      // promotes a to most-recently-used
   c.put("d", 4);   // b is now least-recently-used -> evicted
-  System.out.println(g(c, "a") + " " + g(c, "b"));  // 1 miss
+  IO.println(g(c, "a") + " " + g(c, "b"));  // 1 miss
 }

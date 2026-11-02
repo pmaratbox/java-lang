@@ -25,5 +25,5 @@ void main() throws Exception {
     .limit(2)
     .fetch();
 
-  for (var rec : r) System.out.println(rec.get("name", String.class));
+  for (var rec : r) IO.println(rec.get("name", String.class));
 }

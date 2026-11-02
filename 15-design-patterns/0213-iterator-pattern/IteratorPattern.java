@@ -18,5 +18,5 @@ void main() {
     while (it.hasNext()) {
         out.add(String.valueOf(it.next()));
     }
-    System.out.println(String.join(" ", out));
+    IO.println(String.join(" ", out));
 }

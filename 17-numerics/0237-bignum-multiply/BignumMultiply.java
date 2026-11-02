@@ -18,5 +18,5 @@ static String multiply(String a, String b) {
 }
 
 void main() {
-    System.out.println(multiply("123", "456"));
+    IO.println(multiply("123", "456"));
 }

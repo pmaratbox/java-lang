@@ -9,5 +9,5 @@ void main() {
     var result = original
             .filter(n -> n % 2 == 0)
             .map(n -> n * 10);
-    System.out.println(result.mkString(" "));
+    IO.println(result.mkString(" "));
 }

@@ -17,5 +17,5 @@ void main() {
   // stays in 'locked' rather than crashing.
   fsm.fire("push");
 
-  System.out.println(fsm.getCurrentState().toString().toLowerCase());
+  IO.println(fsm.getCurrentState().toString().toLowerCase());
 }

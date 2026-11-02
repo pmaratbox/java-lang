@@ -7,5 +7,5 @@ void main() {
             out[i] += m[i][j] * v[j];
         }
     }
-    System.out.println(out[0] + " " + out[1]);
+    IO.println(out[0] + " " + out[1]);
 }

@@ -28,6 +28,6 @@ void main() {
     }
 
     if (found) {
-        System.out.println("found");
+        IO.println("found");
     }
 }

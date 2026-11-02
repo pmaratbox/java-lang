@@ -32,6 +32,6 @@ void main() throws Exception {
           .build(),
       HttpResponse.BodyHandlers.ofString());
 
-  System.out.println(response.body());
+  IO.println(response.body());
   app.stop();
 }

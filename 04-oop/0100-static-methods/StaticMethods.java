@@ -6,6 +6,6 @@ class MathUtil {
 
 public class StaticMethods {
     void main() {
-        System.out.println(MathUtil.square(6));
+        IO.println(MathUtil.square(6));
     }
 }

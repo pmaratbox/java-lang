@@ -13,5 +13,5 @@ void main() {
             for (var j = 0; j < n; j++)
                 if (d[i][k] + d[k][j] < d[i][j])
                     d[i][j] = d[i][k] + d[k][j];
-    System.out.println(d[0][2]);
+    IO.println(d[0][2]);
 }

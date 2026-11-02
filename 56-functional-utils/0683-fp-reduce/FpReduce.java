@@ -6,5 +6,5 @@ import io.vavr.collection.List;
 void main() {
   // foldLeft reduces the list to a single value, starting from init 0.
   int sum = List.rangeClosed(1, 5).foldLeft(0, Integer::sum);
-  System.out.println(sum); // 15
+  IO.println(sum); // 15
 }

@@ -7,5 +7,5 @@ void main() {
     var date = LocalDate.parse("2026-06-15");
     // Format it back to ISO (yyyy-MM-dd) using a DateTimeFormatter.
     var iso = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    System.out.println(date.format(iso));
+    IO.println(date.format(iso));
 }

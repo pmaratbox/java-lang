@@ -7,5 +7,5 @@ static boolean isPrime(int n) {
 }
 
 void main() {
-    System.out.println((isPrime(7) ? "yes" : "no") + " " + (isPrime(9) ? "yes" : "no"));
+    IO.println((isPrime(7) ? "yes" : "no") + " " + (isPrime(9) ? "yes" : "no"));
 }

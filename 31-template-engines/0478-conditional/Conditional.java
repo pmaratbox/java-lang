@@ -11,5 +11,5 @@ void main() throws Exception {
   m.put("logged_in", true);
   var w = new StringWriter();
   t.process(m, w);
-  System.out.println(w.toString());
+  IO.println(w.toString());
 }

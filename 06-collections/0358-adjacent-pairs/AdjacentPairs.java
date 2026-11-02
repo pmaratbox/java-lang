@@ -7,5 +7,5 @@ void main() {
     for (var i = 0; i + 1 < nums.size(); i++) {
         sj.add(nums.get(i) + "," + nums.get(i + 1));
     }
-    System.out.println(sj);
+    IO.println(sj);
 }

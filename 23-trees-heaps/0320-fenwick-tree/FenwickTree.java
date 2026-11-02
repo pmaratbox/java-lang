@@ -19,6 +19,6 @@ public class FenwickTree {
         int[] a = {1, 2, 3, 4, 5};
         var ft = new FenwickTree(a.length);
         for (var i = 0; i < a.length; i++) ft.update(i, a[i]);
-        System.out.println(ft.prefix(4));
+        IO.println(ft.prefix(4));
     }
 }

@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 void main() {
-    System.out.println((balanced("([{}])") ? "yes" : "no") + " "
+    IO.println((balanced("([{}])") ? "yes" : "no") + " "
             + (balanced("([)]") ? "yes" : "no"));
 }
 

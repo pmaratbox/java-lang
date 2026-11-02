@@ -7,5 +7,5 @@ void main() {
         out.add(String.valueOf(i));
         i++;
     } while (i <= 3);
-    System.out.println(out);
+    IO.println(out);
 }

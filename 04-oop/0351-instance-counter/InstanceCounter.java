@@ -11,6 +11,6 @@ public class InstanceCounter {
         new Widget();
         new Widget();
         new Widget();
-        System.out.println(Widget.count);
+        IO.println(Widget.count);
     }
 }

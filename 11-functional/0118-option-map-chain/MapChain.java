@@ -10,5 +10,5 @@ void main() {
     var a = present.map(plus2::applyAsInt).map(String::valueOf).orElse("none");
     String b = absent.map(plus2::applyAsInt).map(String::valueOf).orElse("none");
 
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

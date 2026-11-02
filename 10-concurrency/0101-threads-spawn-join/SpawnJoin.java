@@ -11,5 +11,5 @@ void main() throws InterruptedException {
         w.join();
         joined++;
     }
-    System.out.println("done: " + joined);
+    IO.println("done: " + joined);
 }

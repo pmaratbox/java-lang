@@ -14,5 +14,5 @@ void main() {
   fsm.start();
   fsm.fire("start");
   fsm.fire("reset");
-  System.out.println(fsm.getCurrentState().toString().toLowerCase());
+  IO.println(fsm.getCurrentState().toString().toLowerCase());
 }

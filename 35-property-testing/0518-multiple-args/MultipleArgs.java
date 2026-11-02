@@ -13,5 +13,5 @@ void main() {
         var m = Math.max(a, b);
         return m >= a && m >= b;
       });
-  System.out.println("passed");
+  IO.println("passed");
 }

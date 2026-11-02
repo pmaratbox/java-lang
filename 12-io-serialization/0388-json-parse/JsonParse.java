@@ -10,5 +10,5 @@ void main() {
         if (i > 0) out.append(" ");
         out.append(key).append("=").append(value);
     }
-    System.out.println(out.toString());
+    IO.println(out.toString());
 }

@@ -13,5 +13,5 @@ void main() throws Exception {
  for (var o : orders){ io.setInt(1,(int)o[0]); io.setString(2,(String)o[1]); io.executeUpdate(); }
  var rs = c.createStatement().executeQuery(
    "select u.name,o.item from orders o join users u on u.id=o.user_id order by u.name,o.item");
- while(rs.next()) System.out.println(rs.getString(1)+" "+rs.getString(2));
+ while(rs.next()) IO.println(rs.getString(1)+" "+rs.getString(2));
 }

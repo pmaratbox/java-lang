@@ -22,5 +22,5 @@ static class SumVisitor {
 
 void main() {
     List<Node> nodes = Arrays.asList(new Leaf(1), new Leaf(2), new Leaf(3));
-    System.out.println(new SumVisitor().visitAll(nodes));
+    IO.println(new SumVisitor().visitAll(nodes));
 }

@@ -26,6 +26,6 @@ void main() throws Exception {
           .build(),
       HttpResponse.BodyHandlers.ofString());
   var doubled = r.body().replaceAll(".*\"doubled\":\\s*(\\d+).*", "$1");
-  System.out.println(doubled);   // 10
+  IO.println(doubled);   // 10
   s.stop(0);
 }

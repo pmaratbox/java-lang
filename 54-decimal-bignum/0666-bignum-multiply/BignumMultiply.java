@@ -4,5 +4,5 @@ import java.math.BigInteger;
 void main() {
   var a = BigInteger.valueOf(123456789);
   var b = BigInteger.valueOf(987654321);
-  System.out.println(a.multiply(b));
+  IO.println(a.multiply(b));
 }

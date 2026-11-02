@@ -18,5 +18,5 @@ void main() {
     for (var i = 2; i <= n; i++) {
         if (isPrime[i]) out.add(String.valueOf(i));
     }
-    System.out.println(out);
+    IO.println(out);
 }

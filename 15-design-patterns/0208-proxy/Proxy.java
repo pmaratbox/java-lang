@@ -18,5 +18,5 @@ static class VirtualProxy implements Subject {
 
 void main() {
     Subject s = new VirtualProxy();
-    System.out.println(s.request());
+    IO.println(s.request());
 }

@@ -25,5 +25,5 @@ void main() {
     cache.put(2, 2);
     cache.get(1);
     cache.put(3, 3);
-    System.out.println(cache.get(1) + " " + cache.get(2));
+    IO.println(cache.get(1) + " " + cache.get(2));
 }

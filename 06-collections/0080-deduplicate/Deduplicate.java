@@ -7,5 +7,5 @@ void main() {
     var unique = new LinkedHashSet<>(nums);
     var out = new StringJoiner(" ");
     for (int x : unique) out.add(String.valueOf(x));
-    System.out.println(out);
+    IO.println(out);
 }

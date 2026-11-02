@@ -14,5 +14,5 @@ static class Point {
 
 void main() {
     var p = new Point(1, 2);
-    System.out.println(p);
+    IO.println(p);
 }

@@ -26,5 +26,5 @@ void main() {
             outer, bLens.set.apply(aLens.get.apply(outer), 2));
     int after = bLens.get.apply(aLens.get.apply(updated));
 
-    System.out.println(got + " " + after);
+    IO.println(got + " " + after);
 }

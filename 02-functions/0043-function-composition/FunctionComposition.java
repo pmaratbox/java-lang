@@ -4,5 +4,5 @@ void main() {
     Function<Integer, Integer> inc = x -> x + 1;
     Function<Integer, Integer> twice = x -> x * 2;
     var composed = inc.compose(twice);
-    System.out.println(composed.apply(3));
+    IO.println(composed.apply(3));
 }

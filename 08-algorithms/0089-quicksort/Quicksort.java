@@ -21,5 +21,5 @@ void main() {
     var data = List.of(3, 1, 4, 1, 5, 2);
     var out = new StringJoiner(" ");
     for (int x : quicksort(data)) out.add(String.valueOf(x));
-    System.out.println(out);
+    IO.println(out);
 }

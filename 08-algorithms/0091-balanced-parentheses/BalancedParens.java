@@ -16,6 +16,6 @@ static boolean isBalanced(String s) {
 
 void main() {
     for (var s : new String[]{"(())", "(()"}) {
-        System.out.println(isBalanced(s) ? "yes" : "no");
+        IO.println(isBalanced(s) ? "yes" : "no");
     }
 }

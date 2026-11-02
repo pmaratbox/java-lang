@@ -5,7 +5,7 @@ static void permute(int[] a, int k) {
             if (i > 0) sb.append(' ');
             sb.append(a[i]);
         }
-        System.out.println(sb);
+        IO.println(sb);
         return;
     }
     for (var i = k; i < a.length; i++) {

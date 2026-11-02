@@ -8,5 +8,5 @@ static long binom(int n, int k) {
 }
 
 void main() {
-    System.out.println(binom(5, 2));
+    IO.println(binom(5, 2));
 }

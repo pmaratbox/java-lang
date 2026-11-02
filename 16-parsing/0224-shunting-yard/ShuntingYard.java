@@ -18,7 +18,7 @@ void main() {
         }
     }
     while (!ops.isEmpty()) out.add(ops.pop());
-    System.out.println(String.join(" ", out));
+    IO.println(String.join(" ", out));
 }
 
 static boolean isOp(String t) {

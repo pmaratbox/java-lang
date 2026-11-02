@@ -12,5 +12,5 @@ void main() {
     var r = zipWith((x, y) -> x + y, new int[]{1, 2, 3}, new int[]{4, 5, 6});
     var sj = new StringJoiner(" ");
     for (var v : r) sj.add(String.valueOf(v));
-    System.out.println(sj);
+    IO.println(sj);
 }

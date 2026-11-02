@@ -4,6 +4,6 @@ static boolean isPalindrome(String s) {
 
 void main() {
     for (var word : new String[]{"level", "hello"}) {
-        System.out.println(word + ": " + (isPalindrome(word) ? "yes" : "no"));
+        IO.println(word + ": " + (isPalindrome(word) ? "yes" : "no"));
     }
 }

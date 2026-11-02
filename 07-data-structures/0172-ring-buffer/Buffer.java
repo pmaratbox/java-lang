@@ -15,5 +15,5 @@ void main() {
         if (i > 0) sb.append(' ');
         sb.append(buf[(head + i) % cap]);
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

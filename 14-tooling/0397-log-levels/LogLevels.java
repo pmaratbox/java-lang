@@ -9,6 +9,6 @@ void main() {
 
 static void log(Level threshold, Level level, String msg) {
     if (level.ordinal() >= threshold.ordinal()) {
-        System.out.println(level + ": " + msg);
+        IO.println(level + ": " + msg);
     }
 }

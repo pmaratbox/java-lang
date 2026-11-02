@@ -23,5 +23,5 @@ static class Sugar extends CoffeeDecorator {
 
 void main() {
     Coffee c = new Sugar(new Milk(new BaseCoffee()));
-    System.out.println(c.cost());
+    IO.println(c.cost());
 }

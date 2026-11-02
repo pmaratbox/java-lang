@@ -15,5 +15,5 @@ static class Config {
 void main() {
     var a = Config.getInstance();
     var b = Config.getInstance();
-    System.out.println("same: " + (a == b ? "yes" : "no"));
+    IO.println("same: " + (a == b ? "yes" : "no"));
 }

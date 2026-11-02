@@ -7,7 +7,7 @@ public class RecursiveDescentCalc {
     }
 
     static void main() {
-        System.out.println(new RecursiveDescentCalc("2+3*4").expr());
+        IO.println(new RecursiveDescentCalc("2+3*4").expr());
     }
 
     int expr() {

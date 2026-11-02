@@ -7,5 +7,5 @@ void main() {
     var num = n1 * d2 + n2 * d1;
     var den = d1 * d2;
     var g = gcd(num, den);
-    System.out.println((num / g) + "/" + (den / g));
+    IO.println((num / g) + "/" + (den / g));
 }

@@ -5,5 +5,5 @@ void main() {
         if (c == '+') cell++;
         else if (c == '-') cell--;
     }
-    System.out.println(cell);
+    IO.println(cell);
 }

@@ -6,5 +6,5 @@ static int sum(List<Integer> xs) {
 }
 
 void main() {
-    System.out.println(sum(List.of(1, 2, 3, 4)));
+    IO.println(sum(List.of(1, 2, 3, 4)));
 }

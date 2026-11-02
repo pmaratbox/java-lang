@@ -13,6 +13,6 @@ void main() {
     Collections.sort(asc);
     List<Integer> desc = new ArrayList<>(List.of(3, 1, 2));
     desc.sort(Comparator.reverseOrder());
-    System.out.println("asc: " + join(asc));
-    System.out.println("desc: " + join(desc));
+    IO.println("asc: " + join(asc));
+    IO.println("desc: " + join(desc));
 }

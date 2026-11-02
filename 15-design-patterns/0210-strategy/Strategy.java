@@ -11,5 +11,5 @@ static IntBinaryOperator select(String name) {
 void main() {
     var add = select("add");
     var mul = select("mul");
-    System.out.println(add.applyAsInt(3, 4) + " " + mul.applyAsInt(3, 4));
+    IO.println(add.applyAsInt(3, 4) + " " + mul.applyAsInt(3, 4));
 }

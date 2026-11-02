@@ -7,5 +7,5 @@ record Point(int x, int y) {
 
 void main() {
     var p = new Point(1, 2);
-    System.out.println(p);
+    IO.println(p);
 }

@@ -8,5 +8,5 @@ void main() throws Exception {
  int[] values = {50,90,70,30,100,20};
  for (var v : values){ ins.setInt(1,v); ins.executeUpdate(); }
  var rs = c.createStatement().executeQuery("select value from scores order by value desc limit 3");
- while(rs.next()) System.out.println(rs.getInt(1));
+ while(rs.next()) IO.println(rs.getInt(1));
 }

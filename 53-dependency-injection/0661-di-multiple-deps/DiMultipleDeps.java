@@ -28,6 +28,6 @@ public class DiMultipleDeps {
       }
     });
     var service = inj.getInstance(Service.class);
-    System.out.println(service.run());
+    IO.println(service.run());
   }
 }

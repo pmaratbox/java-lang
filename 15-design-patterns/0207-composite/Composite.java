@@ -24,5 +24,5 @@ static class Group implements Node {
 void main() {
     var root = new Group();
     root.add(new Leaf(1)).add(new Leaf(2)).add(new Leaf(3));
-    System.out.println(root.size());
+    IO.println(root.size());
 }

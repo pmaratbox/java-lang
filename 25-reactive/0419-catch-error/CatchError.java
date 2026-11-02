@@ -49,8 +49,8 @@ void main() {
     var safe = catchError(source, err -> fallback);
 
     safe.subscribe(new Observer<>(
-        v -> System.out.println(v),
-        e -> System.out.println("error: " + e.getMessage()),
+        v -> IO.println(v),
+        e -> IO.println("error: " + e.getMessage()),
         () -> { /* completed */ }
     ));
 }

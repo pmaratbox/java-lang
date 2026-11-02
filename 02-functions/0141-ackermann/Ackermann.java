@@ -5,5 +5,5 @@ static int ack(int m, int n) {
 }
 
 void main() {
-    System.out.println(ack(2, 3));
+    IO.println(ack(2, 3));
 }

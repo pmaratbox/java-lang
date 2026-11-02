@@ -17,5 +17,5 @@ void main() {
     String out = runs.stream()
             .map(run -> run.stream().map(String::valueOf).collect(Collectors.joining(" ")))
             .collect(Collectors.joining("|"));
-    System.out.println(out);
+    IO.println(out);
 }

@@ -17,7 +17,7 @@ void main() {
             break;
         }
     }
-    System.out.println(cycle ? "cycle" : "acyclic");
+    IO.println(cycle ? "cycle" : "acyclic");
 }
 
 static boolean dfs(int u) {

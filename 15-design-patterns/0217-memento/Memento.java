@@ -16,5 +16,5 @@ void main() {
     o.state = 2;
     var current = o.state;
     o.restore(snapshot);
-    System.out.println(current + " " + o.state);
+    IO.println(current + " " + o.state);
 }

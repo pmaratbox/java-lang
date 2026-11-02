@@ -10,5 +10,5 @@ void main() {
     var both = and(isEven, isPositive);
     var a = both.test(4) ? "yes" : "no";
     var b = both.test(-4) ? "yes" : "no";
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

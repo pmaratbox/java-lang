@@ -46,7 +46,7 @@ static <T> Observable<T> distinctUntilChanged(Observable<T> source) {
 
 void main() {
     Integer[] input = {1, 1, 2, 2, 2, 3, 1};
-    Consumer<Integer> print = System.out::println;
+    Consumer<Integer> print = IO::println;
 
     distinctUntilChanged(of(input)).subscribe(new Observer<Integer>() {
         @Override

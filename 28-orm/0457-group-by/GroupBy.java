@@ -19,5 +19,5 @@ void main() throws Exception {
     .orderBy(field("category"))
     .fetch();
   for (org.jooq.Record rec : r)
-    System.out.println(rec.get("category", String.class) + " " + rec.get("total", Integer.class));
+    IO.println(rec.get("category", String.class) + " " + rec.get("total", Integer.class));
 }

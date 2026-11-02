@@ -75,7 +75,7 @@ void main() {
 
     zip(a, b, (x, y) -> x + y).subscribe(new Observer() {
         public void next(int value) {
-            System.out.println(value);
+            IO.println(value);
         }
 
         public void complete() {

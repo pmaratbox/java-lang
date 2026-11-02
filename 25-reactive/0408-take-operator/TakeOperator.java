@@ -59,7 +59,7 @@ static Observable take(Observable source, int n) {
 
 void main() {
     take(naturals(), 3).subscribe(new Observer(
-            v -> System.out.println(v),
-            () -> System.out.println("completed")
+            v -> IO.println(v),
+            () -> IO.println("completed")
     ));
 }

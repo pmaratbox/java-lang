@@ -18,7 +18,7 @@ void main() {
     onStack = new boolean[n];
     stack = new ArrayDeque<>();
     for (var i = 0; i < n; i++) if (ids[i] == -1) dfs(i);
-    System.out.println(sccCount);
+    IO.println(sccCount);
 }
 
 static void dfs(int u) {

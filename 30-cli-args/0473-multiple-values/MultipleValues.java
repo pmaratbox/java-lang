@@ -11,6 +11,6 @@ public class MultipleValues {
     var mv = new MultipleValues();
     new CommandLine(mv).parseArgs("--num", "1", "--num", "2", "--num", "3");
     var sum = mv.nums.stream().mapToInt(Integer::intValue).sum();
-    System.out.println(sum);
+    IO.println(sum);
   }
 }

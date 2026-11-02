@@ -20,5 +20,5 @@ static void dfs(int node) {
 
 void main() {
     dfs(0);
-    System.out.println(sb);
+    IO.println(sb);
 }

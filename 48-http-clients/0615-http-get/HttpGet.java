@@ -23,7 +23,7 @@ void main() throws Exception {
   var resp = c.send(
       HttpRequest.newBuilder(URI.create(base + "/hello")).build(),
       HttpResponse.BodyHandlers.ofString());
-  System.out.println(resp.body());
+  IO.println(resp.body());
 
   s.stop(0);
 }

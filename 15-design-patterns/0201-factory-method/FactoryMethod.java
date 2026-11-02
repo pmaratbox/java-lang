@@ -21,5 +21,5 @@ static Shape create(String name) {
 void main() {
     var a = create("circle");
     var b = create("square");
-    System.out.println(a.kind() + " " + b.kind());
+    IO.println(a.kind() + " " + b.kind());
 }

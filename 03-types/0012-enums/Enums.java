@@ -3,6 +3,6 @@ enum Color {
 }
 
 void main() {
-    System.out.println("green: " + Color.GREEN.ordinal());
-    System.out.println("blue: " + Color.BLUE.ordinal());
+    IO.println("green: " + Color.GREEN.ordinal());
+    IO.println("blue: " + Color.BLUE.ordinal());
 }

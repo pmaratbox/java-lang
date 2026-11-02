@@ -3,7 +3,7 @@ import java.util.List;
 
 void main() {
     var fields = parse("a,\"b,c\",d");
-    System.out.println(String.join("|", fields));
+    IO.println(String.join("|", fields));
 }
 
 static List<String> parse(String row) {

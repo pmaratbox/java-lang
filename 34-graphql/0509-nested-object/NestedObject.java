@@ -27,5 +27,5 @@ void main() {
 
     var user = (Map<String, Object>) data.get("user");
     var address = (Map<String, Object>) user.get("address");
-    System.out.println(address.get("city"));
+    IO.println(address.get("city"));
 }

@@ -8,5 +8,5 @@ void main() {
             dp[c] = Math.max(dp[c], dp[c - w[i]] + v[i]);
         }
     }
-    System.out.println(dp[cap]);
+    IO.println(dp[cap]);
 }

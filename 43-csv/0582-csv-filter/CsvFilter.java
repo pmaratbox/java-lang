@@ -15,5 +15,5 @@ void main() throws Exception {
     var age = Integer.parseInt(row[1]);
     if (age > 28) names.add(row[0]);
   }
-  System.out.println(names);   // Alice,Carol
+  IO.println(names);   // Alice,Carol
 }

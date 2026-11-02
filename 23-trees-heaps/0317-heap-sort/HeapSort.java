@@ -25,5 +25,5 @@ void main() {
     heapSort(a);
     var sj = new StringJoiner(" ");
     for (var v : a) sj.add(String.valueOf(v));
-    System.out.println(sj);
+    IO.println(sj);
 }

@@ -10,5 +10,5 @@ import static org.quicktheories.generators.SourceDSL.*;
 void main() {
   qt().forAll(integers().all(), integers().all())
       .check((a, b) -> a + b == b + a);
-  System.out.println("passed");
+  IO.println("passed");
 }

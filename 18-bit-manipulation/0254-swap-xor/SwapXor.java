@@ -3,5 +3,5 @@ void main() {
     a ^= b;
     b ^= a;
     a ^= b;
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

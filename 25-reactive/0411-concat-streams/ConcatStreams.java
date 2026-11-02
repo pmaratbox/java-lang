@@ -55,7 +55,7 @@ public class ConcatStreams {
         var a = Observable.of(1, 2);
         var b = Observable.of(3, 4);
 
-        Consumer<Integer> print = System.out::println;
+        Consumer<Integer> print = IO::println;
 
         Observable.concat(a, b).subscribe(new Observer<Integer>() {
             @Override public void next(Integer value) { print.accept(value); }

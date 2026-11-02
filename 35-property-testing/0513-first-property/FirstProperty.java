@@ -18,5 +18,5 @@ void main() {
         Collections.reverse(twice);
         return twice.equals(xs);
       });
-  System.out.println("passed");
+  IO.println("passed");
 }

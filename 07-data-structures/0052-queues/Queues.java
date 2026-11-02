@@ -11,5 +11,5 @@ void main() {
     while (!queue.isEmpty()) {
         out.add(String.valueOf(queue.poll()));
     }
-    System.out.println(out);
+    IO.println(out);
 }

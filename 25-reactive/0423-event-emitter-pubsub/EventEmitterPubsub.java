@@ -27,8 +27,8 @@ static final class EventEmitter {
 
 void main() {
     var bus = new EventEmitter();
-    Consumer<String> h = payload -> System.out.println("hi " + payload);
-    Consumer<String> g = payload -> System.out.println("bye " + payload);
+    Consumer<String> h = payload -> IO.println("hi " + payload);
+    Consumer<String> g = payload -> IO.println("bye " + payload);
 
     bus.on("greet", h);
     bus.on("bye", g);

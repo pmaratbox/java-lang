@@ -8,5 +8,5 @@ void main() {
             if (r - l - 1 > len) { len = r - l - 1; start = l + 1; }
         }
     }
-    System.out.println(s.substring(start, start + len));
+    IO.println(s.substring(start, start + len));
 }

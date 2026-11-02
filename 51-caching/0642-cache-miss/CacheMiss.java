@@ -9,5 +9,5 @@ static String g(LRUMap<String,Integer> c, String k){
 void main(){
   LRUMap<String,Integer> c = new LRUMap<>(3);
   // empty cache: looking up `x` finds nothing
-  System.out.println(g(c, "x"));
+  IO.println(g(c, "x"));
 }

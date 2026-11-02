@@ -10,5 +10,5 @@ void main() {
             pairs.add(x + y);
         }
     }
-    System.out.println(String.join(" ", pairs));
+    IO.println(String.join(" ", pairs));
 }

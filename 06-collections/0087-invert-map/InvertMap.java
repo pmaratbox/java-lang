@@ -16,5 +16,5 @@ void main() {
     for (Map.Entry<Integer, String> e : inverted.entrySet()) {
         out.add(e.getKey() + ":" + e.getValue());
     }
-    System.out.println(out);
+    IO.println(out);
 }

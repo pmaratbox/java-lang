@@ -40,6 +40,12 @@ bare array initializers such as `{1, 2}`. Numeric and generic declarations also
 keep explicit types when inference would change them. `var` still declares a
 statically typed variable.
 
+Use `IO.println(value)` for console lines and `IO::println` for callbacks.
+`java.lang.IO` needs no import. Format values with `String.format` or
+`String.formatted` before printing; `IO.println` adds the line separator.
+Use `IO.print` when serialized text already includes its trailing newline.
+Error messages continue to use `System.err`.
+
 Run each lesson from its own directory using its README. Both
 `javac HelloWorld.java && java HelloWorld` and `java HelloWorld.java` work for the
 hello-world example; no preview flags are needed. JBang resolves dependencies
@@ -47,7 +53,8 @@ declared with `//DEPS`. Recompile after editing so `java ClassName` runs the
 current source rather than an older `.class` file.
 
 See the [Java documentation on compact source files and instance main methods](https://docs.oracle.com/en/java/javase/25/language/compact-source-files-instance-main-methods.html)
-and [local variable type inference](https://docs.oracle.com/en/java/javase/25/language/local-variable-type-inference.html).
+and [local variable type inference](https://docs.oracle.com/en/java/javase/25/language/local-variable-type-inference.html),
+plus the [IO API](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/IO.html).
 
 ## Lessons
 

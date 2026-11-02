@@ -17,5 +17,5 @@ void main() {
     var result = merged.entrySet().stream()
             .map(e -> e.getKey() + ":" + e.getValue())
             .collect(Collectors.joining(" "));
-    System.out.println(result);
+    IO.println(result);
 }

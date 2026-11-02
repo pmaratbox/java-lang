@@ -6,6 +6,6 @@ static String classify(int n) {
 
 void main() {
     for (var n : new int[]{-1, 0, 5}) {
-        System.out.println(classify(n));
+        IO.println(classify(n));
     }
 }

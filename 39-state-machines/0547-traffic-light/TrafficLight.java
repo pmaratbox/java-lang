@@ -15,5 +15,5 @@ void main() {
   fsm.start();
   fsm.fire("next"); // red -> green
   fsm.fire("next"); // green -> yellow
-  System.out.println(fsm.getCurrentState().toString().toLowerCase());
+  IO.println(fsm.getCurrentState().toString().toLowerCase());
 }

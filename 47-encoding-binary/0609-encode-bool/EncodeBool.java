@@ -11,5 +11,5 @@ static String hex(Object v) throws Exception {
   return s.toString();
 }
 void main() throws Exception {
-  System.out.println(hex(true)); // c3
+  IO.println(hex(true)); // c3
 }

@@ -8,5 +8,5 @@ void main() {
     var result = IntStream.range(0, letters.size())
         .mapToObj(i -> letters.get(i) + "=" + nums.get(i))
         .collect(Collectors.joining(" "));
-    System.out.println(result);
+    IO.println(result);
 }

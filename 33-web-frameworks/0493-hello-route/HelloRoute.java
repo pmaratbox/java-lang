@@ -19,6 +19,6 @@ void main() throws Exception {
       HttpRequest.newBuilder().uri(URI.create("http://localhost:" + port + "/")).build(),
       HttpResponse.BodyHandlers.ofString());
 
-  System.out.println(response.body());
+  IO.println(response.body());
   app.stop();
 }

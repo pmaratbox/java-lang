@@ -6,5 +6,5 @@ record Point(int x, int y) {
 
 void main() {
     var p = new Point(1, 2).add(new Point(3, 4));
-    System.out.println("(" + p.x() + ", " + p.y() + ")");
+    IO.println("(" + p.x() + ", " + p.y() + ")");
 }

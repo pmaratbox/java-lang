@@ -10,7 +10,7 @@ void main() {
             next[i] += row[i];
             next[i + 1] += row[i];
         }
-        System.out.println(sb);
+        IO.println(sb);
         row = next;
     }
 }

@@ -17,7 +17,7 @@ static class NamedWatcher implements Watcher {
     final String id;
     NamedWatcher(String id) { this.id = id; }
     public void update(int value) {
-        System.out.println(id + ": " + value);
+        IO.println(id + ": " + value);
     }
 }
 

@@ -16,5 +16,5 @@ void main() {
             self -> n -> n == 0 ? 1 : n * self.apply(n - 1);
 
     var fact = fix(factGen);
-    System.out.println(fact.apply(5));
+    IO.println(fact.apply(5));
 }

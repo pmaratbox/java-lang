@@ -9,5 +9,5 @@ static long fastPow(long base, long exp) {
 }
 
 void main() {
-    System.out.println(fastPow(2, 10));
+    IO.println(fastPow(2, 10));
 }

@@ -23,5 +23,5 @@ void main() {
             if (!in[e[0]]) pq.add(new int[]{e[0], e[1]});
         }
     }
-    System.out.println(total);
+    IO.println(total);
 }

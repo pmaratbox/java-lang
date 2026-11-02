@@ -13,5 +13,5 @@ void main() throws Exception {
   for (var i = 1; i < rows.size(); i++) {
     sum += Integer.parseInt(rows.get(i)[ageCol].trim());
   }
-  System.out.println(sum);  // 90
+  IO.println(sum);  // 90
 }

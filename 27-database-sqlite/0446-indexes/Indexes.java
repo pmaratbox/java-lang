@@ -12,5 +12,5 @@ void main() throws Exception {
  var sel = c.prepareStatement("select price from products where sku=?");
  sel.setString(1,"B");
  var rs = sel.executeQuery();
- while(rs.next()) System.out.println(rs.getInt(1));
+ while(rs.next()) IO.println(rs.getInt(1));
 }

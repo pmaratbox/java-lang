@@ -3,5 +3,5 @@ void main() {
     var tmp = a;
     a = b;
     b = tmp;
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

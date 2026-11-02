@@ -32,6 +32,6 @@ void main() {
     }
     Deque<Integer> path = new ArrayDeque<>();
     for (var at = 3; at != -1; at = prev[at]) path.push(at);
-    System.out.println(String.join(" ",
+    IO.println(String.join(" ",
             path.stream().map(String::valueOf).toArray(String[]::new)));
 }

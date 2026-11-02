@@ -15,5 +15,5 @@ void main() throws Exception {
 
   var sj = new StringJoiner(",");
   for (var i = 1; i < rows.size(); i++) sj.add(rows.get(i)[ageIdx]);
-  System.out.println(sj);   // 30,25,35
+  IO.println(sj);   // 30,25,35
 }

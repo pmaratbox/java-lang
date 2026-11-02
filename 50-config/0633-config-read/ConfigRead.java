@@ -7,5 +7,5 @@ import java.util.*;
 void main() {
   var file = ConfigFactory.parseFile(new File("app.json"));
   var cfg = file.withFallback(ConfigFactory.parseMap(Map.of("missing", "fallback")));
-  System.out.println(cfg.getString("name"));
+  IO.println(cfg.getString("name"));
 }

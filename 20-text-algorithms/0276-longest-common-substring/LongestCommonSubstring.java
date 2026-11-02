@@ -10,5 +10,5 @@ void main() {
             }
         }
     }
-    System.out.println(a.substring(end - best, end));
+    IO.println(a.substring(end - best, end));
 }

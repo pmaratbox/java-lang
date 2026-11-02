@@ -24,5 +24,5 @@ void main() {
     String neighbors = Graphs.neighborListOf(g, "a").stream()
         .sorted()
         .collect(Collectors.joining(","));
-    System.out.println(neighbors);
+    IO.println(neighbors);
 }

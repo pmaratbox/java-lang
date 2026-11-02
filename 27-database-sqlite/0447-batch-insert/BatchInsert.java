@@ -11,5 +11,5 @@ void main() throws Exception {
  c.commit();
  var rs = c.createStatement().executeQuery("select count(*) from t");
  rs.next();
- System.out.println(rs.getInt(1));
+ IO.println(rs.getInt(1));
 }

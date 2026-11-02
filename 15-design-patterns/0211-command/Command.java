@@ -24,5 +24,5 @@ void main() {
     cmd.execute();
     var after = counter.value;
     cmd.undo();
-    System.out.println(after + " " + counter.value);
+    IO.println(after + " " + counter.value);
 }

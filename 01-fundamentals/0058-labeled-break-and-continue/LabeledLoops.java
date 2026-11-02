@@ -4,10 +4,10 @@ void main() {
         for (var j = 1; j <= 3; j++) {
             if (j > i) continue outer;
             if (i * j == 4) {
-                System.out.println("stop at " + i + "," + j);
+                IO.println("stop at " + i + "," + j);
                 break outer;
             }
-            System.out.println(i + "," + j);
+            IO.println(i + "," + j);
         }
     }
 }

@@ -15,6 +15,6 @@ void main() {
     });
   } catch (Exception e) {
     // After 3 failed attempts the retries are exhausted and the error propagates.
-    System.out.println("failed");
+    IO.println("failed");
   }
 }

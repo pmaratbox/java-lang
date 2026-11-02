@@ -24,5 +24,5 @@ static boolean match(String pat, String text) {
 void main() {
     var a = match("a*b", "aaab") ? "yes" : "no";
     var b = match("a*b", "aac") ? "yes" : "no";
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

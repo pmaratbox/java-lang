@@ -7,5 +7,5 @@ void main() {
     var first = Flux.just(1, 2);
     var second = Flux.just(3, 4);
     Flux.concat(first, second)
-        .subscribe(v -> System.out.println(v));
+        .subscribe(v -> IO.println(v));
 }

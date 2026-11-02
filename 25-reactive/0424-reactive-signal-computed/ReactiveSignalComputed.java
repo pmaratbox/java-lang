@@ -53,9 +53,9 @@ void main() {
 
     var sum = new Computed<>(() -> a.get() + b.get(), a, b);
 
-    System.out.println(sum.get());
+    IO.println(sum.get());
 
     a.set(10);
 
-    System.out.println(sum.get());
+    IO.println(sum.get());
 }

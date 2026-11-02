@@ -9,5 +9,5 @@ void main() throws Exception {
   var rows = new CSVReader(new StringReader(data)).readAll();
   var sj = new StringJoiner(",");
   for (var i = 1; i < rows.size(); i++) sj.add(rows.get(i)[0]);
-  System.out.println(sj);
+  IO.println(sj);
 }

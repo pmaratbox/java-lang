@@ -12,5 +12,5 @@ void main() {
         if (sb.length() > 0) sb.append(" ");
         sb.append(stack.pop());
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

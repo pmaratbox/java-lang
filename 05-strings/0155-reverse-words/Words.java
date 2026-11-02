@@ -6,5 +6,5 @@ void main() {
     var s = "hello world";
     var words = Arrays.asList(s.split(" "));
     Collections.reverse(words);
-    System.out.println(String.join(" ", words));
+    IO.println(String.join(" ", words));
 }

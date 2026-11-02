@@ -40,5 +40,5 @@ void main() {
     for (var s : shapes) {
         total += s.area();
     }
-    System.out.println("total area: " + (int) total);
+    IO.println("total area: " + (int) total);
 }

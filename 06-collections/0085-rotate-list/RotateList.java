@@ -8,5 +8,5 @@ void main() {
     Collections.rotate(nums, -2);
     var out = new StringJoiner(" ");
     for (int x : nums) out.add(String.valueOf(x));
-    System.out.println(out);
+    IO.println(out);
 }

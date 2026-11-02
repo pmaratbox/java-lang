@@ -9,7 +9,7 @@ void main() {
     var maxAttempts = 5;
     for (var i = 1; i <= maxAttempts; i++) {
         if (operation()) {
-            System.out.println("ok after " + i);
+            IO.println("ok after " + i);
             break;
         }
     }

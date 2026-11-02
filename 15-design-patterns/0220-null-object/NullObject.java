@@ -16,5 +16,5 @@ void main() {
     var realLogger = new RealLogger();
     nullLogger.log("ignored");
     realLogger.log("recorded");
-    System.out.println(realLogger.count);
+    IO.println(realLogger.count);
 }

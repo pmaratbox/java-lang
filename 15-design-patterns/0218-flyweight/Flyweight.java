@@ -25,5 +25,5 @@ void main() {
     for (var c : new char[] {'a', 'b', 'a'}) {
         factory.get(c);
     }
-    System.out.println(factory.created);
+    IO.println(factory.created);
 }

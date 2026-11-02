@@ -21,5 +21,5 @@ static class DarkFactory implements ThemeFactory {
 
 void main() {
     ThemeFactory f = new DarkFactory();
-    System.out.println(f.button().label() + " " + f.checkbox().label());
+    IO.println(f.button().label() + " " + f.checkbox().label());
 }

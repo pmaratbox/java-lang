@@ -11,6 +11,6 @@ static boolean anagram(String a, String b) {
 void main() {
     String[][] pairs = {{"listen", "silent"}, {"hello", "world"}};
     for (var p : pairs) {
-        System.out.println(p[0] + "/" + p[1] + ": " + (anagram(p[0], p[1]) ? "yes" : "no"));
+        IO.println(p[0] + "/" + p[1] + ": " + (anagram(p[0], p[1]) ? "yes" : "no"));
     }
 }

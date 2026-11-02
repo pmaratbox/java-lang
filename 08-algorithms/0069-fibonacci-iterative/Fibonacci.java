@@ -9,5 +9,5 @@ void main() {
         a = b;
         b = t;
     }
-    System.out.println(out);
+    IO.println(out);
 }

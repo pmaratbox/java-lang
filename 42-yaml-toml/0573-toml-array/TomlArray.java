@@ -10,5 +10,5 @@ void main() {
   for (var i = 0; i < tags.size(); i++) {
     values.add((String) tags.get(i));
   }
-  System.out.println(String.join(",", values));
+  IO.println(String.join(",", values));
 }

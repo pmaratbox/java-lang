@@ -19,5 +19,5 @@ void main() {
       .execute("mutation { addUser(name: \"bob\") { name } }").getData();
   @SuppressWarnings("unchecked")
   var addUser = (Map<String, Object>) data.get("addUser");
-  System.out.println(addUser.get("name"));
+  IO.println(addUser.get("name"));
 }

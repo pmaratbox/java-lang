@@ -3,5 +3,5 @@ void main() {
     for (var i = 0; i < 20; i++) {
         x = x - (x * x - 2) / (2 * x);
     }
-    System.out.printf("%.4f%n", x);
+    IO.println("%.4f".formatted(x));
 }

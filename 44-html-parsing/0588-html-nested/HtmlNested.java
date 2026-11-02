@@ -12,5 +12,5 @@ void main() {
   var d = Jsoup.parse(DOC);
   var sj = new StringJoiner(",");
   for (var e : d.select(".content p")) sj.add(e.text());
-  System.out.println(sj);
+  IO.println(sj);
 }

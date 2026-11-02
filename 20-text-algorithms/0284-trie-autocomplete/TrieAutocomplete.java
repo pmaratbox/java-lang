@@ -9,7 +9,7 @@ public class TrieAutocomplete {
         for (var c : prefix.toCharArray()) node = node.children.get(c);
         var sb = new StringBuilder();
         collect(node, prefix, sb);
-        System.out.println(sb.toString().trim());
+        IO.println(sb.toString().trim());
     }
 
     static void insert(Node root, String w) {

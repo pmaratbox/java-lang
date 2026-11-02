@@ -20,5 +20,5 @@ void main() throws Exception {
     int total = db.select(sum(field("age", Integer.class)))
                   .from("users")
                   .fetchOne(0, int.class);
-    System.out.println(total);
+    IO.println(total);
 }

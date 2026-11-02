@@ -11,5 +11,5 @@ static class WorkAlgorithm extends Algorithm {
 
 void main() {
     Algorithm a = new WorkAlgorithm();
-    System.out.println(a.run());
+    IO.println(a.run());
 }

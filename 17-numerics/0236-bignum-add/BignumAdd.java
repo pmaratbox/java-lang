@@ -12,5 +12,5 @@ static String add(String a, String b) {
 }
 
 void main() {
-    System.out.println(add("999999999999", "1"));
+    IO.println(add("999999999999", "1"));
 }

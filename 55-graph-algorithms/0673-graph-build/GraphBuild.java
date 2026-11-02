@@ -21,5 +21,5 @@ void main() {
   addE(g, "d", "e", 1);
 
   // Node count and edge count, space-joined, from the graph's own sets.
-  System.out.println(g.vertexSet().size() + " " + g.edgeSet().size());
+  IO.println(g.vertexSet().size() + " " + g.edgeSet().size());
 }

@@ -7,5 +7,5 @@ void main() throws IOException {
     Files.writeString(path, "hello, file");
     var content = Files.readString(path);
     Files.delete(path);
-    System.out.println("read: " + content);
+    IO.println("read: " + content);
 }

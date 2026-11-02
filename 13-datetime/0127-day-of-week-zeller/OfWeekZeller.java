@@ -7,5 +7,5 @@ void main() {
     // h: 0=Saturday, 1=Sunday, 2=Monday, ...
     String[] days = {"Saturday", "Sunday", "Monday", "Tuesday",
                      "Wednesday", "Thursday", "Friday"};
-    System.out.println(days[h]);
+    IO.println(days[h]);
 }

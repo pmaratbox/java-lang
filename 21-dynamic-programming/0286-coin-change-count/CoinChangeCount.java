@@ -8,5 +8,5 @@ void main() {
             dp[a] += dp[a - c];
         }
     }
-    System.out.println(dp[amount]);
+    IO.println(dp[amount]);
 }

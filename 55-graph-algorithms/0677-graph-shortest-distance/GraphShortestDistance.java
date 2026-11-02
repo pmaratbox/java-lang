@@ -22,5 +22,5 @@ void main() {
   addE(g, "d", "e", 1);
 
   var path = new DijkstraShortestPath<>(g).getPath("a", "e");
-  System.out.println((int) path.getWeight());
+  IO.println((int) path.getWeight());
 }

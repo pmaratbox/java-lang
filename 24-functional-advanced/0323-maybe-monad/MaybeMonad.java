@@ -11,7 +11,7 @@ public class MaybeMonad {
 
         var a = present.map(String::valueOf).orElse("none");
         var b = absent.map(String::valueOf).orElse("none");
-        System.out.println(a + " " + b);
+        IO.println(a + " " + b);
     }
 }
 

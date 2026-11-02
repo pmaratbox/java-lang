@@ -8,5 +8,5 @@ void main() {
 
     var sj = new StringJoiner(" ");
     for (var i = 0; i < 3; i++) sj.add(String.valueOf(heap.poll()));
-    System.out.println(sj);
+    IO.println(sj);
 }

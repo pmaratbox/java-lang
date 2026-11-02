@@ -13,5 +13,5 @@ void main() {
     return "ok";
   });
   // Scripted: fail once (attempt 1), succeed on attempt 2.
-  System.out.println(attempts.get());
+  IO.println(attempts.get());
 }

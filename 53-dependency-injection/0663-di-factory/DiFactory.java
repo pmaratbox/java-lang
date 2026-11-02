@@ -20,6 +20,6 @@ public class DiFactory {
   void main() {
     var inj = Guice.createInjector(new WidgetModule());
     var widget = inj.getInstance(Widget.class);
-    System.out.println(widget.value());
+    IO.println(widget.value());
   }
 }

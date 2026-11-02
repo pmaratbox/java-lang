@@ -5,5 +5,5 @@ void main() {
     var full = joined.toString().replace('\\', '/');
     var base = joined.getFileName().toString();
     var ext = base.substring(base.lastIndexOf('.'));
-    System.out.println(full + " " + base + " " + ext);
+    IO.println(full + " " + base + " " + ext);
 }

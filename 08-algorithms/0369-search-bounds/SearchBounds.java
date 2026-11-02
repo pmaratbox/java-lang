@@ -20,5 +20,5 @@ static int upperBound(int[] a, int key) {
 
 void main() {
     int[] a = {1, 3, 5, 5, 7};
-    System.out.println(lowerBound(a, 5) + " " + upperBound(a, 5));
+    IO.println(lowerBound(a, 5) + " " + upperBound(a, 5));
 }

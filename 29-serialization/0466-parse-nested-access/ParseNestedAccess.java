@@ -8,5 +8,5 @@ void main() throws Exception {
   var root = new ObjectMapper().readTree(json);
   var name = root.get("user").get("name").asText();
   var firstRole = root.get("user").get("roles").get(0).asText();
-  System.out.println(name + " " + firstRole);
+  IO.println(name + " " + firstRole);
 }

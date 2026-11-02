@@ -17,5 +17,5 @@ void main() {
             j = lps[j - 1];
         }
     }
-    System.out.println(sb.toString());
+    IO.println(sb.toString());
 }

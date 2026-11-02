@@ -16,5 +16,5 @@ void main() {
     if (v < 3) throw new RuntimeException("fail");  // fails twice, then succeeds
     return "done";
   });
-  System.out.println(attempts.get());   // 3
+  IO.println(attempts.get());   // 3
 }

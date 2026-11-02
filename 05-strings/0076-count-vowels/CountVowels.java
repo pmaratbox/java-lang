@@ -5,5 +5,5 @@ void main() {
     for (var ch : word.toCharArray()) {
         if (vowels.indexOf(ch) >= 0) count++;
     }
-    System.out.println(count);
+    IO.println(count);
 }

@@ -23,7 +23,7 @@ public class PreorderIterative {
             if (n.right != null) stack.push(n.right);
             if (n.left != null) stack.push(n.left);
         }
-        System.out.println(sj);
+        IO.println(sj);
     }
 }
 

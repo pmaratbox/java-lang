@@ -16,5 +16,5 @@ static class Square extends Shape {
 }
 
 void main() {
-    System.out.println(new Square(3).describe());
+    IO.println(new Square(3).describe());
 }

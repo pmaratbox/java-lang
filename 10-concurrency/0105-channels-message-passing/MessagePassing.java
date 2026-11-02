@@ -26,5 +26,5 @@ void main() throws InterruptedException {
         sb.append(value);
     }
     producer.join();
-    System.out.println(sb);
+    IO.println(sb);
 }

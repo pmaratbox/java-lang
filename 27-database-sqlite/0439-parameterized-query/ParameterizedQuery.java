@@ -10,5 +10,5 @@ void main() throws Exception {
  var sel = c.prepareStatement("select name from users where id=?");
  sel.setInt(1,2);
  var rs = sel.executeQuery();
- while(rs.next()) System.out.println(rs.getString(1));
+ while(rs.next()) IO.println(rs.getString(1));
 }

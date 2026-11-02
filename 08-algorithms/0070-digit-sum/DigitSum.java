@@ -5,5 +5,5 @@ void main() {
         total += n % 10;
         n /= 10;
     }
-    System.out.println(total);
+    IO.println(total);
 }

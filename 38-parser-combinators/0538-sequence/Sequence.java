@@ -8,5 +8,5 @@ void main() {
     var a = Scanners.isChar('a').retn("a");
     var b = Scanners.isChar('b').retn("b");
     var ab = Parsers.sequence(a, b, (x, y) -> x + y);
-    System.out.println(ab.parse("ab"));
+    IO.println(ab.parse("ab"));
 }

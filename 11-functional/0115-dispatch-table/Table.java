@@ -8,5 +8,5 @@ void main() {
     );
     int add = ops.get("add").applyAsInt(3, 4);
     int mul = ops.get("mul").applyAsInt(3, 4);
-    System.out.println(add + " " + mul);
+    IO.println(add + " " + mul);
 }

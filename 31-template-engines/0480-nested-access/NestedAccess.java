@@ -14,5 +14,5 @@ void main() throws Exception {
   m.put("user", user);
   var w = new StringWriter();
   t.process(m, w);
-  System.out.println(w.toString());
+  IO.println(w.toString());
 }

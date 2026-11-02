@@ -6,5 +6,5 @@ void main() {
     var a = new SimpleMatrix(new double[][]{{1, 2, 3}});
     var b = new SimpleMatrix(new double[][]{{4, 5, 6}});
     var d = a.dot(b);
-    System.out.println((int) Math.round(d));
+    IO.println((int) Math.round(d));
 }

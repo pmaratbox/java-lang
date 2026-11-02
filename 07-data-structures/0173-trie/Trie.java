@@ -28,5 +28,5 @@ static boolean search(String word) {
 void main() {
     insert("cat");
     insert("car");
-    System.out.println((search("car") ? "yes" : "no") + " " + (search("can") ? "yes" : "no"));
+    IO.println((search("car") ? "yes" : "no") + " " + (search("can") ? "yes" : "no"));
 }

@@ -10,5 +10,5 @@ static String render(String src) {
   return h.render(p.parse(src)).replaceAll("\n+$", "");
 }
 void main() {
-  System.out.println(render("# Hello"));   // <h1>Hello</h1>
+  IO.println(render("# Hello"));   // <h1>Hello</h1>
 }

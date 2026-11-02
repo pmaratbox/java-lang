@@ -15,5 +15,5 @@ static String hex(Object v) throws Exception {
 }
 
 void main() throws Exception {
-  System.out.println(hex(Map.of("a", 1))); // 81a16101 (fixmap + key a161 + value 01)
+  IO.println(hex(Map.of("a", 1))); // 81a16101 (fixmap + key a161 + value 01)
 }

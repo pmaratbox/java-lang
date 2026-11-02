@@ -5,10 +5,10 @@ void main() {
     var tmp = a;
     a = b;
     b = tmp;
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 
     var pair = new Pair(3, 4);
     if (pair instanceof Pair(int x, int y)) {
-        System.out.println(x + " " + y);
+        IO.println(x + " " + y);
     }
 }

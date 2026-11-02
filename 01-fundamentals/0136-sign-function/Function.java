@@ -3,5 +3,5 @@ static int sign(int x) {
 }
 
 void main() {
-    System.out.println(sign(-5) + " " + sign(0) + " " + sign(5));
+    IO.println(sign(-5) + " " + sign(0) + " " + sign(5));
 }

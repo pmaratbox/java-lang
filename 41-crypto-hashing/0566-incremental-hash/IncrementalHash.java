@@ -8,5 +8,5 @@ void main() throws Exception {
     var digest = md.digest();
     var sb = new StringBuilder();
     for (var b : digest) sb.append(String.format("%02x", b));
-    System.out.println(sb);
+    IO.println(sb);
 }

@@ -13,5 +13,5 @@ void main() {
   cache.put("a", 1);
   cache.put("a", 2); // same key -> value replaced
 
-  System.out.println(g(cache, "a"));
+  IO.println(g(cache, "a"));
 }

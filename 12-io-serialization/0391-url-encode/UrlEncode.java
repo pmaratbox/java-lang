@@ -13,5 +13,5 @@ void main() {
             out.append('%').append(String.format("%02X", b & 0xff));
         }
     }
-    System.out.println(out.toString());
+    IO.println(out.toString());
 }

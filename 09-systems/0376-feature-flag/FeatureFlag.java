@@ -3,5 +3,5 @@ static String evaluate(boolean flag) {
 }
 
 void main() {
-    System.out.println(evaluate(true) + " " + evaluate(false));
+    IO.println(evaluate(true) + " " + evaluate(false));
 }

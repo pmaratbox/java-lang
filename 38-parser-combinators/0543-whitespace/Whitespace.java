@@ -13,5 +13,5 @@ void main() {
     var trimmed = num.between(
         Scanners.WHITESPACES.optional(null),
         Scanners.WHITESPACES.optional(null));
-    System.out.println(trimmed.parse("  42  "));
+    IO.println(trimmed.parse("  42  "));
 }

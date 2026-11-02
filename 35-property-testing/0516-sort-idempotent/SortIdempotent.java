@@ -18,5 +18,5 @@ void main() {
   // QuickTheories generates ~100 integer lists; check throws AssertionError on failure.
   qt().forAll(lists().of(integers().all()).ofSizeBetween(0, 20))
       .check(xs -> sorted(sorted(xs)).equals(sorted(xs)));
-  System.out.println("passed");
+  IO.println("passed");
 }

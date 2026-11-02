@@ -10,5 +10,5 @@ void main() {
                     dp[i - 1][j - 1] + cost);
         }
     }
-    System.out.println(dp[a.length()][b.length()]);
+    IO.println(dp[a.length()][b.length()]);
 }

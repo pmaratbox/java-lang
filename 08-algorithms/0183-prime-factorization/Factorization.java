@@ -17,5 +17,5 @@ void main() {
         if (sb.length() > 0) sb.append(' ');
         sb.append(n);
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

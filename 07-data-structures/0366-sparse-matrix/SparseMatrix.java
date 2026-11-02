@@ -23,6 +23,6 @@ public class SparseMatrix {
     void main() {
         var matrix = new SparseMatrix();
         matrix.set(1, 1, 5);
-        System.out.println(matrix.get(1, 1) + " " + matrix.get(0, 0));
+        IO.println(matrix.get(1, 1) + " " + matrix.get(0, 0));
     }
 }

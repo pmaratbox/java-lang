@@ -9,5 +9,5 @@ void main() {
         }
         best = Math.max(best, dp[i]);
     }
-    System.out.println(best);
+    IO.println(best);
 }

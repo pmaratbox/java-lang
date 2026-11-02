@@ -17,7 +17,7 @@ public class BstSearch {
     void main() {
         Node root = null;
         for (var v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
-        System.out.println((search(root, 4) ? "yes" : "no") + " " +
+        IO.println((search(root, 4) ? "yes" : "no") + " " +
                            (search(root, 6) ? "yes" : "no"));
     }
 }

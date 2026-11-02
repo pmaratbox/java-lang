@@ -3,5 +3,5 @@ static boolean isPow2(int n) {
 }
 
 void main() {
-    System.out.println((isPow2(16) ? "yes" : "no") + " " + (isPow2(18) ? "yes" : "no"));
+    IO.println((isPow2(16) ? "yes" : "no") + " " + (isPow2(18) ? "yes" : "no"));
 }

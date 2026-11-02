@@ -10,5 +10,5 @@ void main() {
     for (var p : people) {
         byId.put(p.id(), p.name());
     }
-    System.out.println("id 2: " + byId.get(2));
+    IO.println("id 2: " + byId.get(2));
 }

@@ -18,5 +18,5 @@ void main() {
         seen.add(n);
         n = squareDigits(n);
     }
-    System.out.println(n == 1 ? "yes" : "no");
+    IO.println(n == 1 ? "yes" : "no");
 }

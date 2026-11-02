@@ -11,5 +11,5 @@ static String toCamel(String s) {
 }
 
 void main() {
-    System.out.println(toCamel("hello_world"));
+    IO.println(toCamel("hello_world"));
 }

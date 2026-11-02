@@ -17,5 +17,5 @@ void main() throws Exception {
  c.setAutoCommit(true);
 
  var rs = c.createStatement().executeQuery("select n from t order by n");
- while(rs.next()) System.out.println(rs.getInt(1));
+ while(rs.next()) IO.println(rs.getInt(1));
 }

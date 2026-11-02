@@ -16,5 +16,5 @@ void main() {
   cache.put("c", 3);
   cache.put("d", 4); // evicts a
 
-  System.out.println(g(cache, "a") + " " + g(cache, "d"));
+  IO.println(g(cache, "a") + " " + g(cache, "d"));
 }

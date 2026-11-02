@@ -18,6 +18,6 @@ void main() {
     var inter = new TreeSet<>(a);
     inter.retainAll(b);
 
-    System.out.println(join(union));
-    System.out.println(join(inter));
+    IO.println(join(union));
+    IO.println(join(inter));
 }

@@ -7,5 +7,5 @@ void main() {
         count++;
         i += t.length();
     }
-    System.out.println(count);
+    IO.println(count);
 }

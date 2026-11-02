@@ -6,5 +6,5 @@ static <T> T applyTwice(Function<T, T> f, T x) {
 
 void main() {
     Function<Integer, Integer> inc = n -> n + 1;
-    System.out.println(applyTwice(inc, 3));
+    IO.println(applyTwice(inc, 3));
 }

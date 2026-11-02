@@ -111,7 +111,7 @@ void main() {
     merged.subscribe(new Observer<Integer>() {
         @Override
         public void next(Integer value) {
-            System.out.println(value);
+            IO.println(value);
         }
 
         @Override

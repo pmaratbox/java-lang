@@ -8,5 +8,5 @@ void main() {
     var list = num.sepBy(Scanners.isChar(','));
     var nums = list.parse("1,2,3");
     var sum = nums.stream().mapToInt(Integer::intValue).sum();
-    System.out.println(sum);
+    IO.println(sum);
 }

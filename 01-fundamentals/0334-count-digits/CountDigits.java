@@ -5,5 +5,5 @@ void main() {
         count++;
         n /= 10;
     } while (n != 0);
-    System.out.println(count);
+    IO.println(count);
 }

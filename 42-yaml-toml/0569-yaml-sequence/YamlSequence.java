@@ -10,5 +10,5 @@ void main() {
   @SuppressWarnings("unchecked")
   var fruits = (List<Object>) d.get("fruits");
   var out = fruits.stream().map(Object::toString).collect(Collectors.joining(","));
-  System.out.println(out);
+  IO.println(out);
 }

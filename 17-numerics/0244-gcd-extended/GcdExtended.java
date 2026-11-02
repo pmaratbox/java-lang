@@ -8,5 +8,5 @@ static long[] egcd(long a, long b) {
 
 void main() {
     var r = egcd(30, 12);
-    System.out.println(r[0] + " " + r[1] + " " + r[2]);
+    IO.println(r[0] + " " + r[1] + " " + r[2]);
 }

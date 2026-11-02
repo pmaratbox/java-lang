@@ -8,6 +8,6 @@ void main() {
     var ints = List.of(1, 2, 3);
     var strs = List.of("a", "b", "c");
 
-    System.out.println("first int: " + first(ints));
-    System.out.println("first string: " + first(strs));
+    IO.println("first int: " + first(ints));
+    IO.println("first string: " + first(strs));
 }

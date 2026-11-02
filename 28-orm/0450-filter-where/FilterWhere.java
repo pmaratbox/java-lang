@@ -21,5 +21,5 @@ void main() throws Exception {
     .where(field("age", Integer.class).ge(30))
     .orderBy(field("id"))
     .fetch();
-  for (var rec : r) System.out.println(rec.get("name", String.class));
+  for (var rec : r) IO.println(rec.get("name", String.class));
 }

@@ -6,5 +6,5 @@ import java.io.File;
 void main() {
   var cfg = ConfigFactory.parseFile(new File("app.json"));
   // Read the array `hosts` and join its elements with commas.
-  System.out.println(String.join(",", cfg.getStringList("hosts")));
+  IO.println(String.join(",", cfg.getStringList("hosts")));
 }

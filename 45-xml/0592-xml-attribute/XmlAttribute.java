@@ -9,5 +9,5 @@ void main() throws Exception {
   var d = DocumentBuilderFactory.newInstance().newDocumentBuilder()
                .parse(new ByteArrayInputStream(DOC.getBytes()));
   var first = (Element) d.getElementsByTagName("book").item(0);
-  System.out.println(first.getAttribute("id"));   // b1
+  IO.println(first.getAttribute("id"));   // b1
 }

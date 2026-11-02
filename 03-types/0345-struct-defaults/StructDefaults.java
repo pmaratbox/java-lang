@@ -10,6 +10,6 @@ record Point(int x, int y) {
 void main() {
     var a = Point.defaults();
     var b = Point.defaults().withX(5);
-    System.out.println(a.x() + " " + a.y());
-    System.out.println(b.x() + " " + b.y());
+    IO.println(a.x() + " " + a.y());
+    IO.println(b.x() + " " + b.y());
 }

@@ -23,7 +23,7 @@ void main() throws Exception {
   var c = HttpClient.newHttpClient();
   var r = c.send(HttpRequest.newBuilder(URI.create(base + "/hello")).build(),
                  HttpResponse.BodyHandlers.ofString());
-  System.out.println(r.statusCode()); // 200
+  IO.println(r.statusCode()); // 200
 
   s.stop(0);
 }

@@ -14,5 +14,5 @@ void main() throws Exception {
 
   var firstBook = (Element) d.getElementsByTagName("book").item(0);
   var title = firstBook.getElementsByTagName("title").item(0).getTextContent();
-  System.out.println(title);
+  IO.println(title);
 }

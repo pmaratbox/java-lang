@@ -6,5 +6,5 @@ void main() {
         a = b;
         b = c;
     }
-    System.out.println(b);
+    IO.println(b);
 }

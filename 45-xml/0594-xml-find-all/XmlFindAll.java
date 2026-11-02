@@ -10,5 +10,5 @@ void main() throws Exception {
   var bs = d.getElementsByTagName("book");
   var titles = new StringJoiner(",");
   for (var i = 0; i < bs.getLength(); i++) titles.add(text((Element) bs.item(i), "title"));
-  System.out.println(titles);
+  IO.println(titles);
 }

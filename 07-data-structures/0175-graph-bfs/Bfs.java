@@ -27,5 +27,5 @@ void main() {
             }
         }
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

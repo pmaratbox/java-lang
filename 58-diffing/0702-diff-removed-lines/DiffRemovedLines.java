@@ -15,5 +15,5 @@ void main() throws Exception {
       removed.addAll(d.getSource().getLines());
     }
   }
-  System.out.println(String.join(",", removed));
+  IO.println(String.join(",", removed));
 }

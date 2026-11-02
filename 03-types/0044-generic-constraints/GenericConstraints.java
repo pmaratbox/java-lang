@@ -3,6 +3,6 @@ static <T extends Comparable<T>> T largest(T a, T b) {
 }
 
 void main() {
-    System.out.println(largest(3, 9));
-    System.out.println(largest("apple", "pear"));
+    IO.println(largest(3, 9));
+    IO.println(largest("apple", "pear"));
 }

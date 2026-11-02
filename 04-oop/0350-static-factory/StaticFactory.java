@@ -19,6 +19,6 @@ class Color {
 public class StaticFactory {
     void main() {
         var c = Color.fromHex("#ff0000");
-        System.out.println(c.r + " " + c.g + " " + c.b);
+        IO.println(c.r + " " + c.g + " " + c.b);
     }
 }

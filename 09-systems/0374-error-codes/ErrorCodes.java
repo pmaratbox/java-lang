@@ -6,5 +6,5 @@ void main() {
         1, "denied",
         2, "not found"
     );
-    System.out.println(messages.get(2));
+    IO.println(messages.get(2));
 }

@@ -21,5 +21,5 @@ void main() {
             if (--indeg[v] == 0) pq.add(v);
         }
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

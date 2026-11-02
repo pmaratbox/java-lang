@@ -9,5 +9,5 @@ void main() {
             .filter(n -> !remove.contains(n))
             .map(String::valueOf)
             .collect(Collectors.joining(" "));
-    System.out.println(result);
+    IO.println(result);
 }

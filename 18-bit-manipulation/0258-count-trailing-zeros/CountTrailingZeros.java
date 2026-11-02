@@ -1,4 +1,4 @@
 void main() {
     var n = 8;
-    System.out.println(Integer.numberOfTrailingZeros(n));
+    IO.println(Integer.numberOfTrailingZeros(n));
 }

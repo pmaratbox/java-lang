@@ -10,5 +10,5 @@ void main() {
     var doubled =
         Scanners.INTEGER.map(Integer::parseInt).map(n -> n * 2);
     int result = doubled.parse("21");
-    System.out.println(result);
+    IO.println(result);
 }

@@ -13,5 +13,5 @@ void main() throws Exception {
     var b = (Element) bs.item(i);
     if (b.getAttribute("lang").equals("en")) en.add(text(b, "title"));
   }
-  System.out.println(en);   // Go
+  IO.println(en);   // Go
 }

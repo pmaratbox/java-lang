@@ -16,6 +16,6 @@ public class DiInterface {
       }
     });
     var animal = inj.getInstance(Animal.class);
-    System.out.println(animal.sound());
+    IO.println(animal.sound());
   }
 }

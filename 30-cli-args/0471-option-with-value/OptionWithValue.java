@@ -11,6 +11,6 @@ public class OptionWithValue {
   void main() {
     var cli = new OptionWithValue();
     new CommandLine(cli).parseArgs("--name", "alice");
-    System.out.println(cli.name);
+    IO.println(cli.name);
   }
 }

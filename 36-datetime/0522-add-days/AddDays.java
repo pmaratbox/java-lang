@@ -7,5 +7,5 @@ void main() {
     // Date arithmetic via the library: add 10 days.
     var result = start.plusDays(10);
     // Default LocalDate.toString() is ISO-8601 (yyyy-MM-dd).
-    System.out.println(result);
+    IO.println(result);
 }

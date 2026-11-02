@@ -20,5 +20,5 @@ void main() throws Exception {
     }
   }
   var unchanged = a.size() - removed.size();
-  System.out.println(added.size() + " " + removed.size() + " " + unchanged);
+  IO.println(added.size() + " " + removed.size() + " " + unchanged);
 }

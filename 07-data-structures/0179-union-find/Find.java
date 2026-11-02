@@ -22,5 +22,5 @@ void main() {
 
     union(0, 1);
     union(2, 3);
-    System.out.println((connected(0, 1) ? "yes" : "no") + " " + (connected(0, 2) ? "yes" : "no"));
+    IO.println((connected(0, 1) ? "yes" : "no") + " " + (connected(0, 2) ? "yes" : "no"));
 }

@@ -6,12 +6,12 @@ void main() {
     for (var c : coins) {
         total += c;
         if (total >= price) {
-            System.out.println("dispensed");
+            IO.println("dispensed");
             dispensed = true;
             break;
         }
     }
     if (!dispensed) {
-        System.out.println("waiting");
+        IO.println("waiting");
     }
 }

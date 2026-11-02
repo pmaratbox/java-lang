@@ -7,5 +7,5 @@ void main() {
         var w = words[i];
         result.append(Character.toUpperCase(w.charAt(0))).append(w.substring(1));
     }
-    System.out.println(result);
+    IO.println(result);
 }

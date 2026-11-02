@@ -17,5 +17,5 @@ void main() throws Exception {
 
   // Normalize \r\n -> \n and strip the trailing newline.
   var csv = sw.toString().replace("\r\n", "\n").replaceAll("\n+$", "");
-  System.out.println(csv);
+  IO.println(csv);
 }

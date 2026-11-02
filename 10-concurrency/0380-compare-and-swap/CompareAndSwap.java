@@ -18,5 +18,5 @@ void main() throws InterruptedException {
         ts[i].start();
     }
     for (var t : ts) t.join();
-    System.out.println(value.get());
+    IO.println(value.get());
 }

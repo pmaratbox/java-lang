@@ -15,6 +15,6 @@ static String show(Result r) {
 }
 
 void main() {
-    System.out.println(show(safeDiv(10, 2)));
-    System.out.println(show(safeDiv(1, 0)));
+    IO.println(show(safeDiv(10, 2)));
+    IO.println(show(safeDiv(1, 0)));
 }

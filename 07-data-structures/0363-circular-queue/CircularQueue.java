@@ -33,6 +33,6 @@ public class CircularQueue {
             if (i > 0) sb.append(' ');
             sb.append(q.data[(q.head + i) % q.capacity]);
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

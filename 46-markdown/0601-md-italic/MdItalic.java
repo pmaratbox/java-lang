@@ -11,5 +11,5 @@ static String render(String src) {
 }
 
 void main() {
-  System.out.println(render("*italic*"));   // <p><em>italic</em></p>
+  IO.println(render("*italic*"));   // <p><em>italic</em></p>
 }

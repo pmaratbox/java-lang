@@ -6,5 +6,5 @@ static long factorial(long n) {
 }
 
 void main() {
-    System.out.println("factorial(5) = " + factorial(5));
+    IO.println("factorial(5) = " + factorial(5));
 }

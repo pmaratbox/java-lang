@@ -6,5 +6,5 @@ void main() {
     for (var c : coeffs) {
         result = result * x + c;
     }
-    System.out.println(result);
+    IO.println(result);
 }

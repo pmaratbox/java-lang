@@ -39,7 +39,7 @@ static final class Scheduler {
 
 void main() {
     var sched = new Scheduler();
-    IntConsumer sink = n -> System.out.println(n);
+    IntConsumer sink = n -> IO.println(n);
 
     // inner(n): schedules (now+5 -> n), (now+30 -> n*10).
     // Returns a canceller for its still-pending emissions.

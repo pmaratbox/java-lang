@@ -21,5 +21,5 @@ void main() {
   addE(g, "c", "d", 1);
   addE(g, "d", "e", 1);
 
-  System.out.println(new ConnectivityInspector<>(g).pathExists("a", "e"));
+  IO.println(new ConnectivityInspector<>(g).pathExists("a", "e"));
 }

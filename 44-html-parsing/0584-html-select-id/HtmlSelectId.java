@@ -10,5 +10,5 @@ void main() {
     + "<a href=\"https://example.com\">site</a>\n<div class=\"content\"><p>first</p><p>second</p></div>\n</body></html>";
   var d = Jsoup.parse(DOC);
   // CSS `#status` selects the element whose id is "status".
-  System.out.println(d.selectFirst("#status").text());
+  IO.println(d.selectFirst("#status").text());
 }

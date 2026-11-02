@@ -1,3 +1,3 @@
 void main() {
-    System.out.println("square(8) = " + Mathutil.square(8));
+    IO.println("square(8) = " + Mathutil.square(8));
 }

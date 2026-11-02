@@ -14,5 +14,5 @@ void main() {
   fsm.start();
   fsm.fire("submit");
   fsm.fire("approve");
-  System.out.println(fsm.getCurrentState().toString().toLowerCase());
+  IO.println(fsm.getCurrentState().toString().toLowerCase());
 }

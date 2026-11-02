@@ -9,5 +9,5 @@ static boolean isPerfect(int n) {
 void main() {
     var a = isPerfect(6) ? "yes" : "no";
     var b = isPerfect(8) ? "yes" : "no";
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

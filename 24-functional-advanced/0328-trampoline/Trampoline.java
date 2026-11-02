@@ -16,5 +16,5 @@ static Bounce<Integer> sum(int n, int acc) {
 }
 
 void main() {
-    System.out.println(run(sum(100, 0)));
+    IO.println(run(sum(100, 0)));
 }

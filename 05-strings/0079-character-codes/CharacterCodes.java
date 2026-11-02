@@ -1,3 +1,3 @@
 void main() {
-    System.out.println((int) 'A' + " " + (char) 66);
+    IO.println((int) 'A' + " " + (char) 66);
 }

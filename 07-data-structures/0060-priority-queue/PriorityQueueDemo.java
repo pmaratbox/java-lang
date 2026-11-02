@@ -11,5 +11,5 @@ void main() {
     while (!pq.isEmpty()) {
         out.add(String.valueOf(pq.poll()));
     }
-    System.out.println(out);
+    IO.println(out);
 }

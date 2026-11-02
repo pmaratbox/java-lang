@@ -5,7 +5,7 @@ static class Handler {
     Handler setNext(Handler next) { this.next = next; return next; }
     void handle(int request) {
         if (request == level) {
-            System.out.println("handled by " + level);
+            IO.println("handled by " + level);
         } else if (next != null) {
             next.handle(request);
         }

@@ -13,5 +13,5 @@ void main(){
   for(var v: List.of("a","b","c","d","e")) g.addVertex(v);
   addE(g,"a","b",1); addE(g,"a","c",4); addE(g,"b","c",1);
   addE(g,"b","d",5); addE(g,"c","d",1); addE(g,"d","e",1);
-  System.out.println(g.degreeOf("b"));   // b connects to a, c, d -> 3
+  IO.println(g.degreeOf("b"));   // b connects to a, c, d -> 3
 }

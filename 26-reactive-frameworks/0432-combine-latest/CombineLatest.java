@@ -21,7 +21,7 @@ void main() {
     var sourceB = Mono.delay(Duration.ofMillis(20), s).map(t -> 10).flux();
 
     Flux.combineLatest(sourceA, sourceB, (x, y) -> "(" + x + ", " + y + ")")
-            .subscribe(v -> System.out.println(v));
+            .subscribe(v -> IO.println(v));
 
     s.advanceTimeBy(Duration.ofMillis(300));
 }

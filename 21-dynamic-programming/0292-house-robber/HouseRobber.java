@@ -6,5 +6,5 @@ void main() {
         prev = cur;
         cur = Math.max(cur, take);
     }
-    System.out.println(cur);
+    IO.println(cur);
 }

@@ -46,7 +46,7 @@ void main() {
 
     Observable<String> source = new Observable<>(obs -> {
         var k = ++subscriptions[0];
-        System.out.println("attempt " + k);
+        IO.println("attempt " + k);
         if (k < 3) {
             obs.error(new RuntimeException("fail"));
         } else {
@@ -56,8 +56,8 @@ void main() {
     });
 
     source.retry(2).subscribe(new Observer<String>() {
-        @Override public void next(String value) { System.out.println(value); }
-        @Override public void error(Throwable t) { System.out.println("error: " + t.getMessage()); }
+        @Override public void next(String value) { IO.println(value); }
+        @Override public void error(Throwable t) { IO.println("error: " + t.getMessage()); }
         @Override public void complete() { }
     });
 }

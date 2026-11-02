@@ -8,5 +8,5 @@ void main() throws Exception {
     for (var b : digest) {
         sb.append(String.format("%02x", b));
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

@@ -7,5 +7,5 @@ void main() {
             else dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
         }
     }
-    System.out.println(dp[m - 1][n - 1]);
+    IO.println(dp[m - 1][n - 1]);
 }

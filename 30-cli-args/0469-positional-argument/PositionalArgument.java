@@ -9,6 +9,6 @@ public class PositionalArgument {
   void main() {
     var cmd = new PositionalArgument();
     new CommandLine(cmd).parseArgs("alice");
-    System.out.println(cmd.name);
+    IO.println(cmd.name);
   }
 }

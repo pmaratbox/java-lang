@@ -7,5 +7,5 @@ static IntFunction<IntUnaryOperator> add() {
 
 void main() {
     var add = add();
-    System.out.println(add.apply(2).applyAsInt(3));
+    IO.println(add.apply(2).applyAsInt(3));
 }

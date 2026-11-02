@@ -7,5 +7,5 @@ void main() {
         if (i > 0) out.append(" ");
         out.append(String.format("%02x", bytes[i] & 0xff));
     }
-    System.out.println(out.toString());
+    IO.println(out.toString());
 }

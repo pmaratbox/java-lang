@@ -6,5 +6,5 @@ void main() {
     Set<Integer> a = HashSet.of(1, 2, 3);
     Set<Integer> b = HashSet.of(3, 4, 5);
     Set<Integer> u = a.union(b);
-    System.out.println(u.toSortedSet().mkString(" "));
+    IO.println(u.toSortedSet().mkString(" "));
 }

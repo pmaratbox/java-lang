@@ -26,8 +26,8 @@ static final class Subject<T> {
 void main() {
     var subject = new Subject<>(0);
 
-    subject.subscribe(v -> System.out.println("A: " + v));
+    subject.subscribe(v -> IO.println("A: " + v));
     subject.next(1);
-    subject.subscribe(v -> System.out.println("B: " + v));
+    subject.subscribe(v -> IO.println("B: " + v));
     subject.next(2);
 }

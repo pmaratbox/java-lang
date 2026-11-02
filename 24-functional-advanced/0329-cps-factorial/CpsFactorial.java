@@ -6,5 +6,5 @@ static int factCps(int n, Function<Integer, Integer> k) {
 }
 
 void main() {
-    System.out.println(factCps(5, x -> x));
+    IO.println(factCps(5, x -> x));
 }

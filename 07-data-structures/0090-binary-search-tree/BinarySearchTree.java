@@ -29,5 +29,5 @@ void main() {
     inorder(root, out);
     var sj = new StringJoiner(" ");
     for (int x : out) sj.add(String.valueOf(x));
-    System.out.println(sj);
+    IO.println(sj);
 }

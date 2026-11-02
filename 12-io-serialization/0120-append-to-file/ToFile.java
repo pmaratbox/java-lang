@@ -10,5 +10,5 @@ void main() throws IOException {
     Files.write(file, List.of("b"), StandardOpenOption.APPEND);
     var lines = Files.readAllLines(file);
     Files.delete(file);
-    System.out.println(String.join(" ", lines));
+    IO.println(String.join(" ", lines));
 }

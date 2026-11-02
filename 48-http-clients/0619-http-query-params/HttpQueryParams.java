@@ -25,7 +25,7 @@ void main() throws Exception {
   var r = c.send(
       HttpRequest.newBuilder(URI.create(base + "/greet?name=Bob")).build(),
       HttpResponse.BodyHandlers.ofString());
-  System.out.println(r.body());   // hi Bob
+  IO.println(r.body());   // hi Bob
 
   s.stop(0);
 }

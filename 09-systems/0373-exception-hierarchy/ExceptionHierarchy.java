@@ -15,7 +15,7 @@ public class ExceptionHierarchy {
         try {
             throw new SpecificError("boom");
         } catch (BaseError e) {
-            System.out.println("caught base");
+            IO.println("caught base");
         }
     }
 }

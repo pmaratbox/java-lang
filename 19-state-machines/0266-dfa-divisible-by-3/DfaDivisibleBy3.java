@@ -10,5 +10,5 @@ static boolean divisibleBy3(String bits) {
 void main() {
     var a = divisibleBy3("110") ? "yes" : "no";
     var b = divisibleBy3("100") ? "yes" : "no";
-    System.out.println(a + " " + b);
+    IO.println(a + " " + b);
 }

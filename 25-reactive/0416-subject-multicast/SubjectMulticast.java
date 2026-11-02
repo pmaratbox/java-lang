@@ -18,8 +18,8 @@ static final class Subject<T> {
 
 void main() {
     Subject<Integer> subject = new Subject<>();
-    subject.subscribe(v -> System.out.println("obs1: " + v));
-    subject.subscribe(v -> System.out.println("obs2: " + v));
+    subject.subscribe(v -> IO.println("obs1: " + v));
+    subject.subscribe(v -> IO.println("obs2: " + v));
     subject.next(1);
     subject.next(2);
 }

@@ -6,5 +6,5 @@ void main() {
     var longest = words.stream()
             .max(Comparator.comparingInt(String::length))
             .orElseThrow();
-    System.out.println(longest);
+    IO.println(longest);
 }

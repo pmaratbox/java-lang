@@ -9,5 +9,5 @@ void main() {
   // It is merged with HIGHER priority than the file, overriding `name`.
   System.setProperty("name", "from-env");
   var cfg = ConfigFactory.systemProperties().withFallback(file);
-  System.out.println(cfg.getString("name"));
+  IO.println(cfg.getString("name"));
 }

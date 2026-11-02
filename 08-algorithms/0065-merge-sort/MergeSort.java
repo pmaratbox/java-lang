@@ -28,5 +28,5 @@ void main() {
     for (int x : sorted) {
         out.add(String.valueOf(x));
     }
-    System.out.println(out);
+    IO.println(out);
 }

@@ -13,6 +13,6 @@ void main() throws Exception {
   var base = "http://127.0.0.1:" + s.getAddress().getPort();   // never PRINT the port
   var c = HttpClient.newHttpClient();
   var r = c.send(HttpRequest.newBuilder(URI.create(base + "/info")).build(), HttpResponse.BodyHandlers.ofString());
-  System.out.println(r.headers().firstValue("X-Count").get());  // 7
+  IO.println(r.headers().firstValue("X-Count").get());  // 7
   s.stop(0);
 }

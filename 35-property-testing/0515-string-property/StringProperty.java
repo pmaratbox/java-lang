@@ -9,5 +9,5 @@ void main() {
   // Property: the length of s+s equals 2*len(s) for generated strings s.
   qt().forAll(strings().allPossible().ofLengthBetween(0, 50))
       .check(s -> (s + s).length() == 2 * s.length());
-  System.out.println("passed");
+  IO.println("passed");
 }

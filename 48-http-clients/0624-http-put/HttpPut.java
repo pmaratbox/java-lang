@@ -15,6 +15,6 @@ void main() throws Exception {
   var r = c.send(
       HttpRequest.newBuilder(URI.create(base + "/item")).PUT(HttpRequest.BodyPublishers.noBody()).build(),
       HttpResponse.BodyHandlers.ofString());
-  System.out.println(r.body());   // updated
+  IO.println(r.body());   // updated
   s.stop(0);
 }

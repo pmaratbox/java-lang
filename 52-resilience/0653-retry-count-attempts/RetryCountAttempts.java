@@ -16,5 +16,5 @@ void main() {
     // Retries exhausted: Failsafe rethrows the last failure after every attempt.
   }
   // The library drove 5 attempts (1 initial + 4 retries).
-  System.out.println(attempts.get());
+  IO.println(attempts.get());
 }

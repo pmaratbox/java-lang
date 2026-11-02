@@ -37,5 +37,5 @@ static class PizzaBuilder {
 
 void main() {
     var pizza = new PizzaBuilder().setSize("M").addTopping("cheese").build();
-    System.out.println(pizza);
+    IO.println(pizza);
 }

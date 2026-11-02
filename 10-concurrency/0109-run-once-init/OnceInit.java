@@ -25,6 +25,6 @@ public class OnceInit {
         for (var t : threads) {
             t.join();
         }
-        System.out.println("init count: " + initCount.get());
+        IO.println("init count: " + initCount.get());
     }
 }

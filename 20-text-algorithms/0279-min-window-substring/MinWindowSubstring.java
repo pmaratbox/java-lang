@@ -10,5 +10,5 @@ void main() {
             if (++need[s.charAt(l++)] > 0) required++;
         }
     }
-    System.out.println(s.substring(bestStart, bestStart + bestLen));
+    IO.println(s.substring(bestStart, bestStart + bestLen));
 }

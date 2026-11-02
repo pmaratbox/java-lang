@@ -11,6 +11,6 @@ public class ChoiceOption {
   void main() {
     var p = new ChoiceOption();
     new CommandLine(p).parseArgs("--color", "green");
-    System.out.println(p.color);
+    IO.println(p.color);
   }
 }

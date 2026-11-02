@@ -27,5 +27,5 @@ void main() {
     for (Person p : people) {
         names.add(p.name);
     }
-    System.out.println(String.join(" ", names));
+    IO.println(String.join(" ", names));
 }

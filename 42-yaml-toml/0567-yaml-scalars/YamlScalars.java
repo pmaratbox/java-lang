@@ -6,5 +6,5 @@ import java.util.Map;
 void main() {
   var yaml = new Yaml();
   Map<String, Object> doc = yaml.load("name: Alice\nrole: admin\nage: 30\n");
-  System.out.println(doc.get("name") + " " + doc.get("role") + " " + doc.get("age"));
+  IO.println(doc.get("name") + " " + doc.get("role") + " " + doc.get("age"));
 }

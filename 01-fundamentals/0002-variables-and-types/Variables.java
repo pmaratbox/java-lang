@@ -4,8 +4,8 @@ void main() {
     var greeting = "hello";
     var flag = true;
 
-    System.out.println("int: " + n);
-    System.out.println("float: " + pi);
-    System.out.println("string: " + greeting);
-    System.out.println("bool: " + flag);
+    IO.println("int: " + n);
+    IO.println("float: " + pi);
+    IO.println("string: " + greeting);
+    IO.println("bool: " + flag);
 }

@@ -10,6 +10,6 @@ public class DefaultValue {
     var obj = new DefaultValue();
     // Parse a hardcoded EMPTY argv so output is deterministic.
     new CommandLine(obj).parseArgs();
-    System.out.println(obj.count);
+    IO.println(obj.count);
   }
 }

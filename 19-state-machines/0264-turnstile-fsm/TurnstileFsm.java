@@ -13,5 +13,5 @@ void main() {
         if (sb.length() > 0) sb.append(' ');
         sb.append(state);
     }
-    System.out.println(sb.toString());
+    IO.println(sb.toString());
 }

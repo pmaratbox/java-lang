@@ -15,7 +15,7 @@ public class TreeDiameter {
         var b = new Node("B");
         var root = new Node("root", a, b);
         height(root);
-        System.out.println(best);
+        IO.println(best);
     }
 }
 

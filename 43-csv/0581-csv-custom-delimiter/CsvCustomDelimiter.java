@@ -10,5 +10,5 @@ void main() throws Exception {
       .withCSVParser(new CSVParserBuilder().withSeparator(';').build())
       .build();
   var rows = reader.readAll();
-  System.out.println(String.join(",", rows.get(1)));   // 1,2,3
+  IO.println(String.join(",", rows.get(1)));   // 1,2,3
 }

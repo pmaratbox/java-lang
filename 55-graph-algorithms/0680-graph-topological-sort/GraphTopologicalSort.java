@@ -16,5 +16,5 @@ void main() {
 
   List<String> order = new ArrayList<>();
   new TopologicalOrderIterator<>(dag).forEachRemaining(order::add);
-  System.out.println(String.join(",", order));
+  IO.println(String.join(",", order));
 }

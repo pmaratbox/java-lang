@@ -27,7 +27,7 @@ void main() {
     };
 
     source.subscribe(new Observer<>(
-            value -> System.out.println(value),
-            () -> System.out.println("done")
+            value -> IO.println(value),
+            () -> IO.println("done")
     ));
 }

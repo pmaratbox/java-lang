@@ -14,7 +14,7 @@ public class Subcommand {
 
     @Override
     public void run() {
-      System.out.println(a + b);
+      IO.println(a + b);
     }
   }
 

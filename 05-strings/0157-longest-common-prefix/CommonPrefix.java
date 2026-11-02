@@ -9,5 +9,5 @@ void main() {
         }
         prefix = prefix.substring(0, i);
     }
-    System.out.println(prefix);
+    IO.println(prefix);
 }

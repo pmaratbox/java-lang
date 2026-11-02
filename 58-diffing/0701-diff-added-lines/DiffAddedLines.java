@@ -19,5 +19,5 @@ void main() throws Exception {
     }
   }
 
-  System.out.println(String.join(",", added));
+  IO.println(String.join(",", added));
 }

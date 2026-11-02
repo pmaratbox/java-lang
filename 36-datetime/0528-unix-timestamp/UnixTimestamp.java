@@ -9,5 +9,5 @@ void main() {
     // Convert to an Instant and read the Unix epoch SECONDS computed by the library.
     var instant = fixed.toInstant();
     var epochSeconds = instant.getEpochSecond();
-    System.out.println(epochSeconds);
+    IO.println(epochSeconds);
 }

@@ -16,6 +16,6 @@ void main() {
         original.get("user").get().put("age", 31));
 
     // New map reflects the change; the original is unchanged.
-    System.out.println(updated.get("user").get().get("age").get());
-    System.out.println(original.get("user").get().get("age").get());
+    IO.println(updated.get("user").get().get("age").get());
+    IO.println(original.get("user").get().get("age").get());
 }

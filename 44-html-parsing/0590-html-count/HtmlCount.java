@@ -10,5 +10,5 @@ void main() {
     + "<a href=\"https://example.com\">site</a>\n<div class=\"content\"><p>first</p><p>second</p></div>\n</body></html>";
   var d = Jsoup.parse(DOC);
   // CSS `.item` selects every element with class "item"; `.size()` counts the matches.
-  System.out.println(d.select(".item").size());
+  IO.println(d.select(".item").size());
 }

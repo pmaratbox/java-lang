@@ -11,5 +11,5 @@ void main() {
         }
         result.append(ch).append(count);
     }
-    System.out.println(result);
+    IO.println(result);
 }

@@ -8,5 +8,5 @@ void main() {
   c.put("b", 2);
   c.put("c", 3);
   c.put("d", 4);
-  System.out.println(c.size());
+  IO.println(c.size());
 }

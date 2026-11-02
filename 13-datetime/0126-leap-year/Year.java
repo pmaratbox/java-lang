@@ -3,7 +3,7 @@ static boolean isLeap(int y) {
 }
 
 void main() {
-    System.out.println(
+    IO.println(
         (isLeap(2000) ? "yes" : "no") + " " +
         (isLeap(1900) ? "yes" : "no") + " " +
         (isLeap(2024) ? "yes" : "no"));

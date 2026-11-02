@@ -2,7 +2,7 @@ static void check(int arg) {
     if (arg <= 0) {
         throw new IllegalArgumentException("must be positive");
     }
-    System.out.println("ok");
+    IO.println("ok");
 }
 
 void main() {
@@ -10,6 +10,6 @@ void main() {
     try {
         check(-1);
     } catch (IllegalArgumentException e) {
-        System.out.println("error: " + e.getMessage());
+        IO.println("error: " + e.getMessage());
     }
 }

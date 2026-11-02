@@ -8,5 +8,5 @@ void main() {
         heap.add(v);
         if (heap.size() > k) heap.poll();
     }
-    System.out.println(heap.peek());
+    IO.println(heap.peek());
 }

@@ -14,5 +14,5 @@ static String hex(Object v) throws Exception {
 }
 
 void main() throws Exception {
-  System.out.println(hex((Object) null));
+  IO.println(hex((Object) null));
 }

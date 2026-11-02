@@ -20,6 +20,6 @@ public class SegmentTreeSum {
 
     static void main() {
         var st = new SegmentTreeSum(new int[]{1, 2, 3, 4, 5});
-        System.out.println(st.query(1, 3));
+        IO.println(st.query(1, 3));
     }
 }

@@ -4,5 +4,5 @@ void main() {
     for (var i = 0; i < 5; i++) {
         wrapped.run();
     }
-    System.out.println("calls: " + count[0]);
+    IO.println("calls: " + count[0]);
 }

@@ -19,5 +19,5 @@ void main() {
             sb.append(i);
         }
     }
-    System.out.println(sb.toString());
+    IO.println(sb.toString());
 }

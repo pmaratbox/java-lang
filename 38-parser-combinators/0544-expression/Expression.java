@@ -8,5 +8,5 @@ void main() {
     var sumExpr = num.sepBy(Scanners.isChar('+'));
     var terms = sumExpr.parse("10+20+30");
     var total = terms.stream().mapToInt(Integer::intValue).sum();
-    System.out.println(total);
+    IO.println(total);
 }

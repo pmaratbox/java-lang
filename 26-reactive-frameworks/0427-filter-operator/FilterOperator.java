@@ -6,5 +6,5 @@ import reactor.core.publisher.Flux;
 void main() {
     Flux.range(1, 6)
         .filter(x -> x % 2 == 0)
-        .subscribe(v -> System.out.println(v));
+        .subscribe(v -> IO.println(v));
 }

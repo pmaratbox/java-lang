@@ -8,5 +8,5 @@ void main() {
       .zip(List.of("a", "b", "c"))
       .map(t -> t._1 + "" + t._2)
       .mkString(",");
-  System.out.println(result);
+  IO.println(result);
 }

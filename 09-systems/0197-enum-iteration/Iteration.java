@@ -6,5 +6,5 @@ void main() {
         if (sb.length() > 0) sb.append(' ');
         sb.append(c.name());
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

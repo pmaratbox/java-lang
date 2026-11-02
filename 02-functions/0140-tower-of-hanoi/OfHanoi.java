@@ -4,5 +4,5 @@ static int moves(int n) {
 }
 
 void main() {
-    System.out.println(moves(3));
+    IO.println(moves(3));
 }

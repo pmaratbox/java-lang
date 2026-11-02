@@ -8,5 +8,5 @@ record ProductId(int value) {
 void main() {
     var u = new UserId(1);
     var p = new ProductId(2);
-    System.out.println(u + " " + p);
+    IO.println(u + " " + p);
 }

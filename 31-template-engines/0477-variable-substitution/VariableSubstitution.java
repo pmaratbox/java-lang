@@ -12,6 +12,5 @@ void main() throws Exception {
   data.put("name", "alice");
   var out = new StringWriter();
   t.process(data, out);
-  System.out.print(out.toString());
-  System.out.println();
+  IO.println(out.toString());
 }

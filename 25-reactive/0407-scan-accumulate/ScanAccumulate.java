@@ -26,5 +26,5 @@ static Observable scan(Observable source, int acc, BiFunction<Integer, Integer, 
 void main() {
     var source = of(1, 2, 3, 4);
     var sums = scan(source, 0, (s, v) -> s + v);
-    sums.subscribe(System.out::println);
+    sums.subscribe(IO::println);
 }

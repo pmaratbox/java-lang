@@ -24,6 +24,6 @@ public class VirtualDispatch {
             if (sb.length() > 0) sb.append(' ');
             sb.append(s.describe());
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

@@ -9,7 +9,7 @@ void main() {
             append(out, "PLUS");
         }
     }
-    System.out.println(out.toString());
+    IO.println(out.toString());
 }
 
 static void append(StringBuilder out, String tok) {

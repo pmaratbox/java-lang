@@ -15,5 +15,5 @@ void main() {
     return "ok"; // second attempt returns the value
   });
   // Print the returned value, not the attempt count.
-  System.out.println(result); // ok
+  IO.println(result); // ok
 }

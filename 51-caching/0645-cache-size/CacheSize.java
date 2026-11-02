@@ -6,5 +6,5 @@ void main() {
   LRUMap<String, Integer> c = new LRUMap<>(5);
   c.put("a", 1);
   c.put("b", 2);
-  System.out.println(c.size());
+  IO.println(c.size());
 }

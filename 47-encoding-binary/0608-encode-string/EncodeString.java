@@ -14,5 +14,5 @@ static String hex(Object v) throws Exception {
 }
 
 void main() throws Exception {
-  System.out.println(hex("hello")); // a568656c6c6f
+  IO.println(hex("hello")); // a568656c6c6f
 }

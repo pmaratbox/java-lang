@@ -17,5 +17,5 @@ static class Account {
 void main() {
     var account = new Account(100);
     account.deposit(50);
-    System.out.println(account.getBalance());
+    IO.println(account.getBalance());
 }

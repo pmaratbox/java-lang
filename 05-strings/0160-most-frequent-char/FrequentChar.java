@@ -15,5 +15,5 @@ void main() {
             best = e.getKey();
         }
     }
-    System.out.println(best);
+    IO.println(best);
 }

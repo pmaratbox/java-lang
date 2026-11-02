@@ -3,5 +3,5 @@ static int parity(int n) {
 }
 
 void main() {
-    System.out.println(parity(7) + " " + parity(5));
+    IO.println(parity(7) + " " + parity(5));
 }

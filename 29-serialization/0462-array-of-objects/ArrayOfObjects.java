@@ -7,5 +7,5 @@ record Person(int age, String name) {}
 
 void main() throws Exception {
   var people = List.of(new Person(30, "alice"), new Person(25, "bob"));
-  System.out.println(new ObjectMapper().writeValueAsString(people));
+  IO.println(new ObjectMapper().writeValueAsString(people));
 }

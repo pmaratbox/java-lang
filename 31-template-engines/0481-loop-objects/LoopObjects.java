@@ -15,5 +15,5 @@ void main() throws Exception {
 
   Map<String,Object> m = new HashMap<>(); m.put("users", users);
   var w = new StringWriter(); t.process(m, w);
-  System.out.println(w.toString());
+  IO.println(w.toString());
 }

@@ -9,5 +9,5 @@ static int gcd(int a, int b) {
 
 void main() {
     int a = 4, b = 6;
-    System.out.println(a / gcd(a, b) * b);
+    IO.println(a / gcd(a, b) * b);
 }

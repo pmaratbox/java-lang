@@ -48,7 +48,7 @@ void main() {
         pipeline.accept(result, x);
     }
 
-    System.out.println(result.stream()
+    IO.println(result.stream()
             .map(String::valueOf)
             .collect(Collectors.joining(" ")));
 }

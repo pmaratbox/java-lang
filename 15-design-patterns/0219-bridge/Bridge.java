@@ -19,5 +19,5 @@ static class Circle extends Shape {
 
 void main() {
     Shape shape = new Circle(new Red());
-    System.out.println(shape.describe());
+    IO.println(shape.describe());
 }

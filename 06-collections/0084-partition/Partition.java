@@ -16,6 +16,6 @@ void main() {
         if (n % 2 == 0) evens.add(n);
         else odds.add(n);
     }
-    System.out.println("evens: " + join(evens));
-    System.out.println("odds: " + join(odds));
+    IO.println("evens: " + join(evens));
+    IO.println("odds: " + join(odds));
 }

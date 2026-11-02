@@ -26,5 +26,5 @@ void main() {
   fsm.fire("go");
 
   // The count comes from the per-transition action, not a literal.
-  System.out.println(fsm.count);
+  IO.println(fsm.count);
 }

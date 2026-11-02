@@ -14,6 +14,6 @@ void main() {
     try {
         check(200);
     } catch (TooLargeException e) {
-        System.out.println("error: " + e.getMessage());
+        IO.println("error: " + e.getMessage());
     }
 }

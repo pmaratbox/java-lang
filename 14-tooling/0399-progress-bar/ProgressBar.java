@@ -6,5 +6,5 @@ void main() {
     sb.append("#".repeat(filled));
     sb.append("-".repeat(width - filled));
     sb.append("]");
-    System.out.println(sb);
+    IO.println(sb);
 }

@@ -6,5 +6,5 @@ void main() {
         cur = Math.max(a[i], cur + a[i]);
         best = Math.max(best, cur);
     }
-    System.out.println(best);
+    IO.println(best);
 }

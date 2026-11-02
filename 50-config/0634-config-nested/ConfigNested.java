@@ -5,5 +5,5 @@ import com.typesafe.config.*;
 import java.io.File;
 void main() {
   var cfg = ConfigFactory.parseFile(new File("app.json"));
-  System.out.println(cfg.getInt("server.port"));
+  IO.println(cfg.getInt("server.port"));
 }

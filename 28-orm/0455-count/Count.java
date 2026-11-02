@@ -22,5 +22,5 @@ void main() throws Exception {
     .from(table("users"))
     .fetchOne(0, int.class);
 
-  System.out.println(total);
+  IO.println(total);
 }

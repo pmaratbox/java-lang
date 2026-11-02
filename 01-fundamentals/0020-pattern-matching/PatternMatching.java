@@ -8,6 +8,6 @@ static String word(int n) {
 
 void main() {
     for (var n : new int[]{1, 2, 5}) {
-        System.out.println(n + ": " + word(n));
+        IO.println(n + ": " + word(n));
     }
 }

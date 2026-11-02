@@ -17,5 +17,5 @@ void main() {
     push(3);
     push(1);
     push(2);
-    System.out.println("min: " + getMin());
+    IO.println("min: " + getMin());
 }

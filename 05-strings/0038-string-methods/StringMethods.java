@@ -5,5 +5,5 @@ void main() {
     var result = Arrays.stream("a,b,c".split(","))
         .map(String::toUpperCase)
         .collect(Collectors.joining("-"));
-    System.out.println(result);
+    IO.println(result);
 }

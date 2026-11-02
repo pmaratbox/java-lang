@@ -26,6 +26,6 @@ public class DiNested {
     // C depends on B depends on A — a 3-level chain.
     // Guice resolves the whole graph when we ask for C.
     var c = inj.getInstance(C.class);
-    System.out.println(c.v());
+    IO.println(c.v());
   }
 }

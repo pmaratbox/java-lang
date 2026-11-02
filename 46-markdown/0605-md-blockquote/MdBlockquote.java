@@ -11,5 +11,5 @@ static String render(String src) {
 }
 
 void main() {
-  System.out.println(render("> quote"));
+  IO.println(render("> quote"));
 }

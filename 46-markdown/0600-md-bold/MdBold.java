@@ -11,5 +11,5 @@ static String render(String src) {
 }
 
 void main() {
-  System.out.println(render("**bold**"));   // <p><strong>bold</strong></p>
+  IO.println(render("**bold**"));   // <p><strong>bold</strong></p>
 }

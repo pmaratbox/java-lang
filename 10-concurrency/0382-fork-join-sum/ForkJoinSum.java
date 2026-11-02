@@ -21,5 +21,5 @@ static class SumTask extends RecursiveTask<Integer> {
 void main() {
     var pool = new ForkJoinPool();
     int sum = pool.invoke(new SumTask(1, 9));
-    System.out.println(sum);
+    IO.println(sum);
 }

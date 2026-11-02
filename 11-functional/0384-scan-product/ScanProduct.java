@@ -8,5 +8,5 @@ void main() {
         acc *= x;
         sj.add(String.valueOf(acc));
     }
-    System.out.println(sj.toString());
+    IO.println(sj.toString());
 }

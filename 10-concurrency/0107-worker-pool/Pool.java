@@ -24,5 +24,5 @@ void main() throws Exception {
     for (int r : results) {
         sj.add(Integer.toString(r));
     }
-    System.out.println(sj);
+    IO.println(sj);
 }

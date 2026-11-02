@@ -7,7 +7,7 @@ void main() {
     Flux.range(1, Integer.MAX_VALUE)
         .take(3)
         .subscribe(
-            v -> System.out.println(v),
+            v -> IO.println(v),
             err -> System.err.println(err),
-            () -> System.out.println("completed"));
+            () -> IO.println("completed"));
 }

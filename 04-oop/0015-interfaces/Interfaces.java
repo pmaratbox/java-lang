@@ -18,6 +18,6 @@ record Square(int side) implements Shape {
 void main() {
     List<Shape> shapes = List.of(new Rectangle(3, 4), new Square(5));
     for (Shape s : shapes) {
-        System.out.println(s.name() + " area: " + s.area());
+        IO.println(s.name() + " area: " + s.area());
     }
 }

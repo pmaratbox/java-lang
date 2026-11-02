@@ -8,5 +8,5 @@ void main() {
       .grouped(2)
       .map(chunk -> chunk.mkString(","))
       .mkString("|");
-  System.out.println(result);
+  IO.println(result);
 }

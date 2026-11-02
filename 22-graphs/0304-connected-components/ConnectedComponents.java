@@ -21,5 +21,5 @@ void main() {
     }
     Set<Integer> roots = new HashSet<>();
     for (var i = 0; i < n; i++) roots.add(find(i));
-    System.out.println(roots.size());
+    IO.println(roots.size());
 }

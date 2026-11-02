@@ -17,5 +17,5 @@ void main() {
       .map(x -> x.getPropertyPath().toString().toLowerCase())
       .distinct().sorted()
       .collect(Collectors.joining("\n"));
-  System.out.println(out.isEmpty() ? "ok" : out);
+  IO.println(out.isEmpty() ? "ok" : out);
 }

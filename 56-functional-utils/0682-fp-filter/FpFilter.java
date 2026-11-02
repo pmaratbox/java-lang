@@ -7,5 +7,5 @@ void main() {
   var out = List.rangeClosed(1, 6)
       .filter(x -> x % 2 == 0)
       .mkString(",");
-  System.out.println(out);
+  IO.println(out);
 }

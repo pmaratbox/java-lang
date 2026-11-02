@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 void main() {
     Map<String, String> vars = new HashMap<>();
     vars.put("name", "Ada");
-    System.out.println(render("hi {name}", vars));
+    IO.println(render("hi {name}", vars));
 }
 
 static String render(String template, Map<String, String> vars) {

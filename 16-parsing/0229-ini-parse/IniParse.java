@@ -17,5 +17,5 @@ void main() {
             entries.add(section + "." + key + "=" + val);
         }
     }
-    for (String e : entries) System.out.println(e);
+    for (String e : entries) IO.println(e);
 }

@@ -19,5 +19,5 @@ void main() throws Exception {
       removed.addAll(d.getSource().getLines());
     }
   }
-  System.out.println(added.size() + " " + removed.size());
+  IO.println(added.size() + " " + removed.size());
 }

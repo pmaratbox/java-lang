@@ -20,7 +20,7 @@ void main() {
             Mono.delay(Duration.ofMillis(40), s).map(x -> 4),
             Mono.delay(Duration.ofMillis(60), s).map(x -> 6));
 
-    Flux.merge(sa, sb).subscribe(v -> System.out.println(v));
+    Flux.merge(sa, sb).subscribe(v -> IO.println(v));
 
     s.advanceTimeBy(Duration.ofMillis(300));
 }

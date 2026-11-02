@@ -14,12 +14,12 @@ void main() {
         if (fwd.length() > 0) fwd.append(' ');
         fwd.append(n.value);
     }
-    System.out.println(fwd);
+    IO.println(fwd);
 
     var bwd = new StringBuilder();
     for (var n = n3; n != null; n = n.prev) {
         if (bwd.length() > 0) bwd.append(' ');
         bwd.append(n.value);
     }
-    System.out.println(bwd);
+    IO.println(bwd);
 }

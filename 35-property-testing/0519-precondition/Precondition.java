@@ -9,5 +9,5 @@ void main() {
     qt().forAll(integers().between(0, 1000000))
         .assuming(n -> n > 0)
         .check(n -> n + 1 > n);
-    System.out.println("passed");
+    IO.println("passed");
 }

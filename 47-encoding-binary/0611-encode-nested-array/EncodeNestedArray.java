@@ -15,5 +15,5 @@ static String hex(Object v) throws Exception {
 
 void main() throws Exception {
   Object nested = List.of(List.of(1, 2), List.of(3, 4));
-  System.out.println(hex(nested)); // 92920102920304
+  IO.println(hex(nested)); // 92920102920304
 }

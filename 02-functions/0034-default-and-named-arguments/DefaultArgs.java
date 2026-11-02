@@ -7,6 +7,6 @@ static String greet(String name) {
 }
 
 void main() {
-    System.out.println(greet("Ada"));
-    System.out.println(greet("Ada", "Hi"));
+    IO.println(greet("Ada"));
+    IO.println(greet("Ada", "Hi"));
 }

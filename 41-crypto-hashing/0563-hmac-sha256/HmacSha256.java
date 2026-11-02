@@ -7,5 +7,5 @@ void main() throws Exception {
    var d = mac.doFinal("hello".getBytes("UTF-8"));
    var sb = new StringBuilder();
    for (var b : d) sb.append(String.format("%02x", b));
-   System.out.println(sb);
+   IO.println(sb);
 }

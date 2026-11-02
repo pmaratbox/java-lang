@@ -8,5 +8,5 @@ void main() {
   Map<String, Object> d = y.load("server:\n  host: localhost\n  port: 8080\n");
   @SuppressWarnings("unchecked")
   var server = (Map<String, Object>) d.get("server");
-  System.out.println(server.get("host") + ":" + server.get("port"));
+  IO.println(server.get("host") + ":" + server.get("port"));
 }

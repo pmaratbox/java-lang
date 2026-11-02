@@ -11,5 +11,5 @@ static long daysFromCivil(long y, long m, long d) {
 void main() {
     var a = daysFromCivil(2000, 1, 1);
     var b = daysFromCivil(2000, 12, 31);
-    System.out.println(b - a);
+    IO.println(b - a);
 }

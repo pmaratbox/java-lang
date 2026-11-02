@@ -4,5 +4,5 @@ void main() {
         if (n > 0) sb.append(' ');
         sb.append(n ^ (n >> 1));
     }
-    System.out.println(sb);
+    IO.println(sb);
 }

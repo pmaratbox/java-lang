@@ -15,5 +15,5 @@ void main() throws Exception {
     var price = b.getElementsByTagName("price").item(0).getTextContent();
     sum += Integer.parseInt(price);
   }
-  System.out.println(sum);
+  IO.println(sum);
 }

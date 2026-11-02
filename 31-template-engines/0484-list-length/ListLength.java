@@ -11,5 +11,5 @@ void main() throws Exception {
   m.put("items", Arrays.asList(1, 2, 3));
   var w = new StringWriter();
   t.process(m, w);
-  System.out.println(w.toString());
+  IO.println(w.toString());
 }

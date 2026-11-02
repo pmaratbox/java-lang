@@ -8,5 +8,5 @@ static IntUnaryOperator partial(IntBinaryOperator f, int a) {
 void main() {
     IntBinaryOperator add = (a, b) -> a + b;
     var add10 = partial(add, 10);
-    System.out.println(add10.applyAsInt(3));
+    IO.println(add10.applyAsInt(3));
 }

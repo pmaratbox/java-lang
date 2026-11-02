@@ -29,6 +29,6 @@ public class TestRunner {
                 failed++;
             }
         }
-        System.out.println(passed + " passed, " + failed + " failed");
+        IO.println(passed + " passed, " + failed + " failed");
     }
 }

@@ -5,5 +5,5 @@ import java.io.File;
 
 void main() {
   var cfg = ConfigFactory.parseFile(new File("app.json"));
-  System.out.println(cfg.getBoolean("debug"));
+  IO.println(cfg.getBoolean("debug"));
 }

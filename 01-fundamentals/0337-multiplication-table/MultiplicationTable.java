@@ -5,6 +5,6 @@ void main() {
             if (j > 1) sb.append(' ');
             sb.append(i * j);
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

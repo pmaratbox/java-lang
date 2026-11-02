@@ -20,5 +20,5 @@ void main() {
     };
 
     var doubled = map(source, x -> x * 2);
-    doubled.subscribe(System.out::println);
+    doubled.subscribe(IO::println);
 }

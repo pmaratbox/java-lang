@@ -23,5 +23,5 @@ void main() {
 
   Map<String, Object> data = GraphQL.newGraphQL(schema).build().execute(input).getData();
   var item = (Map<String, Object>) data.get("item");
-  System.out.println(item.get("id"));
+  IO.println(item.get("id"));
 }

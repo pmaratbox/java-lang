@@ -9,6 +9,6 @@ void main() {
             if (i > 0) sb.append(" ");
             sb.append(matrix[i][j]);
         }
-        System.out.println(sb);
+        IO.println(sb);
     }
 }

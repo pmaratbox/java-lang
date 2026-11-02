@@ -20,7 +20,7 @@ void main() throws Exception {
   var body = c.send(
       HttpRequest.newBuilder().uri(URI.create("http://localhost:" + port + "/user")).build(),
       HttpResponse.BodyHandlers.ofString()).body();
-  System.out.println(body);
+  IO.println(body);
 
   app.stop();
 }

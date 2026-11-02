@@ -56,8 +56,8 @@ void main() {
     cold.subscribe(coldA::add);
     cold.subscribe(coldB::add);
 
-    System.out.println("cold A: " + join(coldA));
-    System.out.println("cold B: " + join(coldB));
+    IO.println("cold A: " + join(coldA));
+    IO.println("cold B: " + join(coldB));
 
     // HOT: one shared producer; A subscribes, emit 1, then B subscribes,
     // then emit 2 and 3 to both. B misses the earlier 1.
@@ -71,6 +71,6 @@ void main() {
     hot.emit(2);
     hot.emit(3);
 
-    System.out.println("hot A: " + join(hotA));
-    System.out.println("hot B: " + join(hotB));
+    IO.println("hot A: " + join(hotA));
+    IO.println("hot B: " + join(hotB));
 }

@@ -13,5 +13,5 @@ void main() {
     for (var x : sums) {
         out.add(String.valueOf(x));
     }
-    System.out.println(out);
+    IO.println(out);
 }

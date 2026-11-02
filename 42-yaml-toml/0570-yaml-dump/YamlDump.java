@@ -15,5 +15,5 @@ void main() {
   opt.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
 
   // SnakeYAML serializes the sorted map; dump() ends with a newline.
-  System.out.print(new Yaml(opt).dump(m));
+  IO.print(new Yaml(opt).dump(m));
 }

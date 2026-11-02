@@ -9,5 +9,5 @@ void main() {
     + "<ul class=\"items\">\n<li class=\"item\">apple</li>\n<li class=\"item\">banana</li>\n<li class=\"item\">cherry</li>\n</ul>\n"
     + "<a href=\"https://example.com\">site</a>\n<div class=\"content\"><p>first</p><p>second</p></div>\n</body></html>";
   var d = Jsoup.parse(DOC);
-  System.out.println(d.selectFirst("a").attr("href"));
+  IO.println(d.selectFirst("a").attr("href"));
 }

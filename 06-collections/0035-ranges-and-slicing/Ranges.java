@@ -6,5 +6,5 @@ void main() {
     var slice = nums.subList(1, 4).stream()
         .map(String::valueOf)
         .collect(Collectors.joining(" "));
-    System.out.println("slice: " + slice);
+    IO.println("slice: " + slice);
 }

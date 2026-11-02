@@ -62,6 +62,6 @@ void main() {
     var s = new Scheduler();
     long[] times = { 10, 20, 100 };
     String[] values = { "a", "b", "c" };
-    debounce(s, 30, System.out::println, times, values);
+    debounce(s, 30, IO::println, times, values);
     s.run();
 }

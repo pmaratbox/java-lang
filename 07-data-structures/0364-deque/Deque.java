@@ -10,5 +10,5 @@ void main() {
     for (int value : deque) {
         sj.add(Integer.toString(value));
     }
-    System.out.println(sj);
+    IO.println(sj);
 }

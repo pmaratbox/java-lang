@@ -6,6 +6,6 @@ static MinMax minMax(int a, int b) {
 
 void main() {
     var r = minMax(3, 7);
-    System.out.println("min: " + r.lo());
-    System.out.println("max: " + r.hi());
+    IO.println("min: " + r.lo());
+    IO.println("max: " + r.hi());
 }

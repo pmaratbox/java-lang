@@ -5,5 +5,5 @@ import java.util.List;
 
 void main() throws Exception {
   var numbers = List.of(1, 2, 3);
-  System.out.println(new ObjectMapper().writeValueAsString(numbers));
+  IO.println(new ObjectMapper().writeValueAsString(numbers));
 }

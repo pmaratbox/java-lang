@@ -12,5 +12,5 @@ static int fib(int n) {
 }
 
 void main() {
-    System.out.println(fib(10));
+    IO.println(fib(10));
 }

@@ -24,6 +24,6 @@ void main() throws Exception {
           .build(),
       HttpResponse.BodyHandlers.ofString());
 
-  System.out.println(resp.statusCode());
+  IO.println(resp.statusCode());
   app.stop();
 }

@@ -13,5 +13,5 @@ void main() {
     entries.sort(Map.Entry.comparingByValue());
     var out = new StringJoiner(" ");
     for (Map.Entry<String, Integer> e : entries) out.add(e.getKey() + ":" + e.getValue());
-    System.out.println(out);
+    IO.println(out);
 }

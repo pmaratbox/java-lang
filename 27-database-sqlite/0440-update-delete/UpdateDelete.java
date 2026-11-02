@@ -17,6 +17,6 @@ void main() throws Exception {
     c.createStatement().execute("delete from users where id=1");
     var rs = c.createStatement().executeQuery("select id,name from users order by id");
     while (rs.next()) {
-        System.out.println(rs.getInt(1) + " " + rs.getString(2));
+        IO.println(rs.getInt(1) + " " + rs.getString(2));
     }
 }

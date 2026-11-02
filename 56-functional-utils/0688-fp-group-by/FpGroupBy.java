@@ -9,5 +9,5 @@ void main() {
       .toSortedMap(Comparator.naturalOrder(), e -> e._1, e -> e._2)
       .map(e -> e._1 + ":" + e._2.mkString(","))
       .mkString(";");
-  System.out.println(out);
+  IO.println(out);
 }

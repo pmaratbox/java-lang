@@ -5,5 +5,5 @@ import org.apache.commons.collections4.map.LRUMap;
 void main() {
   LRUMap<String, Integer> c = new LRUMap<>(3);
   c.put("a", 1);
-  System.out.println(c.containsKey("a") + " " + c.containsKey("x"));
+  IO.println(c.containsKey("a") + " " + c.containsKey("x"));
 }

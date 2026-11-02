@@ -15,5 +15,5 @@ void main() throws InterruptedException {
     for (var t : threads) {
         t.join();
     }
-    System.out.println(counter.get());
+    IO.println(counter.get());
 }

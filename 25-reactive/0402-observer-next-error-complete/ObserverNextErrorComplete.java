@@ -35,9 +35,9 @@ static final class SafeObserver<T> {
 
 void main() {
     SafeObserver<Integer> observer = new SafeObserver<>(
-        v -> System.out.println(v),
-        e -> System.out.println("error: " + e.getMessage()),
-        () -> System.out.println("complete")
+        v -> IO.println(v),
+        e -> IO.println("error: " + e.getMessage()),
+        () -> IO.println("complete")
     );
 
     observer.next(1);

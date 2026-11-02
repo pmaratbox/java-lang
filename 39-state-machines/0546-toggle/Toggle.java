@@ -19,5 +19,5 @@ void main() {
   fsm.fire("toggle");
   fsm.fire("toggle");
 
-  System.out.println(fsm.getCurrentState().toString().toLowerCase());
+  IO.println(fsm.getCurrentState().toString().toLowerCase());
 }
