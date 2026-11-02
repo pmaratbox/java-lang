@@ -1,19 +1,17 @@
-public class VendingMachine {
-    public static void main(String[] args) {
-        int[] coins = {10, 10, 5};
-        int price = 25;
-        int total = 0;
-        boolean dispensed = false;
-        for (int c : coins) {
-            total += c;
-            if (total >= price) {
-                System.out.println("dispensed");
-                dispensed = true;
-                break;
-            }
+void main() {
+    int[] coins = {10, 10, 5};
+    var price = 25;
+    var total = 0;
+    var dispensed = false;
+    for (var c : coins) {
+        total += c;
+        if (total >= price) {
+            System.out.println("dispensed");
+            dispensed = true;
+            break;
         }
-        if (!dispensed) {
-            System.out.println("waiting");
-        }
+    }
+    if (!dispensed) {
+        System.out.println("waiting");
     }
 }

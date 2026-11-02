@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS com.google.inject:guice:7.0.0
 import com.google.inject.*;
 
@@ -16,15 +17,15 @@ class C {
 }
 
 public class DiNested {
-  public static void main(String[] args) {
-    Injector inj = Guice.createInjector(new AbstractModule() {
+  void main() {
+    var inj = Guice.createInjector(new AbstractModule() {
       protected void configure() {
         // No bindings needed: Guice resolves concrete classes by injecting their @Inject fields.
       }
     });
     // C depends on B depends on A — a 3-level chain.
     // Guice resolves the whole graph when we ask for C.
-    C c = inj.getInstance(C.class);
+    var c = inj.getInstance(C.class);
     System.out.println(c.v());
   }
 }

@@ -1,20 +1,20 @@
 import java.util.TreeMap;
 
 public class TrieAutocomplete {
-    public static void main(String[] args) {
-        Node root = new Node();
-        for (String w : new String[]{"car", "card", "dog"}) insert(root, w);
-        Node node = root;
-        String prefix = "car";
-        for (char c : prefix.toCharArray()) node = node.children.get(c);
-        StringBuilder sb = new StringBuilder();
+    void main() {
+        var root = new Node();
+        for (var w : new String[]{"car", "card", "dog"}) insert(root, w);
+        var node = root;
+        var prefix = "car";
+        for (var c : prefix.toCharArray()) node = node.children.get(c);
+        var sb = new StringBuilder();
         collect(node, prefix, sb);
         System.out.println(sb.toString().trim());
     }
 
     static void insert(Node root, String w) {
-        Node cur = root;
-        for (char c : w.toCharArray())
+        var cur = root;
+        for (var c : w.toCharArray())
             cur = cur.children.computeIfAbsent(c, k -> new Node());
         cur.word = true;
     }

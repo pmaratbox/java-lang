@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS com.google.inject:guice:7.0.0
 import com.google.inject.*;
 
@@ -8,13 +9,13 @@ class GreeterImpl implements Greeter {
 }
 
 public class DiResolve {
-  public static void main(String[] args) {
-    Injector inj = Guice.createInjector(new AbstractModule() {
+  void main() {
+    var inj = Guice.createInjector(new AbstractModule() {
       protected void configure() {
         bind(Greeter.class).to(GreeterImpl.class).in(Scopes.SINGLETON);
       }
     });
-    Greeter greeter = inj.getInstance(Greeter.class);
+    var greeter = inj.getInstance(Greeter.class);
     System.out.println(greeter.greet());
   }
 }

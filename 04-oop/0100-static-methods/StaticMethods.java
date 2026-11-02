@@ -5,7 +5,7 @@ class MathUtil {
 }
 
 public class StaticMethods {
-    public static void main(String[] args) {
+    void main() {
         System.out.println(MathUtil.square(6));
     }
 }

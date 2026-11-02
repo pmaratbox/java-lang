@@ -1,17 +1,15 @@
-public class CountingSort {
-    public static void main(String[] args) {
-        int[] a = {3, 1, 2, 3, 1};
-        int max = 0;
-        for (int v : a) if (v > max) max = v;
-        int[] counts = new int[max + 1];
-        for (int v : a) counts[v]++;
-        StringBuilder sb = new StringBuilder();
-        for (int v = 0; v <= max; v++) {
-            for (int c = 0; c < counts[v]; c++) {
-                if (sb.length() > 0) sb.append(' ');
-                sb.append(v);
-            }
+void main() {
+    int[] a = {3, 1, 2, 3, 1};
+    var max = 0;
+    for (var v : a) if (v > max) max = v;
+    var counts = new int[max + 1];
+    for (var v : a) counts[v]++;
+    var sb = new StringBuilder();
+    for (var v = 0; v <= max; v++) {
+        for (var c = 0; c < counts[v]; c++) {
+            if (sb.length() > 0) sb.append(' ');
+            sb.append(v);
         }
-        System.out.println(sb);
     }
+    System.out.println(sb);
 }

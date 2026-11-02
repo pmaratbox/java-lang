@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS org.quicktheories:quicktheories:0.26
 import static org.quicktheories.QuickTheory.qt;
 import static org.quicktheories.generators.SourceDSL.*;
@@ -6,13 +7,11 @@ import static org.quicktheories.generators.SourceDSL.*;
 // AssertionError on a counterexample. Here forAll takes TWO generators, so the
 // predicate receives two independently generated integers a, b. The property
 // always holds, so the check passes silently and we print `passed`.
-public class MultipleArgs {
-  public static void main(String[] args) {
-    qt().forAll(integers().all(), integers().all())
-        .check((a, b) -> {
-          int m = Math.max(a, b);
-          return m >= a && m >= b;
-        });
-    System.out.println("passed");
-  }
+void main() {
+  qt().forAll(integers().all(), integers().all())
+      .check((a, b) -> {
+        var m = Math.max(a, b);
+        return m >= a && m >= b;
+      });
+  System.out.println("passed");
 }

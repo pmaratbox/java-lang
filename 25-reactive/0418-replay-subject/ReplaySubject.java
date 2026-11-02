@@ -18,7 +18,7 @@ public class ReplaySubject {
             buffer.pollFirst();
         }
         buffer.addLast(value);
-        for (Consumer<Integer> observer : observers) {
+        for (var observer : observers) {
             observer.accept(value);
         }
     }
@@ -30,8 +30,8 @@ public class ReplaySubject {
         observers.add(observer);
     }
 
-    public static void main(String[] args) {
-        ReplaySubject subject = new ReplaySubject(2);
+    static void main() {
+        var subject = new ReplaySubject(2);
         subject.next(1);
         subject.next(2);
         subject.next(3);

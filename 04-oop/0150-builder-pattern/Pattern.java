@@ -1,43 +1,41 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pattern {
-    static class Pizza {
-        private final String size;
-        private final List<String> toppings;
+static class Pizza {
+    private final String size;
+    private final List<String> toppings;
 
-        Pizza(String size, List<String> toppings) {
-            this.size = size;
-            this.toppings = toppings;
-        }
-
-        @Override
-        public String toString() {
-            return "Pizza(" + size + ", " + String.join(", ", toppings) + ")";
-        }
+    Pizza(String size, List<String> toppings) {
+        this.size = size;
+        this.toppings = toppings;
     }
 
-    static class PizzaBuilder {
-        private String size;
-        private final List<String> toppings = new ArrayList<>();
+    @Override
+    public String toString() {
+        return "Pizza(" + size + ", " + String.join(", ", toppings) + ")";
+    }
+}
 
-        PizzaBuilder setSize(String size) {
-            this.size = size;
-            return this;
-        }
+static class PizzaBuilder {
+    private String size;
+    private final List<String> toppings = new ArrayList<>();
 
-        PizzaBuilder addTopping(String topping) {
-            toppings.add(topping);
-            return this;
-        }
-
-        Pizza build() {
-            return new Pizza(size, toppings);
-        }
+    PizzaBuilder setSize(String size) {
+        this.size = size;
+        return this;
     }
 
-    public static void main(String[] args) {
-        Pizza pizza = new PizzaBuilder().setSize("M").addTopping("cheese").build();
-        System.out.println(pizza);
+    PizzaBuilder addTopping(String topping) {
+        toppings.add(topping);
+        return this;
     }
+
+    Pizza build() {
+        return new Pizza(size, toppings);
+    }
+}
+
+void main() {
+    var pizza = new PizzaBuilder().setSize("M").addTopping("cheese").build();
+    System.out.println(pizza);
 }

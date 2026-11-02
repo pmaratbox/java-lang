@@ -10,11 +10,11 @@ public class LevelOrderTraversal {
         return n;
     }
 
-    public static void main(String[] args) {
+    void main() {
         Node root = null;
-        for (int v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
+        for (var v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
 
-        StringJoiner sj = new StringJoiner(" ");
+        var sj = new StringJoiner(" ");
         Queue<Node> q = new ArrayDeque<>();
         q.add(root);
         while (!q.isEmpty()) {

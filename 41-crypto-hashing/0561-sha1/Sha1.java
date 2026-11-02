@@ -1,11 +1,10 @@
+//JAVA 26
 import java.security.MessageDigest;
 
-public class Sha1 {
-    public static void main(String[] args) throws Exception {
-        byte[] digest = MessageDigest.getInstance("SHA-1")
-                .digest("hello".getBytes("UTF-8"));
-        StringBuilder hex = new StringBuilder();
-        for (byte b : digest) hex.append(String.format("%02x", b));
-        System.out.println(hex);
-    }
+void main() throws Exception {
+    var digest = MessageDigest.getInstance("SHA-1")
+            .digest("hello".getBytes("UTF-8"));
+    var hex = new StringBuilder();
+    for (var b : digest) hex.append(String.format("%02x", b));
+    System.out.println(hex);
 }

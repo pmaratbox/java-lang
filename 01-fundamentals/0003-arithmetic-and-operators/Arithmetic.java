@@ -1,12 +1,10 @@
-public class Arithmetic {
-    public static void main(String[] args) {
-        int a = 17;
-        int b = 5;
+void main() {
+    var a = 17;
+    var b = 5;
 
-        System.out.println("a + b: " + (a + b));
-        System.out.println("a - b: " + (a - b));
-        System.out.println("a * b: " + (a * b));
-        System.out.println("a / b: " + (a / b));
-        System.out.println("a % b: " + (a % b));
-    }
+    System.out.println("a + b: " + (a + b));
+    System.out.println("a - b: " + (a - b));
+    System.out.println("a * b: " + (a * b));
+    System.out.println("a / b: " + (a / b));
+    System.out.println("a % b: " + (a % b));
 }

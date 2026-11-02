@@ -10,15 +10,15 @@ public class FenwickTree {
     }
 
     int prefix(int i) {
-        int sum = 0;
+        var sum = 0;
         for (; i > 0; i -= i & (-i)) sum += bit[i];
         return sum;
     }
 
-    public static void main(String[] args) {
+    static void main() {
         int[] a = {1, 2, 3, 4, 5};
-        FenwickTree ft = new FenwickTree(a.length);
-        for (int i = 0; i < a.length; i++) ft.update(i, a[i]);
+        var ft = new FenwickTree(a.length);
+        for (var i = 0; i < a.length; i++) ft.update(i, a[i]);
         System.out.println(ft.prefix(4));
     }
 }

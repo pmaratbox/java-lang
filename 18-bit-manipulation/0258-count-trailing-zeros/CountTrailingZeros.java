@@ -1,6 +1,4 @@
-public class CountTrailingZeros {
-    public static void main(String[] args) {
-        int n = 8;
-        System.out.println(Integer.numberOfTrailingZeros(n));
-    }
+void main() {
+    var n = 8;
+    System.out.println(Integer.numberOfTrailingZeros(n));
 }

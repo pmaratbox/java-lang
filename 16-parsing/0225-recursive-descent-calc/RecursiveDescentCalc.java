@@ -6,32 +6,32 @@ public class RecursiveDescentCalc {
         this.src = src;
     }
 
-    public static void main(String[] args) {
+    static void main() {
         System.out.println(new RecursiveDescentCalc("2+3*4").expr());
     }
 
     int expr() {
-        int value = term();
+        var value = term();
         while (pos < src.length() && (peek() == '+' || peek() == '-')) {
-            char op = src.charAt(pos++);
-            int rhs = term();
+            var op = src.charAt(pos++);
+            var rhs = term();
             value = op == '+' ? value + rhs : value - rhs;
         }
         return value;
     }
 
     int term() {
-        int value = factor();
+        var value = factor();
         while (pos < src.length() && (peek() == '*' || peek() == '/')) {
-            char op = src.charAt(pos++);
-            int rhs = factor();
+            var op = src.charAt(pos++);
+            var rhs = factor();
             value = op == '*' ? value * rhs : value / rhs;
         }
         return value;
     }
 
     int factor() {
-        int start = pos;
+        var start = pos;
         while (pos < src.length() && Character.isDigit(src.charAt(pos))) pos++;
         return Integer.parseInt(src.substring(start, pos));
     }

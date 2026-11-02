@@ -1,14 +1,12 @@
-public class Prototype {
-    static class Cell {
-        int value;
-        Cell(int value) { this.value = value; }
-        Cell copy() { return new Cell(this.value); }
-    }
+static class Cell {
+    int value;
+    Cell(int value) { this.value = value; }
+    Cell copy() { return new Cell(this.value); }
+}
 
-    public static void main(String[] args) {
-        Cell original = new Cell(1);
-        Cell clone = original.copy();
-        clone.value = 2;
-        System.out.println(original.value + " " + clone.value);
-    }
+void main() {
+    var original = new Cell(1);
+    var clone = original.copy();
+    clone.value = 2;
+    System.out.println(original.value + " " + clone.value);
 }

@@ -1,8 +1,6 @@
-public class JsonStringify {
-    public static void main(String[] args) {
-        String name = "Ada";
-        int age = 36;
-        String json = "{\"name\":\"" + name + "\",\"age\":" + age + "}";
-        System.out.println(json);
-    }
+void main() {
+    var name = "Ada";
+    var age = 36;
+    var json = "{\"name\":\"" + name + "\",\"age\":" + age + "}";
+    System.out.println(json);
 }

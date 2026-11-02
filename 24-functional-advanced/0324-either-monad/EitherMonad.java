@@ -1,16 +1,16 @@
 import java.util.function.Function;
 
 public class EitherMonad {
-    public static void main(String[] args) {
-        Either<String, Integer> ok = Either.<String, Integer>right(20)
+    void main() {
+        var ok = Either.<String, Integer>right(20)
                 .bind(x -> divide(x, 5))
                 .bind(x -> divide(x, 2));
-        Either<String, Integer> bad = Either.<String, Integer>right(20)
+        var bad = Either.<String, Integer>right(20)
                 .bind(x -> divide(x, 0))
                 .bind(x -> divide(x, 2));
 
-        String a = ok.fold(err -> err, val -> String.valueOf(val));
-        String b = bad.fold(err -> err, val -> String.valueOf(val));
+        var a = ok.fold(err -> err, val -> String.valueOf(val));
+        var b = bad.fold(err -> err, val -> String.valueOf(val));
         System.out.println(a + " " + b);
     }
 

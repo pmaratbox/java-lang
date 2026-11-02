@@ -15,21 +15,21 @@ public class CircularQueue {
     }
 
     int dequeue() {
-        int value = data[head];
+        var value = data[head];
         head = (head + 1) % capacity;
         size--;
         return value;
     }
 
-    public static void main(String[] args) {
-        CircularQueue q = new CircularQueue(3);
+    static void main() {
+        var q = new CircularQueue(3);
         q.enqueue(1);
         q.enqueue(2);
         q.enqueue(3);
         q.dequeue();
         q.enqueue(4);
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < q.size; i++) {
+        var sb = new StringBuilder();
+        for (var i = 0; i < q.size; i++) {
             if (i > 0) sb.append(' ');
             sb.append(q.data[(q.head + i) % q.capacity]);
         }

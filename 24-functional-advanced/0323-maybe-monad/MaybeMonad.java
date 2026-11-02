@@ -1,16 +1,16 @@
 import java.util.function.Function;
 
 public class MaybeMonad {
-    public static void main(String[] args) {
-        Maybe<Integer> present = Maybe.some(2)
+    void main() {
+        var present = Maybe.some(2)
                 .bind(x -> Maybe.some(x + 3))
                 .bind(x -> Maybe.some(x * 2));
-        Maybe<Integer> absent = Maybe.<Integer>none()
+        var absent = Maybe.<Integer>none()
                 .bind(x -> Maybe.some(x + 3))
                 .bind(x -> Maybe.some(x * 2));
 
-        String a = present.map(String::valueOf).orElse("none");
-        String b = absent.map(String::valueOf).orElse("none");
+        var a = present.map(String::valueOf).orElse("none");
+        var b = absent.map(String::valueOf).orElse("none");
         System.out.println(a + " " + b);
     }
 }

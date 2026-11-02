@@ -1,12 +1,10 @@
-public class CaesarCipher {
-    public static void main(String[] args) {
-        String text = "abc";
-        int shift = 1;
-        StringBuilder result = new StringBuilder();
-        for (char ch : text.toCharArray()) {
-            char shifted = (char) ((ch - 'a' + shift) % 26 + 'a');
-            result.append(shifted);
-        }
-        System.out.println(result);
+void main() {
+    var text = "abc";
+    var shift = 1;
+    var result = new StringBuilder();
+    for (var ch : text.toCharArray()) {
+        var shifted = (char) ((ch - 'a' + shift) % 26 + 'a');
+        result.append(shifted);
     }
+    System.out.println(result);
 }

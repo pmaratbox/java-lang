@@ -1,20 +1,19 @@
+//JAVA 26
 // Java — jackson-dataformat-msgpack via jbang. Run: jbang EncodeArray.java
 //DEPS org.msgpack:jackson-dataformat-msgpack:0.9.8
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.msgpack.jackson.dataformat.MessagePackFactory;
 import java.util.List;
 
-public class EncodeArray {
-  static ObjectMapper M = new ObjectMapper(new MessagePackFactory());
+static ObjectMapper M = new ObjectMapper(new MessagePackFactory());
 
-  static String hex(Object v) throws Exception {
-    byte[] b = M.writeValueAsBytes(v);
-    StringBuilder s = new StringBuilder();
-    for (byte x : b) s.append(String.format("%02x", x));
-    return s.toString();
-  }
+static String hex(Object v) throws Exception {
+  var b = M.writeValueAsBytes(v);
+  var s = new StringBuilder();
+  for (var x : b) s.append(String.format("%02x", x));
+  return s.toString();
+}
 
-  public static void main(String[] a) throws Exception {
-    System.out.println(hex(List.of(1, 2, 3))); // 93010203 (fixarray 93 + 01 02 03)
-  }
+void main() throws Exception {
+  System.out.println(hex(List.of(1, 2, 3))); // 93010203 (fixarray 93 + 01 02 03)
 }

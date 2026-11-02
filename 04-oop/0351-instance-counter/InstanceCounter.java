@@ -7,7 +7,7 @@ class Widget {
 }
 
 public class InstanceCounter {
-    public static void main(String[] args) {
+    void main() {
         new Widget();
         new Widget();
         new Widget();

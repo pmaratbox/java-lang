@@ -16,14 +16,14 @@ public class MultisetCount {
         return counts.getOrDefault(element, 0);
     }
 
-    public static void main(String[] args) {
-        MultisetCount ms = new MultisetCount();
+    void main() {
+        var ms = new MultisetCount();
         ms.add(1);
         ms.add(1);
         ms.add(2);
-        int before = ms.count(1);
+        var before = ms.count(1);
         ms.remove(1);
-        int after = ms.count(1);
+        var after = ms.count(1);
         System.out.println(before + " " + after);
     }
 }

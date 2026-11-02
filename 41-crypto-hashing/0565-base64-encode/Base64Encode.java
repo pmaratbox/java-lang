@@ -1,9 +1,8 @@
+//JAVA 26
 import java.util.Base64;
 
-public class Base64Encode {
-    public static void main(String[] args) throws Exception {
-        byte[] data = "hello".getBytes("UTF-8");
-        String encoded = Base64.getEncoder().encodeToString(data);
-        System.out.println(encoded);
-    }
+void main() throws Exception {
+    var data = "hello".getBytes("UTF-8");
+    var encoded = Base64.getEncoder().encodeToString(data);
+    System.out.println(encoded);
 }

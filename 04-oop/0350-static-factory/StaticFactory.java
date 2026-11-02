@@ -8,17 +8,17 @@ class Color {
     }
 
     static Color fromHex(String hex) {
-        String s = hex.startsWith("#") ? hex.substring(1) : hex;
-        int r = Integer.parseInt(s.substring(0, 2), 16);
-        int g = Integer.parseInt(s.substring(2, 4), 16);
-        int b = Integer.parseInt(s.substring(4, 6), 16);
+        var s = hex.startsWith("#") ? hex.substring(1) : hex;
+        var r = Integer.parseInt(s.substring(0, 2), 16);
+        var g = Integer.parseInt(s.substring(2, 4), 16);
+        var b = Integer.parseInt(s.substring(4, 6), 16);
         return new Color(r, g, b);
     }
 }
 
 public class StaticFactory {
-    public static void main(String[] args) {
-        Color c = Color.fromHex("#ff0000");
+    void main() {
+        var c = Color.fromHex("#ff0000");
         System.out.println(c.r + " " + c.g + " " + c.b);
     }
 }

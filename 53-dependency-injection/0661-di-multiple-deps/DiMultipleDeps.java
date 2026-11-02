@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS com.google.inject:guice:7.0.0
 import com.google.inject.*;
 
@@ -19,14 +20,14 @@ class Service {
 }
 
 public class DiMultipleDeps {
-  public static void main(String[] args) {
-    Injector inj = Guice.createInjector(new AbstractModule() {
+  void main() {
+    var inj = Guice.createInjector(new AbstractModule() {
       protected void configure() {
         bind(A.class).to(AImpl.class).in(Scopes.SINGLETON);
         bind(B.class).to(BImpl.class).in(Scopes.SINGLETON);
       }
     });
-    Service service = inj.getInstance(Service.class);
+    var service = inj.getInstance(Service.class);
     System.out.println(service.run());
   }
 }

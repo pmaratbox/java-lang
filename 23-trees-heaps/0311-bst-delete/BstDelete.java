@@ -13,7 +13,7 @@ public class BstDelete {
         else {
             if (n.left == null) return n.right;
             if (n.right == null) return n.left;
-            Node s = n.right;
+            var s = n.right;
             while (s.left != null) s = s.left;
             n.val = s.val;
             n.right = delete(n.right, s.val);
@@ -29,11 +29,11 @@ public class BstDelete {
         inorder(n.right, sb);
     }
 
-    public static void main(String[] args) {
+    void main() {
         Node root = null;
-        for (int v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
+        for (var v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
         root = delete(root, 3);
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
         inorder(root, sb);
         System.out.println(sb);
     }

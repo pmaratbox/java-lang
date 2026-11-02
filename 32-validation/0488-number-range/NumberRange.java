@@ -1,23 +1,22 @@
+//JAVA 26
 //DEPS org.hibernate.validator:hibernate-validator:8.0.1.Final
 //DEPS org.glassfish.expressly:expressly:5.0.0
 import jakarta.validation.*;
 import jakarta.validation.constraints.*;
 import java.util.stream.*;
 
-public class NumberRange {
-  static class Person {
-    String name;
-    @Min(0) @Max(120) int age;
-    Person(String name, int age) { this.name = name; this.age = age; }
-  }
+static class Person {
+  String name;
+  @Min(0) @Max(120) int age;
+  Person(String name, int age) { this.name = name; this.age = age; }
+}
 
-  public static void main(String[] a) {
-    Validator v = Validation.buildDefaultValidatorFactory().getValidator();
-    var violations = v.validate(new Person("alice", 200));
-    String out = violations.stream()
-        .map(x -> x.getPropertyPath().toString().toLowerCase())
-        .distinct().sorted()
-        .collect(Collectors.joining("\n"));
-    System.out.println(out.isEmpty() ? "ok" : out);
-  }
+void main() {
+  var v = Validation.buildDefaultValidatorFactory().getValidator();
+  var violations = v.validate(new Person("alice", 200));
+  var out = violations.stream()
+      .map(x -> x.getPropertyPath().toString().toLowerCase())
+      .distinct().sorted()
+      .collect(Collectors.joining("\n"));
+  System.out.println(out.isEmpty() ? "ok" : out);
 }

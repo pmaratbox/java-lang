@@ -1,20 +1,18 @@
-public class SelectionSort {
-    public static void main(String[] args) {
-        int[] a = {5, 1, 4, 2};
-        for (int i = 0; i < a.length - 1; i++) {
-            int min = i;
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[j] < a[min]) min = j;
-            }
-            int t = a[i];
-            a[i] = a[min];
-            a[min] = t;
+void main() {
+    int[] a = {5, 1, 4, 2};
+    for (var i = 0; i < a.length - 1; i++) {
+        var min = i;
+        for (var j = i + 1; j < a.length; j++) {
+            if (a[j] < a[min]) min = j;
         }
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < a.length; i++) {
-            if (i > 0) sb.append(' ');
-            sb.append(a[i]);
-        }
-        System.out.println(sb);
+        var t = a[i];
+        a[i] = a[min];
+        a[min] = t;
     }
+    var sb = new StringBuilder();
+    for (var i = 0; i < a.length; i++) {
+        if (i > 0) sb.append(' ');
+        sb.append(a[i]);
+    }
+    System.out.println(sb);
 }

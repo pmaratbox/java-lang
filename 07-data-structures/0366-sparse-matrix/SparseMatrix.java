@@ -20,8 +20,8 @@ public class SparseMatrix {
         return entries.getOrDefault(key(row, col), 0);
     }
 
-    public static void main(String[] args) {
-        SparseMatrix matrix = new SparseMatrix();
+    void main() {
+        var matrix = new SparseMatrix();
         matrix.set(1, 1, 5);
         System.out.println(matrix.get(1, 1) + " " + matrix.get(0, 0));
     }

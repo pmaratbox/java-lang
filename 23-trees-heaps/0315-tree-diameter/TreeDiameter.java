@@ -3,17 +3,17 @@ public class TreeDiameter {
 
     static int height(Node n) {
         if (n == null) return 0;
-        int l = height(n.left);
-        int r = height(n.right);
+        var l = height(n.left);
+        var r = height(n.right);
         best = Math.max(best, l + r);
         return 1 + Math.max(l, r);
     }
 
-    public static void main(String[] args) {
+    void main() {
         Node c = new Node("C"), d = new Node("D");
-        Node a = new Node("A", c, d);
-        Node b = new Node("B");
-        Node root = new Node("root", a, b);
+        var a = new Node("A", c, d);
+        var b = new Node("B");
+        var root = new Node("root", a, b);
         height(root);
         System.out.println(best);
     }

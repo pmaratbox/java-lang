@@ -11,7 +11,7 @@ class SpecificError extends BaseError {
 }
 
 public class ExceptionHierarchy {
-    public static void main(String[] args) {
+    void main() {
         try {
             throw new SpecificError("boom");
         } catch (BaseError e) {

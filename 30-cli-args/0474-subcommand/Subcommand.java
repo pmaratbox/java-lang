@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS info.picocli:picocli:4.7.6
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
@@ -17,7 +18,7 @@ public class Subcommand {
     }
   }
 
-  public static void main(String[] args) {
+  void main() {
     new CommandLine(new Subcommand()).execute("add", "2", "3");
   }
 }

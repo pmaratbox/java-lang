@@ -1,22 +1,20 @@
-public class SharedCounter {
-    private static int counter = 0;
-    private static final Object lock = new Object();
+private static int counter = 0;
+private static final Object lock = new Object();
 
-    public static void main(String[] args) throws InterruptedException {
-        Thread[] threads = new Thread[10];
-        for (int i = 0; i < threads.length; i++) {
-            threads[i] = new Thread(() -> {
-                for (int j = 0; j < 100; j++) {
-                    synchronized (lock) {
-                        counter++;
-                    }
+void main() throws InterruptedException {
+    var threads = new Thread[10];
+    for (var i = 0; i < threads.length; i++) {
+        threads[i] = new Thread(() -> {
+            for (var j = 0; j < 100; j++) {
+                synchronized (lock) {
+                    counter++;
                 }
-            });
-            threads[i].start();
-        }
-        for (Thread t : threads) {
-            t.join();
-        }
-        System.out.println(counter);
+            }
+        });
+        threads[i].start();
     }
+    for (var t : threads) {
+        t.join();
+    }
+    System.out.println(counter);
 }

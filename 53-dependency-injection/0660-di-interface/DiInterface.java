@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS com.google.inject:guice:7.0.0
 import com.google.inject.*;
 
@@ -8,13 +9,13 @@ class Dog implements Animal {
 }
 
 public class DiInterface {
-  public static void main(String[] args) {
-    Injector inj = Guice.createInjector(new AbstractModule() {
+  void main() {
+    var inj = Guice.createInjector(new AbstractModule() {
       protected void configure() {
         bind(Animal.class).to(Dog.class).in(Scopes.SINGLETON);
       }
     });
-    Animal animal = inj.getInstance(Animal.class);
+    var animal = inj.getInstance(Animal.class);
     System.out.println(animal.sound());
   }
 }

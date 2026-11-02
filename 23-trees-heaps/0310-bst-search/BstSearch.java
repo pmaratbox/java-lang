@@ -14,9 +14,9 @@ public class BstSearch {
         return false;
     }
 
-    public static void main(String[] args) {
+    void main() {
         Node root = null;
-        for (int v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
+        for (var v : new int[]{5, 3, 8, 1, 4}) root = insert(root, v);
         System.out.println((search(root, 4) ? "yes" : "no") + " " +
                            (search(root, 6) ? "yes" : "no"));
     }

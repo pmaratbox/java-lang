@@ -17,10 +17,10 @@ class Triangle extends Shape {
 }
 
 public class VirtualDispatch {
-    public static void main(String[] args) {
-        List<Shape> shapes = List.of(new Circle(), new Square(), new Triangle());
-        StringBuilder sb = new StringBuilder();
-        for (Shape s : shapes) {
+    void main() {
+        var shapes = List.of(new Circle(), new Square(), new Triangle());
+        var sb = new StringBuilder();
+        for (var s : shapes) {
             if (sb.length() > 0) sb.append(' ');
             sb.append(s.describe());
         }

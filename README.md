@@ -5,6 +5,8 @@ Incremental lessons learning Java.
 ## Prerequisites
 
 - OpenJDK 26
+- JBang for lessons whose run command starts with `jbang`; their `//JAVA 26`
+  directive selects the required JDK.
 
 ### Install
 
@@ -17,12 +19,35 @@ Incremental lessons learning Java.
 
         echo 'export PATH="/opt/homebrew/opt/openjdk@26/bin:$PATH"' >> ~/.zshrc
 
-- Debian / Ubuntu: `sudo apt install openjdk-26-jdk` (use your distro's package; fall back to `default-jdk` if 26 isn't packaged yet)
+- Debian / Ubuntu: `sudo apt install openjdk-26-jdk` (if unavailable, install a JDK 26 distribution directly)
 - Other: download from [jdk.java.net/26](https://jdk.java.net/26/)
 
 ### Verify
 
     javac --version && java --version
+
+## Java Style & Running Lessons
+
+Standalone examples use compact source files with `void main()`, a permanent
+language feature since Java 25. The command-line argument lesson uses
+`void main(String[] args)`. Named classes remain where examples need constructors,
+class references, annotations, or multiple top-level types. Entry points in
+classes without a no-argument constructor use `static void main()`.
+
+Use `var` for local variables when the initializer supplies the intended type.
+Types remain explicit for fields, parameters, return values, lambda targets, and
+bare array initializers such as `{1, 2}`. Numeric and generic declarations also
+keep explicit types when inference would change them. `var` still declares a
+statically typed variable.
+
+Run each lesson from its own directory using its README. Both
+`javac HelloWorld.java && java HelloWorld` and `java HelloWorld.java` work for the
+hello-world example; no preview flags are needed. JBang resolves dependencies
+declared with `//DEPS`. Recompile after editing so `java ClassName` runs the
+current source rather than an older `.class` file.
+
+See the [Java documentation on compact source files and instance main methods](https://docs.oracle.com/en/java/javase/25/language/compact-source-files-instance-main-methods.html)
+and [local variable type inference](https://docs.oracle.com/en/java/javase/25/language/local-variable-type-inference.html).
 
 ## Lessons
 

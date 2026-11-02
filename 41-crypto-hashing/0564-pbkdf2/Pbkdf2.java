@@ -1,19 +1,18 @@
+//JAVA 26
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
-public class Pbkdf2 {
-    public static void main(String[] args) throws Exception {
-        char[] password = "password".toCharArray();
-        byte[] salt = "salt".getBytes("UTF-8");
-        int iterations = 1000;
-        int keyBits = 32 * 8;
+void main() throws Exception {
+    var password = "password".toCharArray();
+    var salt = "salt".getBytes("UTF-8");
+    var iterations = 1000;
+    var keyBits = 32 * 8;
 
-        SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
-        PBEKeySpec spec = new PBEKeySpec(password, salt, iterations, keyBits);
-        byte[] derived = factory.generateSecret(spec).getEncoded();
+    var factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
+    var spec = new PBEKeySpec(password, salt, iterations, keyBits);
+    var derived = factory.generateSecret(spec).getEncoded();
 
-        StringBuilder sb = new StringBuilder();
-        for (byte b : derived) sb.append(String.format("%02x", b));
-        System.out.println(sb);
-    }
+    var sb = new StringBuilder();
+    for (var b : derived) sb.append(String.format("%02x", b));
+    System.out.println(sb);
 }

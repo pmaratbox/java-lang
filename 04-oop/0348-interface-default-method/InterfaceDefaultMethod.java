@@ -10,7 +10,7 @@ class CasualGreeter implements Greeter {
 }
 
 public class InterfaceDefaultMethod {
-    public static void main(String[] args) {
+    void main() {
         Greeter a = new PlainGreeter();
         Greeter b = new CasualGreeter();
         System.out.println(a.greet() + " " + b.greet());

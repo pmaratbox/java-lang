@@ -1,7 +1,5 @@
-public class LowestSetBit {
-    public static void main(String[] args) {
-        int x = 12;
-        int low = x & (-x);
-        System.out.println(low);
-    }
+void main() {
+    var x = 12;
+    var low = x & (-x);
+    System.out.println(low);
 }

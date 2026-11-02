@@ -20,7 +20,7 @@ final class Observable<T> {
     @SafeVarargs
     static <T> Observable<T> of(T... items) {
         return new Observable<>(observer -> {
-            for (T item : items) {
+            for (var item : items) {
                 observer.next(item);
             }
             observer.complete();
@@ -51,9 +51,9 @@ interface Observer<T> {
 }
 
 public class ConcatStreams {
-    public static void main(String[] args) {
-        Observable<Integer> a = Observable.of(1, 2);
-        Observable<Integer> b = Observable.of(3, 4);
+    void main() {
+        var a = Observable.of(1, 2);
+        var b = Observable.of(3, 4);
 
         Consumer<Integer> print = System.out::println;
 

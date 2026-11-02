@@ -1,3 +1,4 @@
+//JAVA 26
 //DEPS com.google.inject:guice:7.0.0
 import com.google.inject.*;
 
@@ -16,9 +17,9 @@ public class DiFactory {
     }
   }
 
-  public static void main(String[] args) {
-    Injector inj = Guice.createInjector(new WidgetModule());
-    Widget widget = inj.getInstance(Widget.class);
+  void main() {
+    var inj = Guice.createInjector(new WidgetModule());
+    var widget = inj.getInstance(Widget.class);
     System.out.println(widget.value());
   }
 }

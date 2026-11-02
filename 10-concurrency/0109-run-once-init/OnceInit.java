@@ -16,13 +16,13 @@ public class OnceInit {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        Thread[] threads = new Thread[8];
-        for (int i = 0; i < threads.length; i++) {
+    void main() throws InterruptedException {
+        var threads = new Thread[8];
+        for (var i = 0; i < threads.length; i++) {
             threads[i] = new Thread(OnceInit::init);
             threads[i].start();
         }
-        for (Thread t : threads) {
+        for (var t : threads) {
             t.join();
         }
         System.out.println("init count: " + initCount.get());

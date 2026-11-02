@@ -5,9 +5,9 @@ public class ValidateBst {
         return valid(n.left, low, n.val) && valid(n.right, n.val, high);
     }
 
-    public static void main(String[] args) {
-        Node good = new Node(5, new Node(3, new Node(1), new Node(4)), new Node(8));
-        Node bad = new Node(5, new Node(3, new Node(1), new Node(6)), new Node(8));
+    void main() {
+        var good = new Node(5, new Node(3, new Node(1), new Node(4)), new Node(8));
+        var bad = new Node(5, new Node(3, new Node(1), new Node(6)), new Node(8));
         System.out.println(
             (valid(good, Long.MIN_VALUE, Long.MAX_VALUE) ? "yes" : "no") + " " +
             (valid(bad, Long.MIN_VALUE, Long.MAX_VALUE) ? "yes" : "no"));

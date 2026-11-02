@@ -1,6 +1,4 @@
-public class CommandLineArgs {
-    public static void main(String[] args) {
-        String name = args[0];
-        System.out.println("hello, " + name);
-    }
+void main(String[] args) {
+    var name = args[0];
+    System.out.println("hello, " + name);
 }
